@@ -1,5 +1,6 @@
 {
   "name": "Dust Docs",
+  "theme": "mint",
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -19,13 +20,19 @@
       ]
     },
     {
-      "group": "Tools & Connections",
+      "group": "Docs",
       "pages": [
-        "tools-management",
-        "connections-management",
-        "adding-mcp-server",
-        "personal-vs-workspace-credentials",
-        "agents-management"
+        {
+          "group": "Tools & Connections",
+          "pages": [
+            "docs/tools-and-connections/index",
+            "docs/tools-and-connections/tools-management",
+            "docs/tools-and-connections/connections-management",
+            "docs/tools-and-connections/adding-mcp-server",
+            "docs/tools-and-connections/personal-vs-workspace-credentials",
+            "docs/tools-and-connections/agents-management"
+          ]
+        }
       ]
     }
   ],
