@@ -1,4 +1,5 @@
 {
+  "$schema": "https://mintlify.com/docs.json",
   "name": "Dust Docs",
   "theme": "mint",
   "logo": {
@@ -11,31 +12,30 @@
     "light": "#818cf8",
     "dark": "#4f46e5"
   },
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "index",
-        "quickstart"
-      ]
-    },
-    {
-      "group": "Docs",
-      "pages": [
-        {
-          "group": "Tools & Connections",
-          "pages": [
-            "docs/tools-and-connections/index",
-            "docs/tools-and-connections/tools-management",
-            "docs/tools-and-connections/connections-management",
-            "docs/tools-and-connections/adding-mcp-server",
-            "docs/tools-and-connections/personal-vs-workspace-credentials",
-            "docs/tools-and-connections/agents-management"
-          ]
-        }
-      ]
-    }
-  ],
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": ["index", "quickstart"]
+      },
+      {
+        "group": "Docs",
+        "pages": [
+          {
+            "group": "Tools & Connections",
+            "pages": [
+              "docs/tools-and-connections/index",
+              "docs/tools-and-connections/tools-management",
+              "docs/tools-and-connections/connections-management",
+              "docs/tools-and-connections/adding-mcp-server",
+              "docs/tools-and-connections/personal-vs-workspace-credentials",
+              "docs/tools-and-connections/agents-management"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "footerSocials": {
     "website": "https://dust.tt",
     "x": "https://x.com/dust4ai",
