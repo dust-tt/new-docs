@@ -3,19 +3,17 @@ title: Dust Docs
 description: Dust's documentation, user guides, and developer platform.
 ---
 
-import { Card, Cards } from 'nextra/components';
-
-<Cards>
-  <Card title="User Documentation" href="/docs/intro" icon="📘">
+<Columns cols={2}>
+  <Card title="User Documentation" icon="book" href="/docs/intro" arrow={true}>
     All you need to create and use your first AI agents
   </Card>
-  <Card title="Use Cases & Guides" href="/docs/use-cases" icon="📖">
+  <Card title="Use Cases & Guides" icon="lightbulb" href="/docs/use-cases" arrow={true}>
     See how you can leverage the power of AI to your specific needs
   </Card>
-  <Card title="Developer Platform" href="/api-reference" icon="💻">
+  <Card title="Developer Platform" icon="code" href="/api-reference" arrow={true}>
     API Reference and technical documentation
   </Card>
-  <Card title="Community Support" href="https://community.dust.tt" icon="💬">
+  <Card title="Community Support" icon="users" href="https://community.dust.tt" arrow={true}>
     Join the Dust Slack community and get insights from other members
   </Card>
-</Cards>
+</Columns>
