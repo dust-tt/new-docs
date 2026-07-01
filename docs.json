@@ -16,11 +16,49 @@
     "groups": [
       {
         "group": "Getting Started",
-        "pages": ["index", "quickstart"]
+        "pages": [
+          "docs/intro"
+        ]
       },
       {
-        "group": "Docs",
+        "group": "Guides",
         "pages": [
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "docs/troubleshooting/index"
+            ]
+          },
+          {
+            "group": "Security & Audit",
+            "pages": [
+              "docs/security-and-audit/index"
+            ]
+          },
+          {
+            "group": "Billing",
+            "pages": [
+              "docs/billing/index"
+            ]
+          },
+          {
+            "group": "Spaces",
+            "pages": [
+              "docs/spaces/index"
+            ]
+          },
+          {
+            "group": "Connections",
+            "pages": [
+              "docs/connections/index"
+            ]
+          },
+          {
+            "group": "Admin Setup",
+            "pages": [
+              "docs/admin-setup/index"
+            ]
+          },
           {
             "group": "Tools & Connections",
             "pages": [
@@ -31,7 +69,55 @@
               "docs/tools-and-connections/personal-vs-workspace-credentials",
               "docs/tools-and-connections/agents-management"
             ]
+          },
+          {
+            "group": "Credits & Seats",
+            "pages": [
+              "docs/credits-and-seats/index"
+            ]
+          },
+          {
+            "group": "Access Control",
+            "pages": [
+              "docs/access-control/index"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "docs/analytics/index"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "docs/integrations/index"
+            ]
+          },
+          {
+            "group": "LLM Concepts",
+            "pages": [
+              "docs/llm-concepts/index"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "docs/use-cases/index"
+            ]
           }
+        ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          "api-reference/index"
+        ]
+      },
+      {
+        "group": "Community",
+        "pages": [
+          "community/index"
         ]
       }
     ]
