@@ -1,74 +1,130 @@
----
-title: Dust Docs
-description: Dust's documentation, user guides, and developer platform.
-mode: "custom"
----
-
-export const HeroCard = ({ title, description, href, icon, color }) => (
-  <a
-    className="group block w-full p-6 rounded-xl border border-gray-200 dark:border-zinc-800 hover:border-transparent transition-all duration-300 ease-out hover:shadow-lg dark:hover:shadow-zinc-900/50"
-    href={href}
-  >
-    <div className="flex items-center gap-4">
-      <div
-        className="flex items-center justify-center w-10 h-10 rounded-lg text-2xl transition-all duration-300 ease-out"
-        style={{ backgroundColor: "transparent" }}
-      >
-        <span className="text-gray-400 dark:text-zinc-500 group-hover:text-[color] transition-colors duration-300" data-color={color}>
-          {icon}
-        </span>
-      </div>
-      <div className="flex-1">
-        <h3 className="font-medium text-lg text-gray-900 dark:text-zinc-50 transition-colors duration-300">
-          {title}
-        </h3>
-        <p className="mt-1 text-sm text-gray-500 dark:text-zinc-500">
-          {description}
-        </p>
-      </div>
-      <span className="text-gray-300 dark:text-zinc-700 group-hover:text-gray-500 dark:group-hover:text-zinc-300 transition-all duration-300 group-hover:translate-x-1">
-        →
-      </span>
-    </div>
-  </a>
-);
-
-<div className="px-4 py-16 lg:py-24 max-w-3xl mx-auto text-center">
-  <h1 className="text-4xl font-medium text-gray-900 dark:text-zinc-50 tracking-tight">
-    Dust Documentation
-  </h1>
-  <p className="mt-4 text-lg text-gray-500 dark:text-zinc-500">
-    Guides, references, and resources for building with Dust.
-  </p>
-</div>
-
-<div className="max-w-3xl mx-auto px-6 pb-16 flex flex-col gap-4">
-  <HeroCard
-    title="User Documentation"
-    description="All you need to create and use your first AI agents"
-    href="/docs/intro"
-    icon="📘"
-    color="#0C84FE"
-  />
-  <HeroCard
-    title="Use Cases & Guides"
-    description="See how you can leverage the power of AI to your specific needs"
-    href="/docs/use-cases"
-    icon="📖"
-    color="#418B5C"
-  />
-  <HeroCard
-    title="Developer Platform"
-    description="API Reference and technical documentation"
-    href="/api-reference"
-    icon="💻"
-    color="#FE9C1A"
-  />
-  <HeroCard
-    title="Community Support"
-    description="Join the Dust Slack community and get insights from other members"
-    href="https://community.dust.tt"
-    icon="💬"
-    color="#E14322"
-  />
-</div>
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Dust Docs",
+  "theme": "mint",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0C84FE",
+    "light": "#9FDBFF",
+    "dark": "#0C84FE"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "docs/intro"
+        ]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "docs/troubleshooting/index"
+            ]
+          },
+          {
+            "group": "Security & Audit",
+            "pages": [
+              "docs/security-and-audit/index"
+            ]
+          },
+          {
+            "group": "Billing",
+            "pages": [
+              "docs/billing/index"
+            ]
+          },
+          {
+            "group": "Spaces",
+            "pages": [
+              "docs/spaces/index"
+            ]
+          },
+          {
+            "group": "Connections",
+            "pages": [
+              "docs/connections/index"
+            ]
+          },
+          {
+            "group": "Admin Setup",
+            "pages": [
+              "docs/admin-setup/index"
+            ]
+          },
+          {
+            "group": "Tools & Connections",
+            "pages": [
+              "docs/tools-and-connections/index",
+              "docs/tools-and-connections/tools-management",
+              "docs/tools-and-connections/connections-management",
+              "docs/tools-and-connections/adding-mcp-server",
+              "docs/tools-and-connections/personal-vs-workspace-credentials",
+              "docs/tools-and-connections/agents-management"
+            ]
+          },
+          {
+            "group": "Credits & Seats",
+            "pages": [
+              "docs/credits-and-seats/index"
+            ]
+          },
+          {
+            "group": "Access Control",
+            "pages": [
+              "docs/access-control/index"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "docs/analytics/index"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "docs/integrations/index"
+            ]
+          },
+          {
+            "group": "LLM Concepts",
+            "pages": [
+              "docs/llm-concepts/index"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "docs/use-cases/index"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "API Reference",
+        "pages": [
+          "api-reference/index"
+        ]
+      },
+      {
+        "group": "Community",
+        "pages": [
+          "community/index"
+        ]
+      }
+    ]
+  },
+  "footerSocials": {
+    "website": "https://dust.tt",
+    "x": "https://x.com/dust4ai",
+    "github": "https://github.com/dust-tt"
+  }
+}
