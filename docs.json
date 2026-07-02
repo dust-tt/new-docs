@@ -17,7 +17,41 @@
       {
         "group": "Getting Started",
         "pages": [
-          "getting-started/intro"
+          "getting-started/intro-to-dust",
+          {
+            "group": "Dust Rollout Guide",
+            "pages": [
+              "getting-started/dust-rollout-guide/index",
+              "getting-started/dust-rollout-guide/welcome-to-dust",
+              "getting-started/dust-rollout-guide/launch-strategy",
+              "getting-started/dust-rollout-guide/build-your-builder-community",
+              "getting-started/dust-rollout-guide/admin-guide-set-up-your-dust-workspace",
+              "getting-started/dust-rollout-guide/designing-use-cases",
+              "getting-started/dust-rollout-guide/educate-activate",
+              "getting-started/dust-rollout-guide/measure-expand"
+            ]
+          },
+          {
+            "group": "Use Cases & Guides",
+            "pages": [
+              "getting-started/use-cases-and-guides/index",
+              "getting-started/use-cases-and-guides/knowledge-management",
+              "getting-started/use-cases-and-guides/personal-productivity",
+              "getting-started/use-cases-and-guides/sales",
+              "getting-started/use-cases-and-guides/marketing-content",
+              "getting-started/use-cases-and-guides/customer-care",
+              "getting-started/use-cases-and-guides/engineering",
+              "getting-started/use-cases-and-guides/product",
+              "getting-started/use-cases-and-guides/data",
+              "getting-started/use-cases-and-guides/recruiting-hr"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "getting-started/faq/index"
+            ]
+          }
         ]
       },
       {
@@ -99,12 +133,6 @@
             "pages": [
               "docs/llm-concepts/index"
             ]
-          },
-          {
-            "group": "Use Cases",
-            "pages": [
-              "docs/use-cases/index"
-            ]
           }
         ]
       },
@@ -117,7 +145,7 @@
       {
         "group": "Community",
         "pages": [
-          "community/index"
+          "https://community.dust.tt/"
         ]
       }
     ]
