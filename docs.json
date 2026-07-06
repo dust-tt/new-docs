@@ -30,7 +30,6 @@
               {
                 "group": "Dust Rollout Guide",
                 "pages": [
-                  "docs/user-documentation/getting-started/dust-rollout-guide/index",
                   "docs/user-documentation/getting-started/dust-rollout-guide/welcome-to-dust",
                   "docs/user-documentation/getting-started/dust-rollout-guide/launch-strategy",
                   "docs/user-documentation/getting-started/dust-rollout-guide/build-your-builder-community",
@@ -43,27 +42,56 @@
               {
                 "group": "Use Cases & Guides",
                 "pages": [
-                  "docs/user-documentation/getting-started/use-cases-and-guides/index",
-                  "docs/user-documentation/getting-started/use-cases-and-guides/knowledge-management",
-                  "docs/user-documentation/getting-started/use-cases-and-guides/personal-productivity",
                   "docs/user-documentation/getting-started/use-cases-and-guides/sales",
-                  "docs/user-documentation/getting-started/use-cases-and-guides/marketing-content",
-                  "docs/user-documentation/getting-started/use-cases-and-guides/customer-care",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/customer-support",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/marketing",
                   "docs/user-documentation/getting-started/use-cases-and-guides/engineering",
-                  "docs/user-documentation/getting-started/use-cases-and-guides/product",
-                  "docs/user-documentation/getting-started/use-cases-and-guides/data",
-                  "docs/user-documentation/getting-started/use-cases-and-guides/recruiting-hr"
+                  "docs/user-documentation/getting-started/use-cases-and-guides/data-analytics",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/knowledge",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/recruiting-and-people",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/product-and-design",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/collaboration"
                 ]
               },
               {
                 "group": "FAQ",
                 "pages": [
-                  "docs/user-documentation/getting-started/faq/index"
+                  {
+                    "group": "Managing agents",
+                    "pages": [
+                      "docs/user-documentation/getting-started/faq/i-dont-know-how-to-start-creating-an-agent-what-should-i-do",
+                      "docs/user-documentation/getting-started/faq/how-do-i-edit-a-custom-agent",
+                      "docs/user-documentation/getting-started/faq/what-settings-model-should-i-use",
+                      "docs/user-documentation/getting-started/faq/can-agents-create-a-new-file-or-document-directly-into-notion-google-drive-or-other-connected-platforms",
+                      "docs/user-documentation/getting-started/faq/what-data-do-the-agents-have-access-to",
+                      "docs/user-documentation/getting-started/faq/do-the-agents-have-access-to-the-internet",
+                      "docs/user-documentation/getting-started/faq/does-the-dust-agent-give-accurate-and-safe-responses",
+                      "docs/user-documentation/getting-started/faq/is-there-a-dust-conversation-api",
+                      "docs/user-documentation/getting-started/faq/can-i-delete-or-rename-a-conversation",
+                      "docs/user-documentation/getting-started/faq/can-i-use-the-dust-agents-in-different-languages",
+                      "docs/user-documentation/getting-started/faq/can-i-share-a-conversation",
+                      "docs/user-documentation/getting-started/faq/how-can-i-find-the-id-of-an-agent"
+                    ]
+                  },
+                  {
+                    "group": "Troubleshooting & Limitations",
+                    "pages": [
+                      "docs/user-documentation/getting-started/faq/when-asking-a-question-about-data-within-slack-the-link-to-the-thread-isnt-always-the-right-one",
+                      "docs/user-documentation/getting-started/faq/i-havent-received-a-login-or-i-am-having-trouble-logging-in",
+                      "docs/user-documentation/getting-started/faq/i-try-to-create-an-agent-using-the-table-query-tool-but-it-doesnt-work",
+                      "docs/user-documentation/getting-started/faq/the-agent-is-producing-links-that-dont-work-and-falsely-claiming-something-untrue-whats-going-on",
+                      "docs/user-documentation/getting-started/faq/why-doesnt-the-agent-remember-what-i-said-earlier-in-a-conversation",
+                      "docs/user-documentation/getting-started/faq/why-isnt-my-recently-updated-document-showing-in-agent-responses",
+                      "docs/user-documentation/getting-started/faq/can-dust-remember-and-incorporate-my-feedback-in-the-future",
+                      "docs/user-documentation/getting-started/faq/is-dust-down",
+                      "docs/user-documentation/getting-started/faq/why-is-dust-slow-or-my-agent-taking-too-long-to-respond",
+                      "docs/user-documentation/getting-started/faq/training-material"
+                    ]
+                  },
+                  "docs/user-documentation/getting-started/faq/file-size-limits",
+                  "docs/user-documentation/getting-started/faq/how-to-change-your-email-address-in-dust"
                 ]
-              },
-              "docs/user-documentation/getting-started/quickstart-admin",
-              "docs/user-documentation/getting-started/computer-admin-setup",
-              "docs/user-documentation/getting-started/create-your-first-agent"
+              }
             ]
           },
           {
@@ -201,7 +229,7 @@
         ]
       },
       {
-        "group": "Changelog",
+        "group": "Latest Updates",
         "pages": [
           "docs/changelog"
         ]
