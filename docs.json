@@ -3,10 +3,10 @@
   "name": "Dust Docs",
   "theme": "mint",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/branding/logo/light.svg",
+    "dark": "/branding/logo/dark.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/branding/favicon.svg",
   "colors": {
     "primary": "#0C84FE",
     "light": "#9FDBFF",
@@ -15,7 +15,7 @@
   "topbarLinks": [
     {
       "name": "Use Cases & Guides",
-      "url": "/user-documentation/getting-started/use-cases-and-guides"
+      "url": "/docs/user-documentation/getting-started/use-cases-and-guides"
     }
   ],
   "navigation": {
@@ -26,140 +26,140 @@
           {
             "group": "Getting Started",
             "pages": [
-              "user-documentation/getting-started/intro-to-dust",
+              "docs/user-documentation/getting-started/intro-to-dust",
               {
                 "group": "Dust Rollout Guide",
                 "pages": [
-                  "user-documentation/getting-started/dust-rollout-guide/index",
-                  "user-documentation/getting-started/dust-rollout-guide/welcome-to-dust",
-                  "user-documentation/getting-started/dust-rollout-guide/launch-strategy",
-                  "user-documentation/getting-started/dust-rollout-guide/build-your-builder-community",
-                  "user-documentation/getting-started/dust-rollout-guide/admin-guide-set-up-your-dust-workspace",
-                  "user-documentation/getting-started/dust-rollout-guide/designing-use-cases",
-                  "user-documentation/getting-started/dust-rollout-guide/educate-activate",
-                  "user-documentation/getting-started/dust-rollout-guide/measure-expand"
+                  "docs/user-documentation/getting-started/dust-rollout-guide/index",
+                  "docs/user-documentation/getting-started/dust-rollout-guide/welcome-to-dust",
+                  "docs/user-documentation/getting-started/dust-rollout-guide/launch-strategy",
+                  "docs/user-documentation/getting-started/dust-rollout-guide/build-your-builder-community",
+                  "docs/user-documentation/getting-started/dust-rollout-guide/admin-guide-set-up-your-dust-workspace",
+                  "docs/user-documentation/getting-started/dust-rollout-guide/designing-use-cases",
+                  "docs/user-documentation/getting-started/dust-rollout-guide/educate-activate",
+                  "docs/user-documentation/getting-started/dust-rollout-guide/measure-expand"
                 ]
               },
               {
                 "group": "Use Cases & Guides",
                 "pages": [
-                  "user-documentation/getting-started/use-cases-and-guides/index",
-                  "user-documentation/getting-started/use-cases-and-guides/knowledge-management",
-                  "user-documentation/getting-started/use-cases-and-guides/personal-productivity",
-                  "user-documentation/getting-started/use-cases-and-guides/sales",
-                  "user-documentation/getting-started/use-cases-and-guides/marketing-content",
-                  "user-documentation/getting-started/use-cases-and-guides/customer-care",
-                  "user-documentation/getting-started/use-cases-and-guides/engineering",
-                  "user-documentation/getting-started/use-cases-and-guides/product",
-                  "user-documentation/getting-started/use-cases-and-guides/data",
-                  "user-documentation/getting-started/use-cases-and-guides/recruiting-hr"
+                  "docs/user-documentation/getting-started/use-cases-and-guides/index",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/knowledge-management",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/personal-productivity",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/sales",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/marketing-content",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/customer-care",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/engineering",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/product",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/data",
+                  "docs/user-documentation/getting-started/use-cases-and-guides/recruiting-hr"
                 ]
               },
               {
                 "group": "FAQ",
                 "pages": [
-                  "user-documentation/getting-started/faq/index"
+                  "docs/user-documentation/getting-started/faq/index"
                 ]
               },
-              "user-documentation/getting-started/quickstart-admin",
-              "user-documentation/getting-started/computer-admin-setup",
-              "user-documentation/getting-started/create-your-first-agent"
+              "docs/user-documentation/getting-started/quickstart-admin",
+              "docs/user-documentation/getting-started/computer-admin-setup",
+              "docs/user-documentation/getting-started/create-your-first-agent"
             ]
           },
           {
             "group": "Agents",
             "pages": [
-              "user-documentation/agents/index",
-              "user-documentation/agents/agents-management",
-              "user-documentation/agents/tools-management",
-              "user-documentation/agents/managing-microsoft-tools",
-              "user-documentation/agents/personal-vs-workspace-credentials",
-              "user-documentation/agents/adding-mcp-server",
-              "user-documentation/agents/computer",
-              "user-documentation/agents/how-to-write-effective-instructions",
-              "user-documentation/agents/understanding-llm-limitations",
-              "user-documentation/agents/understanding-context-windows",
-              "user-documentation/agents/understanding-rag"
+              "docs/user-documentation/agents/index",
+              "docs/user-documentation/agents/agents-management",
+              "docs/user-documentation/agents/tools-management",
+              "docs/user-documentation/agents/managing-microsoft-tools",
+              "docs/user-documentation/agents/personal-vs-workspace-credentials",
+              "docs/user-documentation/agents/adding-mcp-server",
+              "docs/user-documentation/agents/computer",
+              "docs/user-documentation/agents/how-to-write-effective-instructions",
+              "docs/user-documentation/agents/understanding-llm-limitations",
+              "docs/user-documentation/agents/understanding-context-windows",
+              "docs/user-documentation/agents/understanding-rag"
             ]
           },
           {
             "group": "Pods",
             "pages": [
-              "user-documentation/pods/index"
+              "docs/user-documentation/pods/index"
             ]
           },
           {
             "group": "Data Sources",
             "pages": [
-              "user-documentation/data-sources/index",
-              "user-documentation/data-sources/connections-management",
-              "user-documentation/data-sources/bigquery",
-              "user-documentation/data-sources/confluence",
-              "user-documentation/data-sources/github",
-              "user-documentation/data-sources/gong",
-              "user-documentation/data-sources/google-drive",
-              "user-documentation/data-sources/intercom",
-              "user-documentation/data-sources/microsoft",
-              "user-documentation/data-sources/notion",
-              "user-documentation/data-sources/snowflake",
-              "user-documentation/data-sources/zendesk",
-              "user-documentation/data-sources/salesforce"
+              "docs/user-documentation/data-sources/index",
+              "docs/user-documentation/data-sources/connections-management",
+              "docs/user-documentation/data-sources/bigquery",
+              "docs/user-documentation/data-sources/confluence",
+              "docs/user-documentation/data-sources/github",
+              "docs/user-documentation/data-sources/gong",
+              "docs/user-documentation/data-sources/google-drive",
+              "docs/user-documentation/data-sources/intercom",
+              "docs/user-documentation/data-sources/microsoft",
+              "docs/user-documentation/data-sources/notion",
+              "docs/user-documentation/data-sources/snowflake",
+              "docs/user-documentation/data-sources/zendesk",
+              "docs/user-documentation/data-sources/salesforce"
             ]
           },
           {
             "group": "Admins",
             "pages": [
-              "user-documentation/admins/index",
-              "user-documentation/admins/access-controls-and-permissions",
-              "user-documentation/admins/memberships-and-roles",
-              "user-documentation/admins/single-sign-on-sso",
-              "user-documentation/admins/saml-sso",
-              "user-documentation/admins/users-and-groups-provisioning",
+              "docs/user-documentation/admins/index",
+              "docs/user-documentation/admins/access-controls-and-permissions",
+              "docs/user-documentation/admins/memberships-and-roles",
+              "docs/user-documentation/admins/single-sign-on-sso",
+              "docs/user-documentation/admins/saml-sso",
+              "docs/user-documentation/admins/users-and-groups-provisioning",
               {
                 "group": "Credits & Seats",
                 "pages": [
-                  "user-documentation/admins/credits",
-                  "user-documentation/admins/credit-management",
-                  "user-documentation/admins/optimize-credit-consumption",
-                  "user-documentation/admins/seat-management",
-                  "user-documentation/admins/train-team-credit-optimization"
+                  "docs/user-documentation/admins/credits",
+                  "docs/user-documentation/admins/credit-management",
+                  "docs/user-documentation/admins/optimize-credit-consumption",
+                  "docs/user-documentation/admins/seat-management",
+                  "docs/user-documentation/admins/train-team-credit-optimization"
                 ]
               },
-              "user-documentation/admins/subscriptions-and-payments",
-              "user-documentation/admins/workspace-analytics",
-              "user-documentation/admins/audit-logs",
-              "user-documentation/admins/audit-logs-events-reference",
-              "user-documentation/admins/admin-troubleshooting",
-              "user-documentation/admins/slack-troubleshooting"
+              "docs/user-documentation/admins/subscriptions-and-payments",
+              "docs/user-documentation/admins/workspace-analytics",
+              "docs/user-documentation/admins/audit-logs",
+              "docs/user-documentation/admins/audit-logs-events-reference",
+              "docs/user-documentation/admins/admin-troubleshooting",
+              "docs/user-documentation/admins/slack-troubleshooting"
             ]
           },
           {
             "group": "Developers",
             "pages": [
-              "user-documentation/developers/index",
-              "user-documentation/developers/agent-builder-sidekick",
-              "user-documentation/developers/dust-mcp-server",
-              "user-documentation/developers/google-sheets-add-on",
-              "user-documentation/developers/browser-extension",
-              "user-documentation/developers/dust-in-teams",
-              "user-documentation/developers/email-agents",
-              "user-documentation/developers/integrations-overview",
-              "user-documentation/developers/make-com",
-              "user-documentation/developers/meeting-transcripts",
-              "user-documentation/developers/n8n",
-              "user-documentation/developers/power-automate",
-              "user-documentation/developers/raycast-extension",
-              "user-documentation/developers/slack-workflows",
-              "user-documentation/developers/dust-in-slack",
-              "user-documentation/developers/slack-auto-join",
-              "user-documentation/developers/zapier",
-              "user-documentation/developers/dust-in-zendesk"
+              "docs/user-documentation/developers/index",
+              "docs/user-documentation/developers/agent-builder-sidekick",
+              "docs/user-documentation/developers/dust-mcp-server",
+              "docs/user-documentation/developers/google-sheets-add-on",
+              "docs/user-documentation/developers/browser-extension",
+              "docs/user-documentation/developers/dust-in-teams",
+              "docs/user-documentation/developers/email-agents",
+              "docs/user-documentation/developers/integrations-overview",
+              "docs/user-documentation/developers/make-com",
+              "docs/user-documentation/developers/meeting-transcripts",
+              "docs/user-documentation/developers/n8n",
+              "docs/user-documentation/developers/power-automate",
+              "docs/user-documentation/developers/raycast-extension",
+              "docs/user-documentation/developers/slack-workflows",
+              "docs/user-documentation/developers/dust-in-slack",
+              "docs/user-documentation/developers/slack-auto-join",
+              "docs/user-documentation/developers/zapier",
+              "docs/user-documentation/developers/dust-in-zendesk"
             ]
           },
           {
             "group": "Deprecated",
             "pages": [
-              "user-documentation/deprecated/index"
+              "docs/user-documentation/deprecated/index"
             ]
           }
         ]
@@ -167,35 +167,35 @@
       {
         "group": "Developer Platform",
         "pages": [
-          "developer-platform/overview",
+          "docs/developer-platform/overview",
           {
             "group": "Core Concepts",
             "pages": [
-              "developer-platform/core-concepts/index"
+              "docs/developer-platform/core-concepts/index"
             ]
           },
           {
             "group": "Dust API Documentation",
             "pages": [
-              "developer-platform/dust-api/index"
+              "docs/developer-platform/dust-api/index"
             ]
           },
           {
             "group": "Dust Labs",
             "pages": [
-              "developer-platform/dust-labs/index"
+              "docs/developer-platform/dust-labs/index"
             ]
           },
           {
             "group": "Dust CLI",
             "pages": [
-              "developer-platform/dust-cli/index"
+              "docs/developer-platform/dust-cli/index"
             ]
           },
           {
             "group": "[Legacy] Dust Apps",
             "pages": [
-              "developer-platform/legacy-dust-apps/index"
+              "docs/developer-platform/legacy-dust-apps/index"
             ]
           }
         ]
@@ -203,7 +203,7 @@
       {
         "group": "Changelog",
         "pages": [
-          "changelog"
+          "docs/changelog"
         ]
       }
     ]
