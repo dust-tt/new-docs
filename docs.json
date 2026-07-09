@@ -3,11 +3,11 @@
   "name": "Dust Docs",
   "theme": "mint",
   "logo": {
-  "light": "/branding/logo/light.svg",
-  "dark": "/branding/logo/dark.svg",
-  "width": 110,
-  "height": 28
-},
+    "light": "/branding/logo/light.svg",
+    "dark": "/branding/logo/dark.svg",
+    "width": 110,
+    "height": 28
+  },
   "favicon": "/branding/favicon.svg",
   "colors": {
     "primary": "#0C84FE",
