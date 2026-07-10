@@ -1,0 +1,82 @@
+---
+title: "N8n"
+description: "--- title: n8n excerpt: >- In this article, we will guide you through how to use the Dust node in n8n to automatically trigger your Dust Agents from a..."
+---
+
+In this article, we will guide you through how to use the Dust node in n8n to automatically trigger your Dust Agents from any other application.
+
+❗️ Self-hosted n8n only!
+Community nodes are only available on the self-hosted version of n8n for now. If you use n8n cloud, the Dust node will not be available. They are preparing the integration of the community nodes in the cloud version, but we don't know when this will be available.
+See their documentation here: [https://docs.n8n.io/integrations/community-nodes/installation/](https://docs.n8n.io/integrations/community-nodes/installation/)
+
+## 1. Install the Dust community node in your n8n environment
+
+In your n8n interface, open your **Settings**
+
+<Image align="center" width="500px" src="https://files.readme.io/ea4201af4d69ac7daa85643decccf073946604ce04de12bd31b05e604bcc2c40-Screenshot_2025-02-11_at_16.33.07.png" />
+
+Then in the sidebar click on **Community nodes**, then **Install a community node**
+
+In the **npm package name**, enter: `n8n-nodes-dust`
+
+<Image align="center" width="600px" src="https://files.readme.io/f02664d77bc9c39084271959acbd343af2e1412606624ce8c189787bed187e71-Screenshot_2025-02-11_at_16.34.52.png" />
+
+Create a new scenario on n8n and choose what event should trigger your Dust Agents.
+
+Your Dust node should now be installed
+
+<Image align="center" src="https://files.readme.io/85f657dc10eaf20fc862363fe0f9e688677cfb9215d9f0400606a335cfe89e21-Screenshot_2025-05-23_at_14.45.14.png" />
+
+## 2. Trigger your node
+
+A common example of a trigger for a Dust Agent to run it on a schedule: 
+
+<Image align="center" width="300px" src="https://files.readme.io/1f9d88371d75e1d74021a8453ed1b4913f74eaf65d450ac776b595cfadabc2eb-Screenshot_2025-02-11_at_16.37.31.png" />
+
+We will not detail the trigger part here, as it could be anything you wish. We will detail in the next steps the possibilities of the Dust node.
+
+## 3. Add your `Dust` node action
+
+* To do so, search for **Dust** among nodes on the right side of the screen
+
+<Image align="center" src="https://files.readme.io/c5e1d308922620962a547693694bdafcf31c7963c58dc8160afa30854a75c620-Screenshot_2025-02-11_at_16.38.42.png" />
+
+Then pick the action you want, for now choices are: 
+
+* Talk to an agent
+* Upload a document
+
+<Image align="center" width="400px" src="https://files.readme.io/4f0eceb703abb8ef817e19a0c41384ae75720b9726325b0bf47bd73e6a23124b-Screenshot_2025-02-11_at_16.39.09.png" />
+
+**You will need to create Dust credentials:** 
+
+<Image align="center" src="https://files.readme.io/0b2a7bf2e5d8b8aefaed4bd9153f3995a5ddab21b40ce752d7e12c2a0ce067e9-Screenshot_2025-02-11_at_16.40.27.png" />
+
+For that you need your Dust Workspace ID, API key and region. Only **admins** can generate API keys.
+
+<Image align="center" src="https://files.readme.io/8282be39fe3bc03d806dfad60a3a5d7fe914c55a969b61aee541fbdb9d93c0a5-Screenshot_2025-02-11_at_16.41.55.png" />
+
+* Once your connection is created, fill in all the necessary fields
+
+<Image align="center" width="300px" src="https://files.readme.io/2839fce65e01a7be0218f756ea6dce70de187da354493ecc07011498775c970e-Screenshot_2025-02-11_at_16.42.43.png" />
+
+* **Assistant Configuration ID**: Pick the agent you want to talk to from the list. Only *Company* and *Shared* agents will be available (you won't find *Personal* agents). The ID can be found in the "Manage Agents" menu in the app
+
+  <Image align="center" width="600px" src="https://files.readme.io/37510f8f67999e5deb13d9ed4fd7ce581b986fe91f68cf984b14b4168f09854e-Screenshot_2025-05-23_at_14.49.22.png" />
+* **The message to send to the Agent**: this is the message to send to the agent
+
+### Optional:
+
+* **Timezone**: this is the timezone in which you want to operate, you can choose from the list (eg: `Europe/Paris` or `America/Los_Angeles`)
+* **username**: put the name to be displayed in the conversation. eg: `Daily summary Zap`
+* **email**: This one is optional, put an email if needed. 
+
+## 4. Run and Publish your workflow
+
+You’re all set! You can use Dust's reply to continue your workflow.
+
+<Image align="center" src="https://files.readme.io/b46ace38c67047df0342f23e2fc4fdf7144ab369cdea691f5cad299c8ac94b38-Screenshot_2025-02-11_at_16.43.29.png" />
+
+## Want to contribute?
+
+We're open source, don't hesitate to create a pull request here if you want to add anything to the node:  [https://github.com/dust-tt/dust-n8n-node](https://github.com/dust-tt/dust-n8n-node)

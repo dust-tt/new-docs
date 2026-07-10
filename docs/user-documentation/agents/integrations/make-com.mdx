@@ -1,0 +1,44 @@
+---
+title: "Make Dust Integration"
+description: "--- title: Make.com excerpt: >- In this article, we will guide you through how to use the Dust block in Make.com to automatically trigger your Dust Ag..."
+---
+
+In this article, we will guide you through how to use the Dust block in Make.com to automatically trigger your Dust agents from any other application.
+
+## 1. Go to [Make](https://make.com) and create a new scenario
+
+Create a new scenario on Make and choose what event should trigger your Dust Agent.
+
+A common example of a trigger for a Dust Agent is: `A new row inserted in a Google Spreadsheet`
+
+<Image align="center" width="600px" src="https://files.readme.io/808597535636f656496200721f70bf235cdf09ba5e3d45f22ec6f1d3a45007cb-Screenshot_2024-09-06_at_12.01.03.png" />
+
+## 2. Add your `Dust` module action
+
+* To do so, search for **Dust** among apps:
+
+<Image align="center" width="500px" src="https://files.readme.io/7769a1bb797607ca7d2b6dd39e0235a14216dade291e2f2683bcb2556c9a506f-Screenshot_2024-09-10_at_09.42.43.png" />
+
+**You will be asked to create a connection to Dust:**
+
+<Image align="center" width="500px" src="https://files.readme.io/0ab952a88c3baf0e43026badafccc2cd3b16129cfe587706e3803cc4592db269-Screenshot_2024-09-06_at_12.03.33.png" />
+
+You will need your **Workspace ID** (which can be found in your Dust tab URL, right after *dust.tt/w/*), as well as your **Dust API key**, which can be found in `*Build > Developer Tools > API Keys > Create an API Key*`
+
+* Once your connection is created, fill in all the necessary fields
+
+<Image align="center" src="https://files.readme.io/ea5a245b0a47ad7d99a5ed6762ed27b85a670d3ec18d4aa2b71790b484fd7dd4-Screenshot_2024-09-06_at_13.32.22.png" />
+
+* **Agent**: Pick the agent you want to talk to from the list. Only *Company* and *Shared* agents will be available (you won't find *Personal* agents)
+* **The message to send to the Agent**: this is the message to send to the agent
+* **Timezone**: this is the timezone in which you want to operate, you can choose from the list (eg: `Europe/Paris` or `America/Los_Angeles`)
+* **username**: put the name to be displayed in the conversation. eg: `Daily summary Zap`
+* **email**: This one is optional, put an email if needed. 
+
+## 5. Run and Publish your scenario
+
+You’re all set! 
+
+Once launched, new content in the Google Sheet will automatically run your Agent. To extract the output of the Agent and send it to your next module, you must use the `content` part of the output
+
+<Image align="center" src="https://files.readme.io/4a7d2b5c398fdb6a4e4087376661f94b01d9b2d23acec2b7349540b16902e46e-Screenshot_2024-09-06_at_13.34.58.png" />

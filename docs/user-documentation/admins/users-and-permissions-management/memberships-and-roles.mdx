@@ -1,0 +1,30 @@
+---
+title: "Setting Up Your Workspace"
+description: "--- title: Memberships & Roles excerpt: '' deprecated: false hidden: false metadata: title: '' description: '' robots: index next: description: '' ---..."
+---
+
+You can manage members (invite, revoke, change role, see member list) by going to Admin > People & Security.
+
+The Dust platform has the following roles:
+
+**Members**: 
+
+* Talk to agents
+* `Build` agents in the Workspace
+
+**Builders**: Members +
+
+* Add Folders to the Workspace
+* Use the Dust API
+* Create Dust Apps
+
+**Admins**: Builders +:
+
+* Manage Workspace Connections
+* Add members to the Workspace and change roles
+* Manage Subscriptions
+* Manage Models providers
+
+## Handle memberships & roles through provisioning
+
+User roles and memberships in Dust can now be managed through automated provisioning. While manual invitation remains available, enterprise customers can configure automated user management through SCIM 2.0 integration with their Identity Provider (IdP). See [Users and groups provisioning](https://docs.dust.tt/docs/users-and-groups-provisioning).

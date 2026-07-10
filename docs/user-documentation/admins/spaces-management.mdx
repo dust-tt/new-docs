@@ -1,0 +1,117 @@
+---
+title: "Spaces"
+description: "--- title: Spaces management excerpt: >- Managing data in Dust is crucial, here's how to make sure you set the right data at the right place. deprecat..."
+---
+
+You can make data available to your Dust workspace via **spaces** that let you organize and [control access](https://docs.dust.tt/edit/access-controls-and-permissions) to your data.
+
+<Callout type="info"Once Connections are set up, don't forget to create spaces and add data to your spaces.>
+
+<HTMLBlock>{`
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+</Callout>
+`}</HTMLBlock>
+
+📚 [Read our full guide](https://docs.google.com/presentation/d/1ncbsTA3P8tUG3NIeqRirHW-YI0pdj-hyw0yHRKet4PU/edit?usp=sharing)
+
+# Spaces
+
+Spaces are containers for storing information relevant to specific groups or projects. They come in two types:
+
+* **Open spaces:** accessible to all workspace members
+* **Restricted spaces**: limited access to designated users
+
+## Open spaces
+
+Open spaces are accessible to all members of your workspace. They're ideal for sharing common resources and fostering collaboration across teams.
+
+<Callout icon="🗄️" theme="default">
+</Callout>
+  ### Key Features
+
+  * Managed by: workspace administrators
+  * Accessible to: available to all workspace members
+  * Ideal for: organizing team/project data
+</Callout>
+
+### Company Data
+
+Every workspace includes a default space called "Company Data". This special space cannot be modified or restricted.
+
+## Restricted spaces
+
+Workspace administrators manage which team members have access to a space. Agents that access data from a specific space are only available to members of that space. If you have [Users and groups provisioning](https://docs.dust.tt/docs/users-and-groups-provisioning) set up, members can be based on groups coming from your IdP.
+
+<Callout icon="🔒" theme="default">
+</Callout>
+  ### Key features:
+
+  * Managed by: workspace administrators
+  * Accessible to: only to selected members
+  * Ideal for: securing sensitive data and controlling who can access it
+</Callout>
+
+### Using provisioned groups
+
+If you have [Users and groups provisioning](https://docs.dust.tt/docs/users-and-groups-provisioning) setup, members can be based on groups coming from your IdP. Select "Provisioned group access" from the combo box, then add the groups you want to associate with the space. The group members will be managed in your IdP - you won't have to manually manage space members in Dust.
+
+<Image align="center" border={true} width="500px" src="https://files.readme.io/6caf42a60a46a6d2f427ffd072e82eec537b0a74ea1b0a94ae697e5c9ddb2f7a-Screenshot_2025-07-02_at_13.52.27.png" className="border" />
+
+# How to add data to a space
+
+<HTMLBlock>{`
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
+`}</HTMLBlock>
+
+## Create a space
+
+Only workspace admins can create and manage spaces:
+
+1. Go to "**Spaces**" tab
+2. Click "_**New**_"
+3. Name the Space
+4. Choose if it's **Open** or **Restricted**
+5. If restricted, add Members
+6. Click "**Create**"
+
+<Image align="center" border={true} width="500px" src="https://files.readme.io/94558e266dcf6c4caf5f24b165451724ca1b253bcd0b1515999a346664a514e9-Screenshot_2025-07-02_at_13.55.14.png" className="border" />
+
+## Add data to a space
+
+<Image align="center" border={false} src="https://files.readme.io/a5b4e2d9c92f14714f7684529f7c4d03725ef3c1493e76f044c5ae1c2f929593-Screenshot_2024-10-23_at_10.17.02.png" />
+
+### From a connection
+
+_Note:_ Only admins can add data from "_**Connections**_" to a space.
+
+To add data from a _**connection**_ (connected by an Admin),
+
+1. Click on your Space and click on "_**Connected Data.**_".
+2. Click "_**Add data from connections**_".
+3. From the modal, select only the data that should be available to the space.
+4. Click "_**Save**_."
+
+<Image align="center" border={false} src="https://files.readme.io/92d0f3d775c526475eb07532678f56168c58ce638e8b3fba7d269294c6facd35-Screenshot_2024-10-23_at_10.19.00.png" />
+
+### From other sources
+
+**For folders, websites, and apps:**
+
+* in Open spaces: only admins and builders can add data
+* in Restricted spaces: all members can add data
+
+## Using spaces in agents tools
+
+### Agents visibility
+
+**The space(s) used by an agent determines who can see and use the agent**. Only members of the space(s) used by the agent's tools will be able to see and use it.
+
+<Image align="center" border={false} src="https://files.readme.io/4e967167af71ea68d8050ae2ce3c86ca7ed90fe356871dfbe810f7f9822f8e67-Capture_decran_2025-07-31_a_14.27.37.png" />
+
+# Limitations and Plan Details
+
+The number of spaces you can create depends on your plan.
+
+The number of spaces you can create depends on your plan: Business supports up to 5 spaces, and Enterprise supports up to 100. For more information or assistance with Dust Spaces, please contact our support team at [support@dust.tt](mailto:support@dust.tt).

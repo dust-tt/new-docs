@@ -1,0 +1,112 @@
+---
+title: "What is Dust?"
+description: "--- title: Overview excerpt: What is Dust and how to use the platform deprecated: false hidden: true metadata: title: '' description: '' robots: index..."
+---
+
+# What is Dust?
+
+Dust is a platform that enables teams to **create customizable and secure AI assistants powered by leading large language models**. These assistants **integrate with company data sources to enhance productivity** and improve work processes across various domains
+
+# Where do I begin?
+
+## 👶 You're new to AI and LLMs
+
+**Our best advice is to ask questions to @gpt4, @gemini-pro, @mistral, and @claude-3 simultaneously in the chat bar for everything,** from work tasks (ask it to help you innovate, summarize documents, write emails, give advice) to fun (use it instead to write fun stories or, poems).
+
+Using assistants effectively is always a little weird, and there is no instruction manual, but we found that after around a few hours of using @gpt4 and @claude, people **get it.** 
+
+You will learn how models behave, which is helpful when creating assistants.
+
+## 🤺 You're already an LLM user
+
+**You should have a Builder role in Dust**. If you are not, ask the admin of your workspace. Keep practicing and sharing your best (structured) prompts to help others use your assistants or create their own.
+
+# Quick start guide
+
+### 1. Watch this short demo video
+
+<Embed url="https://www.youtube.com/watch?v=QIRLzdtq7pg" href="https://www.youtube.com/watch?v=QIRLzdtq7pg" typeOfEmbed="youtube" html="%3Ciframe%20class%3D%22embedly-embed%22%20src%3D%22%2F%2Fcdn.embedly.com%2Fwidgets%2Fmedia.html%3Fsrc%3Dhttps%253A%252F%252Fwww.youtube.com%252Fembed%252FQIRLzdtq7pg%253Ffeature%253Doembed%26display_name%3DYouTube%26url%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DQIRLzdtq7pg%26image%3Dhttps%253A%252F%252Fi.ytimg.com%252Fvi%252FQIRLzdtq7pg%252Fhqdefault.jpg%26key%3D7788cb384c9f4d5dbbdbeffd9fe4b92f%26type%3Dtext%252Fhtml%26schema%3Dyoutube%22%20width%3D%22640%22%20height%3D%22480%22%20scrolling%3D%22no%22%20title%3D%22YouTube%20embed%22%20frameborder%3D%220%22%20allow%3D%22autoplay%3B%20fullscreen%3B%20encrypted-media%3B%20picture-in-picture%3B%22%20allowfullscreen%3D%22true%22%3E%3C%2Fiframe%3E" />
+
+### Start by adding a Connection
+
+You can use Dust without connections to your favorite tools, but connection allows you to retrieve, explore, repackage, and share knowledge in a quick and friendly way.
+
+Go to ️**Admin > Connections > Select** the desired Connection, click **Connect > Authenticate your account**, and select the data you wish to synchronize with Dust.
+
+If you don’t want to connect your everyday business tools to Dust (yet), as a builder, you can also:
+
+* Create a Data Source, as you would create a new folder in Google Drive.
+* Synchronize a Public Website (only): data will be refreshed based on the selected frequency; you can define the maximum number of pages you want to index and the depth— of links to follow from the first URL.
+
+<Callout type="danger"About sharing data and permissions>
+</Callout>
+Any data you synchronize with Dust is then accessible to all the workspace members. Ensure you only share documents that can be shared with your entire workspace.
+
+### Set up your very own @dust
+
+**@dust** is created to help you explore your company data. It is a general assistant that is better at exploration than answering with 100% accurate answers. Think about it as your company data researcher or librarian.
+
+<Image align="center" border={true} src="https://files.readme.io/c255b8d-Screenshot_2024-08-09_at_15.43.45.png" className="border" />
+
+### 4. Start asking questions to @dust and other Dust assistants like @gpt4 and @claude to get to know Dust
+
+### How do I use an agent?
+
+* Type your message and mention the assistant with "**@**", or click the robot icon 🤖 in the message bar.
+* Always start with "**@**" when calling an assistant, or it won't respond.
+
+You can also chain assistants!
+
+Let’s try this:
+
+* Ask **@dust** about your company
+* Then, in the same conversation, ask **@claude** and **@mistral** to add their thoughts ✨
+
+### How do I use an agent in Slack?
+
+* **If enabled by your admin**, you can use the **@dust** assistant in Slack channels, exactly as described above
+* To call other assistants, use the syntax **@dust ~gpt4** OR **@dust** **+gpt4** and your question to engage with @gpt4 for example (change `gpt4` to `any company assistant name` to interact with it!) ⬇️
+
+<Image align="center" border={false} src="https://files.readme.io/9967e2d-Screenshot_2024-05-22_at_11.00.07.png" />
+
+### 5. Create your first custom assistant
+
+Here is the flow you will follow to create an assistant:
+
+<Image align="center" border={false} src="https://files.readme.io/2cc054d-Untitled_2.png" />
+
+Think about the questions you are asked too often about this document or something you must do every week/day.
+
+Click on `Create a new assistant`, and give it a try!
+
+# Must Read: The three rules to create great assistants
+
+Based on our experience rolling out Dust assistants to augment our customers’ teams, we can share three rules:
+
+<Callout icon="🔀" theme="default">
+</Callout>
+  ### Rule #1
+
+  The more data you give access to an assistant, the lower the chance of retrieving the correct information.
+</Callout>
+
+<Callout icon="🏗️" theme="default">
+</Callout>
+  ### Rule #2
+
+  What kind of assistant do you want to build?
+
+  * **support assistant** to answer questions about policies, processes, codes, FAQs…— they are specialized in one topic;
+  * **research assistant** to explore a corpus of knowledge— they have a larger knowledge and the usual way to interact with this assistant is to iterate with it;
+  * **generation assistants**— to create blog posts, memos, cold emails, and summaries…;
+  * **structured data assistants**— to analyze DBs.
+
+  **Then, try to understand how chaining assistants** can complete more complex tasks: a typical “chaining” is iterating with @researchassistant and turning your research into a document with @generationassistant
+</Callout>
+
+<Callout icon="⏲️" theme="default">
+</Callout>
+  ### Rule #3
+
+  **Invest some time in your assistant's instructions:** test different prompts and models and keep iterating. Good instructions make the difference between poor and great results.
+</Callout>

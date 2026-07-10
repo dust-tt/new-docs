@@ -1,0 +1,63 @@
+---
+title: "Workspace Analytics"
+description: "--- title: Workspace analytics excerpt: Track your team's Dust usage deprecated: false hidden: false metadata: title: '' description: '' robots: index..."
+---
+
+Track adoption, credit consumption, and usage patterns across your workspace from **Admin > Analytics**. Only workspace admins can access this page.
+
+<HTMLBlock>{`
+<div class="wistia_responsive_padding" style="padding:62.08% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"></div></div>
+<script src="https://fast.wistia.net/player.js" async></script>
+`}</HTMLBlock>
+
+Use the time range selector at the top right of the page to scope every chart and table on the dashboard to the last **7, 14, 30, or 90 days** (30 by default). "Active users" refers to members who interacted with Dust during the selected window.
+
+## What's on the dashboard
+
+- **Overview** — total workspace members alongside the active-user count for the selected period.
+- **Credit usage** — a stacked bar chart of credits consumed over time. Credits are Dust's unit of AI compute usage. Switch the granularity between **Daily, Weekly, and Monthly**, and break the data down by:
+
+  - **Total** — all consumption combined.
+  - **By Usage Type** — interactive (User) versus Programmatic (API and integration) usage.
+  - **By Agent**, **By User**, or **By Source** — the top contributors in each dimension.
+
+  When grouped, use the **Top N** selector (5, 10, 15, 20, or 30) to control how many series are shown. The rest are bundled into an "Others" bar. Click a legend entry to drill into one or more series, and **Clear filters** to reset. The chart can be opened full screen.
+- **Users by credits** — the top 100 members by credits consumed over the selected period, with their message count and most-used agents (model and, on hover, description). Search for a specific user by name.
+- **Agents by credits** — the top 100 agents by credits consumed, with their model, description, top users, and top skills (skill descriptions show on hover). Search for a specific agent by name.
+- **Activity over time** — a line chart that toggles between **messages and conversations** (volume) and **DAU / WAU / MAU** (daily, weekly, and monthly active users).
+- **Message sources** — breakdown of where messages originate: the Dust web app, the browser extension, Slack, Teams, email, triggered and scheduled runs, and programmatic integrations such as the API, Zapier, n8n, and Make.
+- **Tool usage** — executions and unique users per tool over time. Pick a specific tool from the dropdown to drill in.
+- **Skill usage** — executions and unique users per skill, with the same drill-down control.
+
+## Downloading data
+
+**Per-chart CSVs.** The Activity over time, Message sources, Tool usage, and Skill usage charts each have a download button that exports the underlying data as a CSV, scoped to the currently selected time range. Files are named after their section (for example `dust_activity_last_30_days.csv`) so they're easy to archive or feed into another tool.
+
+📄 **Privacy:** analytics and exports never include the content of messages. Only metadata such as timestamps, user and agent identifiers, conversation IDs, credit consumption, and the source of each message is captured.
+
+## Accessing analytics via the API
+
+You can pull usage data programmatically through the [Export workspace analytics](https://docs.dust.tt/reference/get_api-v1-w-wid-analytics-export) endpoint. Any Dust API key with the **builder** role (or above) can call it — no special access request needed.
+
+Pass the `table` you want along with a `startDate` and `endDate` (both `YYYY-MM-DD`):
+
+| Table           | Description                                                                             |
+| --------------- | --------------------------------------------------------------------------------------- |
+| `usage_metrics` | Daily messages, conversations, and active users                                         |
+| `active_users`  | Daily, weekly, and monthly active users                                                 |
+| `source`        | Message volume by origin                                                                |
+| `tool_usage`    | Tool executions and unique users per day                                                |
+| `skills`        | Skill catalog with metadata (name, description, last editor, and timestamps)            |
+| `skill_usage`   | Skill executions and unique users per day                                               |
+| `agents`        | Top agents by message count                                                             |
+| `users`         | Top users by message count                                                              |
+| `messages`      | Detailed message-level log (metadata only, no content)                                  |
+| `feedback`      | User feedback on agent messages (thumb, optional comment, agent, and conversation link) |
+
+Responses are returned as CSV by default, or as JSON when `format=json`. Pass an optional `timezone` parameter (an IANA name such as `Europe/Paris` or `America/New_York`) to align daily buckets to your local time rather than UTC.
+
+<Callout type="danger"**Legacy endpoint**>
+</Callout>
+The previous [`workspace-usage`](https://docs.dust.tt/reference/get_api-v1-w-wid-workspace-usage) endpoint is deprecated and will be removed after **2026-06-01**. Migrate to `analytics/export` before then.
+
+<br />

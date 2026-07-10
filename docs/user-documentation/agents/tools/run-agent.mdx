@@ -1,0 +1,46 @@
+---
+title: "Overview"
+description: "--- title: Run agent excerpt: Enables agents to run other agents as tools deprecated: false hidden: false metadata: title: '' description: '' robots:..."
+---
+
+# Overview
+
+The `run_agent` tool enables your agents to run other agent as a tool. Two modes of executions are available: 
+
+### Default: Agent runs in background
+
+The selected agent runs in a separate conversation and returns its output to the main agent, which then continues processing. This is particularly useful to:
+
+* **Share behaviors across agents**: Factor specialized capabilities into dedicated custom agents that can be reused by multiple higher-level agents. This creates a modular architecture where lower-level agents handle specific tasks, improving maintainability and consistency.
+* **Delegate in long-running loops**: When an agent needs to perform complex, multi-step tasks, delegating subtasks to sub-agents in separate conversations prevents context exhaustion. Each sub-agent operates with a fresh context window, enabling longer and more complex agentic workflows.
+
+<br />
+
+### New: agent responds in  conversation
+
+The selected agent takes over and responds directly to the user instead of the main agent. This is a complete handoff. Useful to:
+
+* **Route to specialized agents**: Direct users to the most appropriate agent based on their request type, domain, or required expertise.
+* **Leverage specialized tools or knowledge**: Hand off to an agent with access to specific toolsets, data sources, or domain expertise that the main agent doesn't have, ensuring the user gets a direct response from the most capable agent.
+
+<br />
+
+# Configuration
+
+The tool is configured as a regular tool in the agent builder and simply consists in selecting the agent to call.
+
+<Image align="center" border={true} src="https://files.readme.io/ab91992019d37532d687b9b42236b8e8896613d8129a8c0be885b0c28e708ee2-image.png" className="border" />
+
+You can provide context in the agent instructions about when to call the agent and what information to provide when doing so.
+
+# Accessing sub-agents conversations
+
+When your agent calls another agent you will be able to access the query and response (as well as agent thoughts) in the action detail panel. A link is also present to introspect the sub-conversation created and the actions taken by the sub-agent there.
+
+<Image align="center" border={true} src="https://files.readme.io/21747e739c82a99ba1494f86d5c327e2f8b1d49eae4fe9594a783b21c59d04e5-image.png" className="border" />
+
+<br />
+
+# Limitations
+
+We enforce a maximum recursion depth of 4 for calling sub-agents. Beyond this depth the action will return an error to the agent attempting it.

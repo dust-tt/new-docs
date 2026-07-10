@@ -58,6 +58,16 @@
                 "group": "FAQ",
                 "pages": [
                   {
+                    "group": "General Questions",
+                    "pages": [
+                      "docs/user-documentation/getting-started/faq/general-questions/what-data-sources-can-be-connected-to-dust",
+                      "docs/user-documentation/getting-started/faq/general-questions/what-ai-models-are-available-in-dust",
+                      "docs/user-documentation/getting-started/faq/general-questions/what-tools-are-available-in-dust",
+                      "docs/user-documentation/getting-started/faq/general-questions/what-are-the-pricing-plans-for-dust",
+                      "docs/user-documentation/getting-started/faq/general-questions/how-does-dust-handle-user-data"
+                    ]
+                  },
+                  {
                     "group": "Managing agents",
                     "pages": [
                       "docs/user-documentation/getting-started/faq/managing-agents/i-dont-know-how-to-start-creating-an-agent-what-should-i-do",
@@ -411,260 +421,13 @@
           {
             "group": "Dust API Documentation",
             "pages": [
-              "docs/developer-platform/dust-api-documentation/openapi-and-postman",
-              {
-                "group": "Agents",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/agents/get-agent-configuration",
-                  "docs/developer-platform/dust-api-documentation/agents/update-agent-configuration",
-                  "docs/developer-platform/dust-api-documentation/agents/search-agents-by-name",
-                  "docs/developer-platform/dust-api-documentation/agents/export-agent-configuration-as-yaml",
-                  "docs/developer-platform/dust-api-documentation/agents/import-agent-configuration",
-                  "docs/developer-platform/dust-api-documentation/agents/archive-agent-configuration"
-                ]
-              },
-              {
-                "group": "Workspace",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/workspace/list-agents",
-                  "docs/developer-platform/dust-api-documentation/workspace/export-workspace-analytics",
-                  "docs/developer-platform/dust-api-documentation/workspace/get-workspace-usage-data"
-                ]
-              },
-              {
-                "group": "Apps",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/apps/get-an-app-run",
-                  "docs/developer-platform/dust-api-documentation/apps/create-an-app-run",
-                  "docs/developer-platform/dust-api-documentation/apps/list-apps"
-                ]
-              },
-              {
-                "group": "Conversations",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/conversations/events-streaming",
-                  "docs/developer-platform/dust-api-documentation/conversations/cancel-message-generation",
-                  "docs/developer-platform/dust-api-documentation/conversations/create-a-content-fragment",
-                  "docs/developer-platform/dust-api-documentation/conversations/get-events-for-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/conversations/get-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/conversations/edit-an-existing-message",
-                  "docs/developer-platform/dust-api-documentation/conversations/get-events-for-a-message",
-                  "docs/developer-platform/dust-api-documentation/conversations/create-a-message",
-                  "docs/developer-platform/dust-api-documentation/conversations/validate-an-action",
-                  "docs/developer-platform/dust-api-documentation/conversations/create-a-new-conversation",
-                  "docs/developer-platform/dust-api-documentation/conversations/update-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/conversations/answer-a-user-question",
-                  "docs/developer-platform/dust-api-documentation/conversations/download-a-conversation-file"
-                ]
-              },
-              {
-                "group": "Datasource Views",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/datasource-views/get-a-data-source-view",
-                  "docs/developer-platform/dust-api-documentation/datasource-views/update-a-data-source-view",
-                  "docs/developer-platform/dust-api-documentation/datasource-views/delete-a-data-source-view",
-                  "docs/developer-platform/dust-api-documentation/datasource-views/search-the-data-source-view",
-                  "docs/developer-platform/dust-api-documentation/datasource-views/list-data-source-views"
-                ]
-              },
-              {
-                "group": "Datasources",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/datasources/retrieve-a-document",
-                  "docs/developer-platform/dust-api-documentation/datasources/upsert-a-document",
-                  "docs/developer-platform/dust-api-documentation/datasources/delete-a-document",
-                  "docs/developer-platform/dust-api-documentation/datasources/update-parents-of-a-document",
-                  "docs/developer-platform/dust-api-documentation/datasources/get-documents",
-                  "docs/developer-platform/dust-api-documentation/datasources/search-the-data-source",
-                  "docs/developer-platform/dust-api-documentation/datasources/get-a-table",
-                  "docs/developer-platform/dust-api-documentation/datasources/delete-a-table",
-                  "docs/developer-platform/dust-api-documentation/datasources/get-a-row",
-                  "docs/developer-platform/dust-api-documentation/datasources/create-a-file-upload-url",
-                  "docs/developer-platform/dust-api-documentation/datasources/delete-a-row",
-                  "docs/developer-platform/dust-api-documentation/datasources/list-rows",
-                  "docs/developer-platform/dust-api-documentation/datasources/upsert-rows",
-                  "docs/developer-platform/dust-api-documentation/datasources/get-tables",
-                  "docs/developer-platform/dust-api-documentation/datasources/upsert-a-table",
-                  "docs/developer-platform/dust-api-documentation/datasources/get-data-sources",
-                  "docs/developer-platform/dust-api-documentation/datasources/check-upsert-queue-status"
-                ]
-              },
-              {
-                "group": "Feedbacks",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/feedbacks/get-feedbacks-for-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/feedbacks/submit-feedback-for-a-message",
-                  "docs/developer-platform/dust-api-documentation/feedbacks/delete-feedback-for-a-message"
-                ]
-              },
-              {
-                "group": "MCP",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/mcp/update-heartbeat",
-                  "docs/developer-platform/dust-api-documentation/mcp/register-a-client-side-mcp-server",
-                  "docs/developer-platform/dust-api-documentation/mcp/stream-mcp-tool-requests",
-                  "docs/developer-platform/dust-api-documentation/mcp/submit-mcp-tool-execution-results",
-                  "docs/developer-platform/dust-api-documentation/mcp/deregister-a-client-side-mcp-server"
-                ]
-              },
-              {
-                "group": "Mentions",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/mentions/get-mention-suggestions-for-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/mentions/parse-mentions-in-markdown-text",
-                  "docs/developer-platform/dust-api-documentation/mentions/get-mention-suggestions"
-                ]
-              },
-              {
-                "group": "Search",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/search/search-for-nodes",
-                  "docs/developer-platform/dust-api-documentation/search/search-for-nodes-streaming",
-                  "docs/developer-platform/dust-api-documentation/search/upload-a-tool-file"
-                ]
-              },
-              {
-                "group": "Tools",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/tools/list-available-mcp-server-views"
-                ]
-              },
-              {
-                "group": "Triggers",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/triggers/receive-external-webhook"
-                ]
-              },
-              {
-                "group": "Skills",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/skills/list-skills",
-                  "docs/developer-platform/dust-api-documentation/skills/import-skills-from-uploaded-files"
-                ]
-              },
-              {
-                "group": "Spaces",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/spaces/list-available-spaces"
-                ]
-              },
-              {
-                "group": "Private User",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-user/get-current-user",
-                  "docs/developer-platform/dust-api-documentation/private-user/update-current-user"
-                ]
-              },
-              {
-                "group": "Private Authentication",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-authentication/initiate-workos-login",
-                  "docs/developer-platform/dust-api-documentation/private-authentication/exchange-code-or-refresh-token",
-                  "docs/developer-platform/dust-api-documentation/private-authentication/revoke-a-session"
-                ]
-              },
-              {
-                "group": "Private Agents",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-agents/list-agent-configurations",
-                  "docs/developer-platform/dust-api-documentation/private-agents/create-an-agent-configuration"
-                ]
-              },
-              {
-                "group": "Private Conversations",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-conversations/cancel-message-generation",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/create-a-content-fragment",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/get-conversation-feedbacks",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/get-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/delete-or-leave-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/update-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/get-conversation-participants",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/add-a-participant",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/list-conversations",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/create-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/compact-a-conversation",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/cancel-a-wake-up",
-                  "docs/developer-platform/dust-api-documentation/private-conversations/list-wake-ups"
-                ]
-              },
-              {
-                "group": "Private Messages",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-messages/edit-a-message",
-                  "docs/developer-platform/dust-api-documentation/private-messages/submit-message-feedback",
-                  "docs/developer-platform/dust-api-documentation/private-messages/delete-message-feedback",
-                  "docs/developer-platform/dust-api-documentation/private-messages/get-a-message",
-                  "docs/developer-platform/dust-api-documentation/private-messages/delete-a-message",
-                  "docs/developer-platform/dust-api-documentation/private-messages/retry-an-agent-message",
-                  "docs/developer-platform/dust-api-documentation/private-messages/list-messages",
-                  "docs/developer-platform/dust-api-documentation/private-messages/post-a-message",
-                  "docs/developer-platform/dust-api-documentation/private-messages/get-a-single-action"
-                ]
-              },
-              {
-                "group": "Private Events",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-events/stream-conversation-events",
-                  "docs/developer-platform/dust-api-documentation/private-events/stream-message-events",
-                  "docs/developer-platform/dust-api-documentation/private-events/stream-sandbox-function-events"
-                ]
-              },
-              {
-                "group": "Private Files",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-files/get-or-download-a-file",
-                  "docs/developer-platform/dust-api-documentation/private-files/upload-file-content",
-                  "docs/developer-platform/dust-api-documentation/private-files/delete-a-file",
-                  "docs/developer-platform/dust-api-documentation/private-files/create-a-file-upload"
-                ]
-              },
-              {
-                "group": "Private Mentions",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-mentions/get-mention-suggestions"
-                ]
-              },
-              {
-                "group": "Private Spaces",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-spaces/get-a-data-source-view",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/update-a-data-source-view",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/delete-a-data-source-view",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/list-data-source-views",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/create-a-data-source-view",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/get-a-space",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/update-a-space",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/delete-a-space",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/list-spaces",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/create-a-space",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/get-project-notification-preference",
-                  "docs/developer-platform/dust-api-documentation/private-spaces/set-project-notification-preference"
-                ]
-              },
-              {
-                "group": "Private Extension",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-extension/get-extension-configuration"
-                ]
-              },
-              {
-                "group": "Private Workspace",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-workspace/get-workspace-feature-flag"
-                ]
-              },
-              {
-                "group": "Private Assistant",
-                "pages": [
-                  "docs/developer-platform/dust-api-documentation/private-assistant/resolve-a-conversation-go-template"
-                ]
-              }
-            ]
+              "docs/developer-platform/dust-api-documentation/openapi-and-postman"
+            ],
+            "openapi": "docs/developer-platform/dust-api-documentation/openapi.json"
           },
           {
             "group": "Dust Labs",
-            "pages": ["/docs/developer-platform/dust-labs/dust-labs-repository"]
+            "pages": ["docs/developer-platform/dust-labs/dust-labs-repository"]
           },
           {
             "group": "Dust CLI",

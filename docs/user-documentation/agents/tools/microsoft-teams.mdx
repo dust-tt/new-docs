@@ -1,0 +1,72 @@
+---
+title: "Permissions needed"
+description: "--- title: Microsoft Teams excerpt: Tool to search in your personal Microsoft teams content deprecated: false hidden: false metadata: robots: index --..."
+---
+
+<Callout type="info"This tool uses personal credentials.>
+</Callout>
+This tool interact with Microsoft Teams using the user's account: it adapts to each user.
+
+## :gear: Admin: Setup in Dust
+
+Go to Spaces > Tools in your Dust workspace, click `Add Tools`, and select Microsoft Teams.
+
+You will then be redirected to an oAuth flow to connect an admin Microsoft Account. This account only be used during the set up and users won't be able to query Sharepoint/OneDrive from this account.
+
+By default this tool is added to the Company data Space, so accessible in all the workspace.
+
+## :key: Usage
+
+Once the tool has been configured by the admin as described before, it can be selected on any agent in the Agent Builder.
+
+1. Under **Spaces** -> **Tools**, select **Add Tools**
+2. Select **Microsoft Teams** from the available MCP servers
+3. When users use an agent with the Microsoft Teams tool for the first time, they will get a notification to click on the `Connect` button to connect their own Microsoft credentials. This ensures that agents only have access to the channels and content users can personally access.
+
+## :toolbox: Available Tools
+
+**Search Messages Content**
+Search for messages content in Microsoft Teams chats and channels. Returns the results in relevance order.
+
+**List Teams**
+List all Teams that the authenticated user has joined. Returns team details including name, description, and team ID.
+
+**List Users**
+List all users in the organization. Returns user details including display name, email, and user ID.
+
+**List Channels**
+List all channels in a specific team. Returns channel details including name, description, and channel ID.
+
+**List Chats**
+List all chats (one-on-one or group chats) for the authenticated user. Returns chat details including chat ID, topic, and participants. Can be filtered by chat type.
+
+**List Messages**
+List all messages (and their replies) in a specific channel. Returns thread messages with their replies.
+
+**Post Message**
+Post a message to a Teams channel, chat, or as a reply in a thread. Can send messages to channels, direct chats, or as threaded replies.
+
+## :stop_sign: Limitations
+
+* Microsoft API supports keyword-based search only (not semantic search)
+
+<br />
+
+# Permissions needed
+
+If your users struggle with approval requirements, you can go in the Azure Admin portal and grant permissions at admin level here:
+
+<Image align="center" src="https://files.readme.io/27f94d1657ad7ba665d30aac83f37883efa4e8aba0114c51335a6b11ed2e91d4-Screenshot_2025-08-06_at_11.19.49.png" />
+
+For that go to the Azure Admin Portal, then **Enterprise applications** (you can follow this <Anchor label="link" target="_blank" href="https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview">link</Anchor> instead), then **Dust - Tools**, then **Permissions** and click the **Grant admin consent** blue button.  
+
+**Still not working?**
+
+Try this other process:
+
+1. Go to this <Anchor label="link" target="_blank" href="https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AccessRequests">link</Anchor>
+2. Click on "All (preversion)"
+3. Click on the "Dust - Tools" app
+4. Click "Revoir les autorisations et le consentement" (or equivalent in English) in the right panel
+
+(optional) Deactivate and re-activate your Teams tool if the issue persists.

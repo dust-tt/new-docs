@@ -1,0 +1,41 @@
+---
+title: "Overview"
+description: "--- title: Users and groups provisioning excerpt: '' deprecated: false hidden: false metadata: title: '' description: '' robots: index next: descripti..."
+---
+
+# Overview
+
+Dust supports automated user and group management through SCIM 2.0 (System for Cross-domain Identity Management). This enterprise feature streamlines user lifecycle management and security.
+
+# Setting up SCIM provisioning
+
+SCIM provisioning can be enabled for enterprise users. You'll need administrative access to both Dust and your IdP.
+
+1. In Dust, navigate to Admin > People & Security > Domain and Members > User provisioning > Setup Directory sync
+
+<Image align="center" border={true} width="600px" src="https://files.readme.io/f63e1e2b01d26b139caa9274b8e80c3a6c04f2a647e01b7214165e4e264dfc28-Screenshot_2025-07-02_at_13.33.16.png" className="border" />
+
+2. Select you identity provider (IdP) from the list
+
+<Image align="center" border={true} width="400px" src="https://files.readme.io/054a19381a3f79e66ab07d367d9deb2c3cf54b02c9a2e497aa8a6f3aae1440e9-Screenshot_2025-07-02_at_13.33.26.png" className="border" />
+
+3. Follow the steps
+
+<Image align="center" border={true} width="700px" src="https://files.readme.io/3b2e5dcb78da3801eaaf55e18ca4b7ee372986537a0cd7599def516d5655183d-Screenshot_2025-07-02_at_13.33.50.png" className="border" />
+
+4. **Important note for Enterprise customers:** to enable department-segmented analytics, customers must provision relevant groups to Dust.
+
+<br />
+
+<Callout icon="📘" theme="info">
+</Callout>
+  Check your IdP documentation along the way  
+  The setup experience may vary depending on the selected IdP. We recommend checking the documentation of your IdP (specifically the sections about SSO, SAML and SCIM) as each might have specificities. (_For example, [Okta (OIDC)](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm) might require you to create 2 applications - one for SSO, one for SCIM_)
+</Callout>
+
+<br />
+
+# Assign roles through provisioning
+
+You can automatically assign admin and builder roles to your users by adding them into special groups (exactly) named "**dust-admins**" and "**dust-builders**".  
+You will have to create these groups in your IdP, assign appropriate members to them and synchronize them.

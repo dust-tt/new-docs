@@ -1,0 +1,85 @@
+---
+title: "Overview"
+description: "--- title: Rate Limiting deprecated: false hidden: false metadata: robots: index --- To ensure fair resource allocation across your workspace, Dust en..."
+---
+
+# Overview
+
+To ensure fair resource allocation across your workspace, Dust enforces rate limits on trigger executions. These limits prevent individual automations from consuming disproportionate capacity while allowing legitimate automation use cases.
+
+This page describes trigger execution limits. These are separate from plan-level usage allowances, credit balances, and fair-use limits that may apply to your workspace under your subscription.
+
+Triggers can operate in two modes:
+
+- **Fair use mode**: Counts toward the regular usage allowance available to your workspace under your plan.
+- **Programmatic usage mode**: Billed separately through programmatic usage credits, for high-volume use cases.
+
+# Rate Limit Rules
+
+## Fair Use Mode
+
+- **42 runs per trigger per 24 hours** on fair use
+- Applies to each individual trigger
+- Uses a sliding 24-hour window, not a daily reset
+- Fair-use triggers may also be subject to workspace-level guardrails to preserve capacity for direct user interactions
+- The workspace-level calculation depends on your plan and contract
+
+For legacy Enterprise plans, fair-use limits are transitioning from message-based allowances to credit-based limits. If your workspace is affected, Dust will communicate the applicable limit and effective date directly.
+
+## Programmatic Usage Mode
+
+For high-volume or truly programmatic use cases (e.g., PR reviews on every commit, IT ticketing automation), admins can request to move specific triggers to programmatic usage mode:
+
+- Billed separately through programmatic usage credits
+- Does not count toward trigger fair-use capacity
+- Frees up capacity for other fair-use triggers
+- Can support much higher volumes (e.g., 1,000 runs per day)
+- Applies only to webhook-based triggers. Scheduled triggers remain on fair use by nature
+
+To request this, see [Requesting Higher Limits](#requesting-higher-limits) below.
+
+For details on how programmatic usage draws from your workspace credit pool and what happens when credits are depleted, see [Credit Management](././credit-management).
+
+# What Happens When a Limit Is Reached?
+
+When a trigger hits its rate limit:
+
+- Incoming webhook requests are paused until capacity is available
+- You'll see a chip indicating the trigger is rate-limited in the trigger details
+
+# Best Practices
+
+## Deciding Between Fair Use and Programmatic Usage
+
+**Fair use is ideal for**:
+
+- Daily or hourly briefings (e.g., morning digest of tasks)
+- Email response drafting (a few times per day)
+- Low-frequency notifications (status updates, document changes)
+- Exploratory and testing use cases
+
+**Programmatic usage is appropriate for**:
+
+- PR reviews triggered on every commit
+- IT ticketing systems with high message volume
+- Customer support automation handling dozens or hundreds of tickets daily
+- Any trigger running 42+ times per day consistently
+
+# Requesting Higher Limits
+
+If your legitimate use case requires higher limits, workspace admins can contact support at [support@dust.tt](mailto:support@dust.tt) to:
+
+1. **Increase fair-use limits**: Bump a specific trigger's limit within fair use (e.g., from 42 to 100 runs per day)
+2. **Move to programmatic usage**: Switch a high-volume trigger to programmatic mode, which:
+   - Removes it from the fair-use combined limit
+   - Allows much higher volumes
+   - Draws from the workspace credit pool
+
+When contacting support, please include:
+
+- Description of your use case
+- Expected daily volume
+
+# Need Help?
+
+If you're experiencing rate limiting issues or need to discuss your automation requirements, reach out to our team at [support@dust.tt](mailto:support@dust.tt). We're here to help you design automation strategies that work within your workspace capacity and determine whether fair use or programmatic usage is the right fit for your use case.

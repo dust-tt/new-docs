@@ -1,0 +1,97 @@
+---
+title: "⭐ Key Features"
+description: "--- title: Val Town excerpt: >- Tools to interact with Val Town's platform to write and scale serverless JavaScript.  deprecated: false hidden: false..."
+---
+
+# ⭐ Key Features
+
+* **Function Creation**: Create and deploy serverless JavaScript/TypeScript functions (vals) directly from agent conversations
+* **Code Execution**: Run vals with parameters and get real-time results
+* **Val Discovery**: Search and browse existing vals across the Val Town platform
+* **Serverless Automation**: Build APIs, scheduled tasks, and automation workflows without infrastructure management
+
+## :compass: Use case examples
+
+<Cards columns={3}>
+  <Card title="Rapid API Prototyping" icon="fa-rocket" target="\_blank">
+    Create and deploy HTTP endpoints instantly without server setup
+  </Card>
+
+  <Card title="Automated Data Processing" icon="fa-gears">
+    Build serverless functions that process data on demand
+  </Card>
+
+  <Card title="Webhook Endpoints" icon="fa-plug">
+    Generate webhook receivers for third-party integrations in seconds
+  </Card>
+
+  <Card title="AI-Powered Development" icon="fa-brain">
+    Describe functions in plain English and let Dust generate the code
+  </Card>
+
+  <Card title="Real-time Testing" icon="fa-flask">
+    Execute and test your vals immediately within Dust conversations
+  </Card>
+</Cards>
+
+***
+
+# ⚙️ Admin : Setup in Dust
+
+Go to Spaces > Tools in your Dust workspace, click `Add Tools`, and select _Val Town_.
+
+## Authentication
+
+Val Town’s REST API supports Bearer Token authentication. You can create and manage your Val Town API tokens on the [API Tokens page](https://www.val.town/settings/api). In order to use all available tools, the token will need read and write permissions for vals.
+
+Your Val Town API token must be stored as a Dust developer secret. Go to Admin -> Builder Tools Management -> Secrets, and select _Create Secret_ to store your Val Town API token.
+
+# User : Usage in Dust
+
+Once the tool has been configured by the admin as described before, it can be selected on any agent. In the Agent Builder, simply click on `Add Tool` and select Val Town. You will be required to select a developer secret that will be used as a bearer token for all API calls.
+
+# Available Tools
+
+## Create Val
+
+Creates a new val in Val Town. Use create_file to add files to the val.
+
+## Get Val
+
+Gets a specific val by its ID
+
+## List Vals
+
+Lists vals available to the user's account
+
+## Search Vals
+
+Searches for vals by name, description, or content
+
+## List Val Files
+
+Lists all files in a specific val
+
+## Get File Content
+
+Gets the content of a specific file in a val using the Val Town API
+
+## Delete File
+
+Deletes a specific file from a val using the Val Town API
+
+## Update File Content
+
+Updates the content of a specific file in a val. Note: To change file type (e.g., to HTTP), use the file_update tool instead.
+
+## Write File
+
+The primary function for writing content to files and updating file metadata. Use this to add content, change file type, rename files, or move files. For HTTP type: return value from serve handler must be a response or a promise resolving to a response.
+
+## Create File
+
+Creates a new empty file in an existing val. Use write_file to add content and set the file type.
+
+## Call Http Endpoint
+
+Runs an HTTP val endpoint by getting the file's endpoint link and making a request to it

@@ -1,0 +1,42 @@
+---
+title: "Pods Admin"
+description: "--- title: Admin controls hidden: false metadata: robots: noindex --- Workspace administrators can configure two Pod-level policies from the **Admin s..."
+---
+
+Workspace administrators can configure two Pod-level policies from the **Admin settings**, under the **Capabilities** section.
+
+<Image align="center" border={true} src="https://files.readme.io/b8a0d6f09110da0b885e976f650e68efa13cfda2d5d0675c2a01358df0d4422d-image.png" className="border" />
+
+<br />
+
+***
+
+## Pod visibility policy
+
+Controls whether members can create Open Pods or are limited to Restricted (private) ones.
+
+| Option                                | Effect                                                                                         |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Private and open Pods** _(default)_ | Members can create either Restricted or Open Pods                                              |
+| **Private Pods only**                 | Members can only create Restricted Pods — the Open visibility toggle is disabled with a notice |
+
+<Callout type="info"Useful for large organizations where members might inadvertently make a Pod visible to everyone without realizing the scope. Setting this to "Private Pods only" ensures that sharing is always intentional.>
+</Callout>
+Note: existing Open Pods are not force-closed when this policy is enabled. Editors can still switch them back to Restricted manually.
+
+***
+
+## Pod files policy
+
+Controls whether members can manually add files or linked data to a Pod's Files tab.
+
+| Option                                 | Effect                                                                                     |
+| -------------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Manual updates allowed** _(default)_ | Members can upload files and link Company Data nodes to a Pod                              |
+| **Manual updates disabled**            | The Add button is hidden — only agents and automated connectors can populate the Files tab |
+
+<Callout type="info"Useful for organizations with tight data governance rules, where knowledge in Pods should come exclusively from controlled, automated sources rather than ad-hoc member uploads.>
+</Callout>
+***
+
+Both settings default to the permissive option, so existing Pods and member workflows are unaffected unless an admin explicitly changes them.

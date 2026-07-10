@@ -1,0 +1,141 @@
+---
+title: "Credits"
+description: "--- title: Credits excerpt: Understand what credits are, how they're calculated, and when they're free. deprecated: false hidden: false metadata: titl..."
+---
+
+Credits are the unit of usage on Dust. Every AI interaction — sending a message, running an agent, using a tool — consumes credits. This page explains what credits are, how they're calculated, and when usage is free.
+
+## What is a credit?
+
+A credit represents a unit of AI work performed on Dust. Credits are consumed whenever you interact with agents, use tools, or run automated workflows.
+
+Credits are not transferable between users, do not roll over to the next billing period, and are not refundable.
+
+## How credits are calculated
+
+Each interaction consumes credits based on two components that are added together:
+
+`total credits = token credits + action credits`
+
+### Token credits
+
+Token credits are proportional to the amount of AI processing involved in generating a response. More complex queries, longer contexts, and more capable models consume more token credits.
+
+### Action credits
+
+Action credits are a fixed amount charged per tool action, regardless of response length. Tools are grouped into 3 tiers:
+
+<Table>
+  <thead>
+    <tr>
+      <th>
+        Tier
+      </th>
+
+      <th>
+        Credits per action
+      </th>
+
+      <th>
+        Tools
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        **Free**
+      </td>
+
+      <td>
+        0 credit
+      </td>
+
+      <td>
+        - **Internal tools:** memory, agent routing, common utilities
+        - **Most Orchestration helpers:** ask user question, close/edit plan, cancel wakeup, mentions
+        - **Skills management:&#x20;**&#x63;reate, update, enable skills
+        - **Most Files management:** read, write, copy, move, delete files
+        - **Most Pods tools:&#x20;**&#x63;reate conversations, manage tasks, list members
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Basic**
+      </td>
+
+      <td>
+        1 credit
+      </td>
+
+      <td>
+        - **Orchestration:&#x20;**&#x72;un agent, create plan, schedule wakeup, create schedule
+        - **Web Search:&#x20;**&#x62;rowse a list of websites, google web search from query
+        - **Frames:&#x20;**&#x65;diting, exporting, publishing, retrieving, reverting a Frame
+        - **Pods:&#x20;**&#x63;reate pod, semantic search, retrieve recent documents, start task agent
+        - **Analytics:&#x20;**&#x75;sage, credits, top agents/users/skills/tools
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        **Advanced**
+      </td>
+
+      <td>
+        3 credits
+      </td>
+
+      <td>
+        - **Knowledge & Retrieval:** Search, Query Tables, Data Warehouses, Include Data, Extract Data, Files, HTTP Client
+
+        * **Frame Creation**
+        * **Output Generation:** File Generation, Image Generation, Sound Studio, Speech Generator, Interactive Content (Frames), Slideshow,
+        * **3rd party MCP integration:** Gmail, Slack, GitHub, Notion, Google Drive, Jira, HubSpot, Salesforce, Zendesk, Fathom, Gong, Monday, Confluence, Ashby, and more
+        * **All external MCP Servers**
+      </td>
+    </tr>
+  </tbody>
+</Table>
+
+<br />
+
+### Sub-agent costs
+
+When an agent runs sub-agents in the background, each sub-agent's credit cost is added to the total. Costs accumulate across the full agent chain and are displayed alongside the main agent cost.
+
+## When credits are not consumed
+
+Some interactions are exempt from credit consumption:
+
+- **Sidekick**: all Sidekick interactions (Tokens and Actions) are free and do not consume credits.
+
+## Credit cost display
+
+After each message, Dust shows the credit cost of that interaction directly in the conversation. This lets every member track their usage in real time without navigating to the Usage page.
+
+The display includes the cost of the main agent response and any sub-agents that ran in the background as part of that interaction.
+
+<Image src="https://files.readme.io/84b9f7975e7fc29ce90ef29216a95c967a7c390e7c17084d737d475d23dc061e-MessageCreditDisplayInConversation.png" align="center" />
+
+## Credit allocations by seat type
+
+Each seat type includes a credit allocation (see [Seat management](./seat-management) for details on seat types and how to assign them):
+
+| Seat type     | Credits                                    |
+| ------------- | ------------------------------------------ |
+| **Free seat** | 500 credits (one-time lifetime allocation) |
+| **Pro seat**  | 8,000 credits/month                        |
+| **Max seat**  | 40,000 credits/month                       |
+
+Credits are tied to the individual user, not the seat. Changing or unassigning a seat does not revoke credits already allocated — the user retains them and can continue consuming them until the end of their current period.
+
+For details on how credits are drawn from different sources (individual allocation, workspace pool, overage), see [Credit management](./credit-management).
+
+## Credit reset
+
+Individual seat credits reset monthly, on the anniversary of your subscription start date. Unused credits do not carry over to the following month.
+
+**Free seat credits** are a one-time lifetime allocation and do not reset.

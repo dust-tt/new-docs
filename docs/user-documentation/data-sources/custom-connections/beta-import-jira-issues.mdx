@@ -1,0 +1,56 @@
+---
+title: "Import Jira"
+description: "--- title: '[Beta] Import Jira issues' excerpt: A script to import Jira Tickets deprecated: false hidden: false metadata: title: '' description: '' ro..."
+---
+
+## Jira Issues Importer for Dust
+
+The **Jira issues Importer for Dust** is a powerful tool designed to seamlessly integrate your Jira issues data with Dust's AI-powered knowledge management platform. 
+
+This open-source script, **available on GitHub at[dust-tt/dust-labs/jira](https://github.com/dust-tt/dust-labs/tree/main/jira)**, automates the process of exporting issues updated in the last 24 hours from Jira and importing them into a Dust datasource. It fetches comprehensive issues details, like so:
+
+```
+Issue Key: KAN-3
+ID: 10002
+URL: https://dust4ai.atlassian.net/rest/api/3/issue/10002
+Summary: Nice task to do
+Description:
+What do you think about this description
+
+Issue Type: Task
+Status: To Do
+Priority: Medium
+Assignee: Alban Dumouilla (alban@dust.tt)
+Reporter: Alban Dumouilla (alban@dust.tt)
+Project: My Kanban Project (KAN)
+Created: 2024-08-20T15:51:58.901+0200
+Updated: 2024-08-20T16:26:36.215+0200
+Resolution: Unresolved
+Resolution Date: N/A
+Labels: test
+Components: 
+Sprint: N/A
+Epic: N/A
+Time Tracking:
+  Original Estimate: N/A
+  Remaining Estimate: N/A
+  Time Spent: N/A
+Votes: 0
+Watches: 1
+Fix Versions: 
+Affected Versions: 
+Subtasks: 
+Issue Links: Blocks KAN-1: This is a todo card
+Attachments: 
+
+Comments:
+
+[2024-08-20T16:26:36.076+0200] Author: Alban Dumouilla (alban@dust.tt)
+This is the first comment of the issue
+```
+
+The script then formats and uploads this data to Dust.
+
+By leveraging this script, support teams can effortlessly keep their Dust knowledge base up-to-date with the latest information from Jira. 
+
+This integration enables more effective use of Dust's AI capabilities for analyzing support trends, improving response times, and enhancing overall customer service quality. The script is designed with rate limiting and error handling in mind, ensuring reliable performance even with large volumes of Jira issues data.

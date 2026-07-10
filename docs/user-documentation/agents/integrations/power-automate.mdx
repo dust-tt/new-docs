@@ -1,0 +1,156 @@
+---
+title: ":computer: Setup in Power Automate (admin only)"
+description: "--- title: Power Automate excerpt: Talk to an agent or upload a file from your Power Automate workflows deprecated: false hidden: false metadata: robo..."
+---
+
+# :computer: Setup in Power Automate (admin only)
+
+Install the Dust custom connector in your Power Automate environment.
+
+## 📋 Prerequisites
+
+Before installing the Dust Assistant Solution, ensure you have:
+
+* **Power Platform Access**: get the _Power Automate Premium_ <Anchor label="license" target="_blank" href="https://www.microsoft.com/power-platform/products/power-automate/pricing">license</Anchor>
+* **Environment Permissions**: Environment Maker role or higher
+  1. Go to [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)
+  2. Select **Environments** → Your environment
+  3. Verify you have **Environment Maker** or **System Administrator** role
+* **Dust Account**: Active Dust workspace with API access
+* **API Credentials**: Create a Dust API key from your workspace settings
+  1. **Log into Dust**
+     * Go to [dust.tt](https://dust.tt)
+     * Navigate to your workspace
+
+  2. **Generate API Key**
+     * Go to **Admin** → **API Keys**
+     * Click **"Create API Key"**
+     * Copy the generated key
+     * **Store securely** - you won't see it again
+
+## 🔧 Installation Guide
+
+### Step 1: Download the Connector
+
+Download the latest version: <Anchor label="DustAssistantSolution.zip" target="_blank" href="https://office-addins.dust.tt/power-automate/PowerAutomate_DustAssistantSolution.zip">DustAssistantSolution.zip</Anchor>
+
+### Step 2: Import the Solution
+
+1. **Navigate to Power Automate**
+   * Go to [make.powerautomate.com](https://make.powerapps.com)
+   * Select your target environment (top-right dropdown)
+
+2. **Import Solution**
+   * Click **"Solutions"** in the left navigation
+   * Click **"Import solution"**
+   * Click **"Browse"** and select the downloaded `.zip` file
+   * Click **"Next"**
+
+3. **Review Import Settings**
+   * Review the solution details
+   * Click **"Import"**
+   * Wait for import completion (2-5 minutes)
+
+### Step 3: Test connection
+
+1. **Open the Custom Connector**
+   * Go to **"Solutions"** → **"Dust Assistant Solution"**
+   * Click on the Custom Connector you want to test
+
+2. **Test connection**
+   * Click **"Edit"** (pencil icon)
+   * Go to **"Test"** tab
+   * **Create a new connection**: Enter your **Dust API Key** in the authentication field ( :warning:You must add "Bearer " before your API token)
+   * Test with a sample body (select the connector you want to test below and copy the corresponding sample body)
+
+```json Talk to an Agent
+{
+  "message": {
+    "context": {
+      "timezone": "Europe/Paris",
+      "username": "xxx"
+    },
+    "content": "hello",
+    "mentions": [
+      {
+        "configurationId": "gpt-5"
+      }
+    ]
+  },
+  "blocking": true
+}
+```
+```json Upload document
+{
+  "text": "This is my doc content",
+  "title": "Doc title",
+  "tags": ["tag1", "tag2"]
+}
+```
+
+* Wait for the response: the HTTP status should be 200.
+
+### Step 4: Share the connector
+
+* Go to **"Solutions"** → **"Dust Assistant Solution"**
+* Click on the Custom Connector you want to share
+* Go to the "Share" tab
+* You can now decide either to share the connector with your whole organization, or select specific users to share with.
+
+## 🔄 Updates and Maintenance
+
+### Updating the Connector
+
+1. **Download** the latest version
+2. **Import** the new solution (it will update the existing one)
+3. **Test** your existing flows/apps
+
+<br />
+
+# :key: Usage
+
+Add a Dust connector to your flows.
+
+## 📋 Prerequisites
+
+* **Power Platform Access**: get the _Power Automate Premium_ <Anchor label="license" target="_blank" href="https://www.microsoft.com/power-platform/products/power-automate/pricing">license</Anchor>. Ask your admin to grant you a licence.
+* **Dust Account**: Active Dust workspace with API access
+* **API Credentials**: Create a Dust API key from your workspace settings
+  1. _Log into Dust_*
+     * Go to [dust.tt](https://dust.tt)
+     * Navigate to your workspace
+
+  2. **Generate API Key**
+     * Go to **Admin** → **API Keys**
+     * Click **"Create API Key"**
+     * Copy the generated key
+     * **Store securely** - you won't see it again
+
+## 🔧 User guide
+
+### Step 1: Use the Dust connector in your flow
+
+1. In Power Automate, create a new flow or use an existing one
+2. Add a new action
+3. Search for "Dust" in the search bar (you can click on the "Custom" filter to see only custom connectors)
+
+<Image align="center" border={false} width="500px" src="https://files.readme.io/0dda3c51a45d7793ad704485d701f29c0a6f1d2109bb6f8cd4a281ba64cf0633-image.png" />
+
+4. Select the Dust connector you want to use (either _Talk to an Agent_ or _Upload document_)
+5. Enter your **Dust API Key** in the authentication field ( :warning: You must add "Bearer " before your API key)
+
+### Step 2: Enter the required Parameters
+
+You may need to click on the "Display all" button.
+
+<Tabs>
+  <Tab title="'Talk to an Agent' Connector">
+    <Image align="center" src="https://files.readme.io/3156290422f4cbc5f87520a81c820240d4248c36f3ac38ded6cb47a3fd448367-image.png" width="500px" />
+  </Tab>
+
+  <Tab title="'Upload Document' Connector">
+    <Image align="center" src="https://files.readme.io/de37f136cdde57cc397d12069173f8413625d10947df3ed3c256317d7c9f858f-image.png" width="500px" />
+  </Tab>
+</Tabs>
+
+<br />
