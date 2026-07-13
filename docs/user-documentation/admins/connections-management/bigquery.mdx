@@ -1,11 +1,9 @@
 ---
-title: "Overview"
-description: "--- title: BigQuery excerpt: How to set-up your Dust BigQuery connection deprecated: false hidden: false metadata: title: '' description: '' robots: i..."
+title: "BigQuery"
+description: "ℹ️ Dust does not synchronize or store any of your BigQuery data. We only store metadata, such as datasets and table names. You can connect Dust to you..."
 ---
 
-# Overview
-
-ℹ️ Dust does not synchronize or store any of your BigQuery data. We only store metadata, such as datasets and table names.
+ℹ Dust does not synchronize or store any of your BigQuery data. We only store metadata, such as datasets and table names.
 
 You can connect Dust to your BigQuery data warehouse to enable your agents to perform [Table queries](././table-queries) on your BigQuery tables.
 
@@ -22,8 +20,6 @@ The agents can also leverage the results to create visualizations, such as chart
 The "Tools inspection" button allows to view the reasoning and SQL query used by the agent to retrieve the data:
 
 <Image align="center" border={true} width="75% " src="https://files.readme.io/af56babf45529b4891881a8fd90ebb64365775de8e23f46b73379efc3fb6715d-Screenshot_2024-10-17_at_15.24.32.png" className="border" />
-
-# Setting up the Connection
 
 ## Key BigQuery Concepts
 
@@ -82,7 +78,7 @@ The key file will download automatically. Keep it secure as it provides access t
 3. Paste your service account key into the box (**Note:** you may have to wait a few seconds for the key to register)
 4. Select the BigQuery location (region or multi-region) for this connection. Dust can only query datasets in the selected location. All datasets you connect here must be in that same location.
 
-ℹ️ **BigQuery limitation**
+ℹ **BigQuery limitation**
 BigQuery prevents cross-location queries. A single query cannot reference tables from datasets in different locations (for example, US and EU). If your data spans multiple locations, select only the datasets from one location for this connection. [Learn more](https://cloud.google.com/bigquery/docs/datasets-intro#dataset_location)
 
 5. Select the datasets and tables you want to make available in Dust

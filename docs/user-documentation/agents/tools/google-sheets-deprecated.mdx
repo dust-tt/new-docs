@@ -1,6 +1,6 @@
 ---
-title: "Admin: Setup in Google Cloud"
-description: "--- title: '[Deprecated] Google Sheets' excerpt: '' deprecated: true hidden: false metadata: title: '' description: '' robots: index next: description..."
+title: "[Deprecated] Google Sheets"
+description: "The Google Sheets tool is deprecated. Migrate to the Google Drive tool, which supports reading and editing Google Sheets via tools like Get Spreadshee..."
 ---
 
 <Callout type="warning"Deprecated — Use the Google Drive tool for Google Sheets workflows.>
@@ -11,13 +11,11 @@ The Google Sheets tool is deprecated. Migrate to the Google Drive tool, which su
 </Callout>
 This tool interacts with Google Sheets using the user accounts: it adapts to each user.
 
-💡 **Migrate to the Google Drive tool**: https://docs.dust.tt/docs/google-drive
+ **Migrate to the Google Drive tool**: https://docs.dust.tt/docs/google-drive
 Common replacements:
-- **List Spreadsheets** → Use Google Drive: Search Files (filter to spreadsheets) or Get Spreadsheet when you know the ID.
-- **Get Spreadsheet / Get Worksheet** → Use Google Drive: Get Spreadsheet / Get Worksheet.
-- **Append Data / Update Cells / Format Cells / Clear Range / Copy Sheet / Add/Delete/Rename/Move Worksheet** → Use Google Drive: Append to Spreadsheet / Update Spreadsheet.
-
-# Admin: Setup in Google Cloud
+- **List Spreadsheets**  Use Google Drive: Search Files (filter to spreadsheets) or Get Spreadsheet when you know the ID.
+- **Get Spreadsheet / Get Worksheet**  Use Google Drive: Get Spreadsheet / Get Worksheet.
+- **Append Data / Update Cells / Format Cells / Clear Range / Copy Sheet / Add/Delete/Rename/Move Worksheet**  Use Google Drive: Append to Spreadsheet / Update Spreadsheet.
 
 A Google Workspace account is required for the following steps.
 
@@ -44,15 +42,13 @@ Create a new client:
 
 Pick Create and on the next screen, copy the Client ID and Client Secret (you'll need them for the Dust setup):
 
-# Admin: Setup in Dust
-
 Go to Spaces > Tools in your Dust workspace, click `Add Tools`, and select Google Sheets.
 
 You will then be redirected to an oAuth flow to connect an admin Google Sheets Account. This account only be used during the set up and users won't be able to query Google Sheets from this account.
 
 By default this tool is added to the Company data Space, so accessible in all the workspace.
 
-## 🧰 Available Tools
+##  Available Tools
 
 **List Spreadsheets**
 List Google Sheets spreadsheets accessible by the user from both personal drive and shared drives. Supports pagination and search.
@@ -92,8 +88,6 @@ Rename a worksheet in a Google Sheets spreadsheet.
 
 **Move Worksheet**
 Move a worksheet to a new position in a Google Sheets spreadsheet.
-
-# Usage
 
 Once the tool has been configured by the admin as described before, it can be configured for any agent. In the Agent Builder, simply click on `Add Tool` and select Google Sheets. 
 

@@ -1,9 +1,7 @@
 ---
-title: "Overview"
-description: "--- title: Run agent excerpt: Enables agents to run other agents as tools deprecated: false hidden: false metadata: title: '' description: '' robots:..."
+title: "Run agent"
+description: "The `run_agent` tool enables your agents to run other agent as a tool. Two modes of executions are available: The selected agent runs in a separate c..."
 ---
-
-# Overview
 
 The `run_agent` tool enables your agents to run other agent as a tool. Two modes of executions are available: 
 
@@ -25,22 +23,16 @@ The selected agent takes over and responds directly to the user instead of the m
 
 <br />
 
-# Configuration
-
 The tool is configured as a regular tool in the agent builder and simply consists in selecting the agent to call.
 
 <Image align="center" border={true} src="https://files.readme.io/ab91992019d37532d687b9b42236b8e8896613d8129a8c0be885b0c28e708ee2-image.png" className="border" />
 
 You can provide context in the agent instructions about when to call the agent and what information to provide when doing so.
 
-# Accessing sub-agents conversations
-
 When your agent calls another agent you will be able to access the query and response (as well as agent thoughts) in the action detail panel. A link is also present to introspect the sub-conversation created and the actions taken by the sub-agent there.
 
 <Image align="center" border={true} src="https://files.readme.io/21747e739c82a99ba1494f86d5c327e2f8b1d49eae4fe9594a783b21c59d04e5-image.png" className="border" />
 
 <br />
-
-# Limitations
 
 We enforce a maximum recursion depth of 4 for calling sub-agents. Beyond this depth the action will return an error to the agent attempting it.

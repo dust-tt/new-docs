@@ -1,6 +1,6 @@
 ---
-title: "Dust Assistants In A Slack Workflow"
-description: "--- title: Slack workflows excerpt: '' deprecated: false hidden: false metadata: title: '' description: '' robots: index next: description: '' --- Sla..."
+title: "Slack workflows"
+description: "Slack workflows allow you to automate routine tasks and interactions within your Slack workspace. You can integrate Dust agents into these workflows...."
 ---
 
 ## Overview
@@ -10,24 +10,24 @@ Slack workflows allow you to automate routine tasks and interactions within your
 For example:
 
 * create a Slack workflow sending a message every day at 10a.m. in the #general channel: [\`@dust](https://github.com/dust) +highlights\` What have been the highlights since yesterday?
-* trigger a Dust agent in the #your-channel channel every time a member adds the ❓ emoji to a Slack message.
+* trigger a Dust agent in the #your-channel channel every time a member adds the  emoji to a Slack message.
 
 ## Setting up a Slack Workflow with a Dust agent
 
-1. **Create a Slack workflow.** This includes defining the workflow trigger, for example a scheduled time (e.g., daily at 10a.m.) or an action (e.g., adding a ❓ emoji to a message). You can find more details about how to create a Slack workflow [here](https://slack.com/help/articles/17542172840595-Build-a-workflow--Create-a-workflow-in-Slack). 
+1. **Create a Slack workflow.** This includes defining the workflow trigger, for example a scheduled time (e.g., daily at 10a.m.) or an action (e.g., adding a  emoji to a message). You can find more details about how to create a Slack workflow [here](https://slack.com/help/articles/17542172840595-Build-a-workflow--Create-a-workflow-in-Slack). 
 2. **Whitelist your Slack workflow with the Dust team.** Dust will need to whitelist your Slack workflow for the Dust agent to reply to workflow messages triggered by the workflow Slackbot. Email `support@dust.tt` with: 
 
    1. Your Dust workspace URL and the exact name(s) of the Space(s) used by the agent. If the agent uses any Restricted Space(s), include their exact names in addition to Company Data.
    2. The name of the Slack workflow you intend to use with a Dust agent.
 
-   > ⚠️
+   > 
    >
    > ### Restricted Space whitelisting required
    > If your agent is configured to use data from a Restricted Space (you'll see a yellow Restricted Space heads‑up in the Agent Builder), we must whitelist that Restricted Space by its exact name alongside Company Data. Otherwise, the agent will not be allowed to respond when triggered by the workflow.
 
    <Image align="center" src="https://files.readme.io/dedfac4-Untitled_19.png" />
 
-   <Callout icon="💡" theme="default">
+   <Callout icon="" theme="default">
 </Callout>
      ### Good to know
 

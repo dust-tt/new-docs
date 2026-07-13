@@ -1,6 +1,6 @@
 ---
-title: "Admin: Setup in Dust"
-description: "--- title: Gmail excerpt: >- Connect Gmail to Dust agents to read messages, create drafts, and send emails using user credentials. deprecated: false h..."
+title: "Gmail"
+description: "The Gmail tool interacts with Gmail using each user's account, adapting to individual access permissions. <br /> <br /> Navigate to Spaces > Tools in..."
 ---
 
 <Callout type="info"Personal credentials required>
@@ -8,8 +8,6 @@ description: "--- title: Gmail excerpt: >- Connect Gmail to Dust agents to read 
 The Gmail tool interacts with Gmail using each user's account, adapting to individual access permissions.
 
 <br />
-
-# Admin: Setup in Dust
 
 <br />
 
@@ -20,8 +18,6 @@ The setup redirects you to an `OAuth flow` to connect an admin Gmail account. Du
 The Gmail tool is added to the Company data Space, making it accessible across the entire workspace.
 
 <br />
-
-# Usage
 
 <br />
 
@@ -35,9 +31,7 @@ When users first use an agent with the Gmail tool, a connection error appears:
 
 Click the `Connect` button.
 
-**⚠️ Note:** Gmail tools with High or Medium stake levels require user approval. See the "Tool Control & Automation" section below for more information on managing approvals.
-
-# List of tools
+** Note:** Gmail tools with High or Medium stake levels require user approval. See the "Tool Control & Automation" section below for more information on managing approvals.
 
 The Gmail tool provides the following capabilities:
 
@@ -51,9 +45,7 @@ The Gmail tool provides the following capabilities:
 | **`delete_draft`**       | Deletes a draft email from Gmail                                          | Low         |
 | **`send_mail`**          | Sends an email directly from Gmail _(new)_                                | High*       |
 
-**⚠️ Note:**`send_mail` is disabled by default on existing workspaces. Admins must manually enable it in **Spaces > Tools > Gmail**. It is enabled by default on new Gmail tool installations.
-
-# Tool Control & Automation
+** Note:**`send_mail` is disabled by default on existing workspaces. Admins must manually enable it in **Spaces > Tools > Gmail**. It is enabled by default on new Gmail tool installations.
 
 Gmail tools use specific approval levels ("stakes") to control automation:
 
@@ -66,6 +58,6 @@ Admins can modify the stake level of each tool in **Spaces > Tools > Gmail** to 
 
 **Learn more about tool management and stake levels in the [Tools Management documentation](https://docs.dust.tt/docs/tools-management).**
 
-**⚠️ Email Reputation Warning**: Dust is not designed for bulk email campaigns. Using it for mass outreach can harm your domain's email reputation, affecting deliverability across your entire organization. Keep automation targeted and workflow-driven for best results.
+** Email Reputation Warning**: Dust is not designed for bulk email campaigns. Using it for mass outreach can harm your domain's email reputation, affecting deliverability across your entire organization. Keep automation targeted and workflow-driven for best results.
 
 <br />

@@ -1,15 +1,11 @@
 ---
-title: "Built-in Providers"
-description: "--- title: Filter webhooks payload excerpt: Learn how to write custom payload-filters for your triggers. deprecated: false hidden: false metadata: rob..."
+title: "Filter webhooks payload"
+description: "Dust can generate a filter with a Large Language Model to help you determine precisely which events should be triggering your agent, and create new co..."
 ---
-
-# Built-in Providers
 
 Dust can generate a filter with a Large Language Model to help you determine precisely which events should be triggering your agent, and create new conversation.  
 
 Just describe when you want your agent to act, and Dust takes it from here.
-
-# Custom Webhook Providers
 
 For custom webhooks, Dust cannot generate a filter automatically for triggers based on your natural language description. To filter the incoming calls, you'll need to write a filter using a custom syntax.
 
@@ -70,10 +66,10 @@ Fields are referenced using **dot notation** to traverse the JSON payload struct
 
 Field references:
 
-* `"action"` → `"opened"`
-* `"issue.number"` → `42`
-* `"issue.labels"` → `["bug", "critical"]`
-* `"tags.*.name"` → `["bug", "feature"]`
+* `"action"`  `"opened"`
+* `"issue.number"`  `42`
+* `"issue.labels"`  `["bug", "critical"]`
+* `"tags.*.name"`  `["bug", "feature"]`
 
 <br />
 
@@ -509,9 +505,9 @@ When writing filters:
 ```
 Payload: {"action": "opened", "issue": {"labels": ["bug"]}}
 
-Step 1: (eq "action" "opened")  ✓
-Step 2: (has "issue.labels" "bug")  ✓
-Step 3: (and (eq "action" "opened") (has "issue.labels" "bug"))  ✓
+Step 1: (eq "action" "opened")  
+Step 2: (has "issue.labels" "bug")  
+Step 3: (and (eq "action" "opened") (has "issue.labels" "bug"))  
 ```
 
 <br />

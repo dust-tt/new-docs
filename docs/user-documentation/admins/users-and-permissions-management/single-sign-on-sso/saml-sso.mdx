@@ -1,9 +1,7 @@
 ---
-title: "Overview"
-description: "--- title: SAML SSO excerpt: '' deprecated: false hidden: false metadata: title: '' description: '' robots: index next: description: '' --- Dust suppo..."
+title: "SAML SSO"
+description: "Dust supports SAML Single Sign-On (SSO) to manage your team's access to our platform securely and effortlessly using your existing Identity Provider (..."
 ---
-
-# Overview
 
 Dust supports SAML Single Sign-On (SSO) to manage your team's access to our platform securely and effortlessly using your existing Identity Provider (IdP). This feature simplifies user management and enhances security by centralizing authentication.
 
@@ -14,8 +12,6 @@ While this guide focuses on generic SAML configuration, Dust works seamlessly wi
 * Azure AD
 * Google Workspace
 * OneLogin
-
-# Setting up SAML Single Sign-On (SSO)
 
 To enable SSO for Dust using SAML, follow these steps to create a custom app integration in your Identity Provider (IdP).
 
@@ -53,7 +49,7 @@ You'll need to copy several pieces of information for the next step:
 
 The following SAML attributes must be properly configured in your IdP for successful login.
 
-<Callout icon="📘" theme="info">
+<Callout icon="" theme="info">
 </Callout>
   **All attributes are required** to ensure that the SSO connection is functional
 
@@ -107,8 +103,8 @@ For IdP administrators, here's the complete attribute mapping schema in JSON for
 
 <br />
 
-❗️ Google Workspace SAML
-When [setting up a SAML app in Google Workspace 📘](https://support.google.com/a/answer/6087519?hl=en), it is not possible to set the `email_verified` claim to `true`. This is a known issue in the Auth0 community, which can be bypassed by mapping a dynamic field such as `nameidentifier` to the `email_verified` field
+ Google Workspace SAML
+When [setting up a SAML app in Google Workspace ](https://support.google.com/a/answer/6087519?hl=en), it is not possible to set the `email_verified` claim to `true`. This is a known issue in the Auth0 community, which can be bypassed by mapping a dynamic field such as `nameidentifier` to the `email_verified` field
 
 ## 4. Enabling SAML Single Sign-On (SSO) in Dust
 
@@ -131,7 +127,7 @@ After enabling SSO, you have the option to enforce it across the entire workspac
 
 By default, only SP-initiated flows are allowed on Dust's side. However, if your company is using IdP-initiated flows for convenience, [despite the known security flaws](https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/identity-provider-initiated-single-sign-on), Dust can support this way of authenticating.
 
-ℹ️ Warning on IdP-initiated flows
+ℹ Warning on IdP-initiated flows
 If your company is allowing IdP-initiated flows, the message displayed in Dust will be "invalid_request: IdP-initiated login is not enabled for connection "workspace- not enabled "
 <Image align="center" border={false} width="300px" src="https://files.readme.io/e0946af08c018aa4b9058021e467db937ec7d7ce153c1db9129f57d4f52d460b-image.png" />
 

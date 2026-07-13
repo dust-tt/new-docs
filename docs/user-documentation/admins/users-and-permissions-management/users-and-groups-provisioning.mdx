@@ -1,13 +1,9 @@
 ---
-title: "Overview"
-description: "--- title: Users and groups provisioning excerpt: '' deprecated: false hidden: false metadata: title: '' description: '' robots: index next: descripti..."
+title: "Users and groups provisioning"
+description: "Dust supports automated user and group management through SCIM 2.0 (System for Cross-domain Identity Management). This enterprise feature streamlines..."
 ---
 
-# Overview
-
 Dust supports automated user and group management through SCIM 2.0 (System for Cross-domain Identity Management). This enterprise feature streamlines user lifecycle management and security.
-
-# Setting up SCIM provisioning
 
 SCIM provisioning can be enabled for enterprise users. You'll need administrative access to both Dust and your IdP.
 
@@ -27,15 +23,13 @@ SCIM provisioning can be enabled for enterprise users. You'll need administrativ
 
 <br />
 
-<Callout icon="📘" theme="info">
+<Callout icon="" theme="info">
 </Callout>
   Check your IdP documentation along the way  
   The setup experience may vary depending on the selected IdP. We recommend checking the documentation of your IdP (specifically the sections about SSO, SAML and SCIM) as each might have specificities. (_For example, [Okta (OIDC)](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm) might require you to create 2 applications - one for SSO, one for SCIM_)
 </Callout>
 
 <br />
-
-# Assign roles through provisioning
 
 You can automatically assign admin and builder roles to your users by adding them into special groups (exactly) named "**dust-admins**" and "**dust-builders**".  
 You will have to create these groups in your IdP, assign appropriate members to them and synchronize them.

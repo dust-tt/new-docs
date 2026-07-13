@@ -1,6 +1,6 @@
 ---
 title: "Slack Troubleshooting"
-description: "--- title: Slack Troubleshooting excerpt: 'Quick fixes for Slack integration issues.  ##' --- Dust's Slack integration has two layers: **Slack Apps**..."
+description: "Dust's Slack integration has two layers: **Slack Apps** and **Features**. A Slack app is the foundation. When you install a Slack app, it creates a bo..."
 ---
 
 ## How Dust's Slack Integration Works
@@ -17,7 +17,7 @@ A Slack app is the foundation. When you install a Slack app, it creates a bot us
 | **Dust**             | `@Dust` bot           | Interactive chat with agents **directly in Slack**                                                 |
 | **Dust Slack Tools** | -                     | **Slack Tool** or **Slack Bot Tool** capability in Dust                                            |
 
-<Callout icon="💡" theme="default">
+<Callout icon="" theme="default">
 </Callout>
   ### Why three Slack Apps?
 
@@ -48,11 +48,11 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 3. Wait 2–5 minutes for Slack to propagate the change
 4. Refresh the connection manager in Dust
 
-<Callout icon="💡" theme="default">
+<Callout icon="" theme="default">
 </Callout>
   ### Inviting is not the same as syncing
 
-  Inviting the bot makes the channel visible in Dust's connection manager. But messages only sync after you explicitly select that channel in **Spaces → Connections → Slack → Add / Remove data** (:doc:`/slack-connection`). This gives you control over exactly what data enters Dust.
+  Inviting the bot makes the channel visible in Dust's connection manager. But messages only sync after you explicitly select that channel in **Spaces  Connections  Slack  Add / Remove data** (:doc:`/slack-connection`). This gives you control over exactly what data enters Dust.
 </Callout>
 
 ### Channel not syncing
@@ -62,7 +62,7 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 **How to fix it:**
 
 1. In Slack, type `/invite @Dust Data Sync` and press **Enter**
-2. In Dust, go to **Spaces → Connections → Slack → Add / Remove data** (see [Slack Connection](https://docs.dust.tt/docs/slack-connection))
+2. In Dust, go to **Spaces  Connections  Slack  Add / Remove data** (see [Slack Connection](https://docs.dust.tt/docs/slack-connection))
 3. Verify the channel appears and is selected
 4. If already selected but not syncing, unselect it, save, then re‑select it
 
@@ -86,7 +86,7 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 
 * Verify you're a Dust workspace admin
 * If your connection was set up before December 2024, follow the [Slack Connection setup guide](/slack-connection) to create your own Slack App.
-* To enable the interactive bot, go to **Workspace Management → Workspace Settings → Integrations** and toggle Slack on (:doc:`/slack`).
+* To enable the interactive bot, go to **Workspace Management  Workspace Settings  Integrations** and toggle Slack on (:doc:`/slack`).
 
 ## @Dust Bot Issues
 
@@ -96,13 +96,13 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 
 **How to fix it:**
 
-1. In Dust, go to **Workspace Management → Workspace Settings → Integrations** and verify Slack is toggled on (:doc:`/slack`).
+1. In Dust, go to **Workspace Management  Workspace Settings  Integrations** and verify Slack is toggled on (:doc:`/slack`).
 2. In the Slack channel, type `/invite @Dust` and press **Enter**
 3. Mention the bot: `@Dust your question here`
 
 **To remove the bot from a channel:** Type `/remove @Dust` and press **Enter**.
 
-<Callout icon="🗯️" theme="default">
+<Callout icon="" theme="default">
 </Callout>
   ### DMs are not supported
 
@@ -176,7 +176,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 
 **How to fix it:**
 
-1. Go to **Spaces → Tools → Add Tools**
+1. Go to **Spaces  Tools  Add Tools**
 2. Select **Slack** from the list
 3. Complete the OAuth flow with your Slack account
 4. The Slack tools now appear when building agents (:doc:`/slack-mcp`).
@@ -196,7 +196,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 **How to check your Slack role:**
 
 1. Click your workspace name in Slack (top‑left corner)
-2. Go to **Settings & administration → Manage members**
+2. Go to **Settings & administration  Manage members**
 3. Search for your name—your role appears next to it
 
 ### Connection broke after editing app
@@ -209,7 +209,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 * Redirect URLs
 * Credentials (Client ID, Client Secret, Signing Secret)
 
-**If you rotated credentials for security reasons:** Update them immediately in **Spaces → Connections → Slack → Manage → Edit** (:doc:`/slack-connection#managing-permissions`). Enter the new credentials from your Slack app's Basic Information page. The connection should resume automatically.
+**If you rotated credentials for security reasons:** Update them immediately in **Spaces  Connections  Slack  Manage  Edit** (:doc:`/slack-connection#managing-permissions`). Enter the new credentials from your Slack app's Basic Information page. The connection should resume automatically.
 
 ### Legacy connection migration
 
@@ -223,13 +223,13 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 
 **Why this happens:** Your Slack workspace has an app approval workflow enabled. New apps require admin approval before they can be used.
 
-**How to fix it:** Ask your Slack admin to approve the app in **Slack Admin → Manage Apps → App Requests**.
+**How to fix it:** Ask your Slack admin to approve the app in **Slack Admin  Manage Apps  App Requests**.
 
 ### Can't see all channels
 
 **Why this happens:** Dust has its own permission layer that controls who can select which channels for syncing.
 
-**How to fix it:** Check **Spaces → Connections → Slack** to see access restrictions and which spaces receive which data (:doc:`/slack-connection#managing-permissions`).
+**How to fix it:** Check **Spaces  Connections  Slack** to see access restrictions and which spaces receive which data (:doc:`/slack-connection#managing-permissions`).
 
 ### "You don't have permission" error
 
@@ -250,7 +250,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 | **No default agent in private channels**   | Slack's Terms of Service restrict certain bot behaviors in private channels. Use `@Dust +agent-name` syntax instead.                                                                                                                 |
 | **Thread links sometimes approximate**     | When messages aren't threaded, Dust links to the approximate location in the channel rather than the exact message. Use threads for precise linking. (:doc:`/slack-connection#slack-connection-specificities`)                       |
 
-<Callout icon="💡" theme="default">
+<Callout icon="" theme="default">
 </Callout>
   ### Best practice: Use threads
 

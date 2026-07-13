@@ -1,6 +1,6 @@
 ---
-title: "Overview"
-description: "--- title: Notion excerpt: How to set-up your Notion connection on Dust deprecated: false hidden: false metadata: title: '' description: '' robots: in..."
+title: "Notion"
+description: "Ensure to do the Initial Connection Setup once and then Manage the Connection by adding or unselecting pages directly from Notion. The recommended app..."
 ---
 
 <Callout type="danger"Heads up>
@@ -12,11 +12,7 @@ This will help them control what Dust has access to by managing the permission o
 If you cannot locate a specific Notion page in Dust, simply add it directly through Notion. To guarantee proper indexing and organization, link all parent pages to reestablish the page hierarchy.  
 Notion connections are unique per user, and replacing an existing connection with a new user's permissions disrupts the current data access.
 
-# Overview
-
 Dust integrates with Notion to bring your workspace's pages and databases into Dust, allowing for a streamlined data-sharing and collaboration process. Due to permission restrictions, only Notion Admins can set up this connection.
-
-# Setting up the Connection
 
 ### Initial Connection Setup
 
@@ -66,16 +62,12 @@ See the Best Practice section below.
 
 <Image align="center" src="https://files.readme.io/4af8940-Untitled_37.png" />
 
-# Data Synchronization
-
 * **For new top pages:** Refresh occurs once daily.
 * **For new pages within a synced top page or changes in an already synced page:** Refresh is immediate, with a few seconds to minutes latency.
 
 <Callout type="danger"Large workspaces>
 </Callout>
 Large Notion workspaces can take several days for the initial sync. Plan accordingly and monitor the process.
-
-# Best Practices
 
 * **Restrict Permission Management:** To avoid accidental data access changes, limit the ability to manage Notion permissions to a single identified admin.
 * **Check if the page or Teamspace is restricted:** Ensure the page or Teamspace is not restricted, otherwise Dust wont be able to index the data. If the Notion Teamspace is restricted, then all the child pages are as well.  

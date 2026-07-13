@@ -1,6 +1,6 @@
 ---
-title: "Remote Mcp Server"
-description: "--- title: Adding an MCP Server excerpt: >- Extending Dust's toolset beyond the default list of tools is possible by adding extra MCP Servers. Multipl..."
+title: "Adding an MCP Server"
+description: "<br /> As an administrator, you can add a Remote MCP Server to your workspace. To do so, navigate to Spaces > Tools. Here, you'll find an **Add Tool**..."
 ---
 
 <br />
@@ -49,7 +49,7 @@ In most scenarios, the **Automatic** option will discover all required configura
 
 Alternatively, you can use a **Bearer token** while setting up the connection to the MCP Server. This token will be sent as an Authorization header in the calls made to that server later.
 
-<Callout icon="📘" theme="info">
+<Callout icon="" theme="info">
 </Callout>
   Connecting with a Bearer token will often link the Dust connection with a single account on the third party service. This means that using them in Dust will do all the calls with the account authenticated to the server.
 
@@ -98,7 +98,7 @@ You can also create a MCP Server yourself, and plug it directly into Dust. For t
   * assign it a public URL
   * secure its access by creating an Oauth app in your cloud provider, or dropping all network traffic except the white-listed Authorization Header contained in the **Bearer Token** field
 
-<Callout icon="📘" theme="info">
+<Callout icon="" theme="info">
 </Callout>
   Connectivity to the custom MCP server can be tested using the official [MCP inspector](https://modelcontextprotocol.io/docs/tools/inspector) tool
 </Callout>

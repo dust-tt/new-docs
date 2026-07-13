@@ -1,9 +1,7 @@
 ---
-title: "Overview"
-description: "--- title: Rate Limiting deprecated: false hidden: false metadata: robots: index --- To ensure fair resource allocation across your workspace, Dust en..."
+title: "Rate Limiting"
+description: "To ensure fair resource allocation across your workspace, Dust enforces rate limits on trigger executions. These limits prevent individual automations..."
 ---
-
-# Overview
 
 To ensure fair resource allocation across your workspace, Dust enforces rate limits on trigger executions. These limits prevent individual automations from consuming disproportionate capacity while allowing legitimate automation use cases.
 
@@ -13,8 +11,6 @@ Triggers can operate in two modes:
 
 - **Fair use mode**: Counts toward the regular usage allowance available to your workspace under your plan.
 - **Programmatic usage mode**: Billed separately through programmatic usage credits, for high-volume use cases.
-
-# Rate Limit Rules
 
 ## Fair Use Mode
 
@@ -40,14 +36,10 @@ To request this, see [Requesting Higher Limits](#requesting-higher-limits) below
 
 For details on how programmatic usage draws from your workspace credit pool and what happens when credits are depleted, see [Credit Management](././credit-management).
 
-# What Happens When a Limit Is Reached?
-
 When a trigger hits its rate limit:
 
 - Incoming webhook requests are paused until capacity is available
 - You'll see a chip indicating the trigger is rate-limited in the trigger details
-
-# Best Practices
 
 ## Deciding Between Fair Use and Programmatic Usage
 

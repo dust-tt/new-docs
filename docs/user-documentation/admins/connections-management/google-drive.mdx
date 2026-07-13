@@ -1,6 +1,6 @@
 ---
-title: "Overview"
-description: "--- title: Google Drive excerpt: How to set-up the Google Drive connection on Dust deprecated: false hidden: false metadata: title: '' description: ''..."
+title: "Google Drive"
+description: "The recommended approach to creating a Google Drive Connection is to provision a user dust-admin@yourdomain.com in your Google workspace and use that..."
 ---
 
 <Callout type="danger"Recommended method>
@@ -9,15 +9,11 @@ The recommended approach to creating a Google Drive Connection is to provision a
 This will help them control what Dust has access to by managing the permission of that account on Google Drive.  
 The connection between Dust and Google Drive is subject to the initial user's permission. Any changes to a user's Drive permissions could affect the data accessibility on Dust. It's crucial to manage permissions carefully to maintain a stable connection.
 
-# Overview
-
 You can sync Dust with Shared Google Drive to enable access to documents, spreadsheets, and presentations within your workspace. Only the content within the scope of the admin's Drive permissions will be available in Dust. The admin can granularly select the exact data they want to make available to Dust.
 
 Dust doesn't take into account files with more than 2MB of extracted text. Supported files include GDocs, GSlides, docx, pptx, .txt and .md files and PDFs that contain text.
 
 You can activate the PDF text indexing at Spaces > Connected data > Manage Google Drive
-
-# Setting up the Connection
 
 To set up the Google Drive connection, follow these steps:
 
@@ -41,11 +37,9 @@ To set up the Google Drive connection, follow these steps:
 
 Dust modal to select the data you want to sync with your Dust workspace.
 
-# Managing Permissions
-
 * Admins should either designate a single individual to manage Drive permissions for Dust or utilize a virtual user (e.g., [dust@workspace.com](mailto:dust@workspace.com)) for consistent access management. This approach avoids unintentional permission resets and data disconnections.
 
-* ⚠️ **The email address used to manage permissions should have edition & download rights** on the desired documents to allow them to be read by Dust.
+*  **The email address used to manage permissions should have edition & download rights** on the desired documents to allow them to be read by Dust.
 
 * Sometimes, downloads are blocked for specific documents. **If you don’t see a document in your Gdrive Data Source tree**, you can check that it is **downloadable** by following the path described in this toggle.
 
@@ -67,8 +61,6 @@ Dust only syncs Google Sheets but is currently not compatible with Excel native 
 
 **This can be done automatically in your GDrive settings if needed.**\
   
-
-# Sync Rate
 
 If the Google Drive is very large, it is normal for the first synchronisation process to be quite long (over 24 hours, up to several days for extremely large Drives). 
 

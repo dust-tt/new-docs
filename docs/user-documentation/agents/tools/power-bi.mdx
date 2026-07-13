@@ -1,6 +1,6 @@
 ---
-title: "Power Bi"
-description: "--- title: Power BI excerpt: >- Power BI's Remote MCP Server lets your Dust assistants query semantic models, retrieve schemas, and execute DAX querie..."
+title: "Power BI"
+description: "**Requirements**: Microsoft Entra admin access, a Power BI account (free tier works), and the MCP feature enabled in the Power BI admin portal. *** Go..."
 ---
 
 **Requirements**: Microsoft Entra admin access, a Power BI account (free tier works), and the MCP feature enabled in the Power BI admin portal.
@@ -9,7 +9,7 @@ description: "--- title: Power BI excerpt: >- Power BI's Remote MCP Server lets 
 
 ### 1. Register an app in Microsoft Entra
 
-Go to [entra.microsoft.com](https://entra.microsoft.com) → **Identity → Applications → App registrations → New registration**.
+Go to [entra.microsoft.com](https://entra.microsoft.com)  **Identity  Applications  App registrations  New registration**.
 
 * **Name**: `Dust Power BI MCP` (or any name)
 * **Supported account types**: _Accounts in this organizational directory only_
@@ -24,7 +24,7 @@ Click **Register**, then note down:
 
 ### 2. Configure authentication
 
-In your app registration, go to **Authentication → Add Redirect URI → Web**.
+In your app registration, go to **Authentication  Add Redirect URI  Web**.
 
 Add these three redirect URIs:
 
@@ -40,7 +40,7 @@ Under **settings**, set **Allow public client flows** to **Enabled**. Click **Sa
 
 ### 3. Create a client secret
 
-Go to **Certificates & secrets → Client secrets → New client secret**. Add a description and expiration, then click **Add**.
+Go to **Certificates & secrets  Client secrets  New client secret**. Add a description and expiration, then click **Add**.
 
 **Copy the "Value" column immediately** (it won't be visible again).
 
@@ -48,7 +48,7 @@ Go to **Certificates & secrets → Client secrets → New client secret**. Add a
 
 ### 4. Add API permissions
 
-Go to **API permissions → Add a permission → APIs my organization uses**, search for **Power BI Service**, select **Delegated permissions** and check:
+Go to **API permissions  Add a permission  APIs my organization uses**, search for **Power BI Service**, select **Delegated permissions** and check:
 
 * `Dataset.Read.All`
 * `Report.Read.All`
@@ -61,7 +61,7 @@ Click **Add permissions**, then **Grant admin consent**.
 
 ### 5. Enable the MCP feature in Power BI
 
-Go to [app.fabric.microsoft.com](https://app.fabric.microsoft.com) → **Settings ⚙️ → Admin portal → Tenant settings → Integration settings**, and enable:
+Go to [app.fabric.microsoft.com](https://app.fabric.microsoft.com)  **Settings   Admin portal  Tenant settings  Integration settings**, and enable:
 
 * **"Users can use the Power BI Model Context Protocol server endpoint (preview)"**
 
@@ -69,7 +69,7 @@ Go to [app.fabric.microsoft.com](https://app.fabric.microsoft.com) → **Setting
 
 ### 6. Connect in Dust
 
-In Dust, go to a **Space → Dev tools → MCP Servers → Add a remote MCP server**.
+In Dust, go to a **Space  Dev tools  MCP Servers  Add a remote MCP server**.
 
 **Server URL**:
 
@@ -105,5 +105,5 @@ Save, authenticate with your Microsoft account, and the tools will appear.
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | **AADSTS700016**: app not found in directory | Wrong Client ID. Use "Application (client) ID", not "Secret ID" or "Object ID".                   |
 | **"The feature is not available"**           | Enable the MCP feature in the Power BI admin portal (step 5).                                     |
-| **"Could not get or open connection"**       | Enable XMLA endpoints in admin portal → Tenant settings → Integration settings.                   |
+| **"Could not get or open connection"**       | Enable XMLA endpoints in admin portal  Tenant settings  Integration settings.                   |
 | **"Personal authentication required"**       | Click the authentication link in the conversation to sign in. You might need to refresh the page. |

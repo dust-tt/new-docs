@@ -1,17 +1,13 @@
 ---
-title: "Introduction"
-description: "--- title: Image Generation excerpt: Generate images from text prompts using AI deprecated: false hidden: false metadata: title: '' description: '' ro..."
+title: "Image Generation"
+description: "Dust agents can generate images from text prompts using the Image Generation capability. This feature allows your agents to create custom visuals base..."
 ---
-
-# Introduction
 
 Dust agents can generate images from text prompts using the Image Generation capability. This feature allows your agents to create custom visuals based on natural language descriptions, enabling a wide range of creative and practical applications.
 
 What sets Dust's image generation apart is the ability to use **reference images** and run **parallel generations**. Agents can use previously generated images (or uploaded images) as references for subsequent generations, maintaining visual consistency across a series of assets. Combined with parallel execution, this enables complex asset creation pipelines where multiple variations are generated simultaneously.
 
 The Image Generation capability uses the **gemini-3-pro-image** model to transform your text descriptions into high-quality images. Whether you need product photography pipelines, brand asset variations, multi-format marketing campaigns, or visual style transfers, your agents can create them on demand.
-
-# How to Enable Image Generation
 
 When creating or editing an agent:
 
@@ -23,8 +19,6 @@ When creating or editing an agent:
 
 That's it! Your agent can now generate images when needed.
 
-# Tool Capabilities
-
 The Image Generation tool provides several configurable options displayed in the UI:
 
 ## Quality Settings
@@ -35,7 +29,7 @@ Choose between quality levels based on your needs. Higher quality produces more 
 * **2K** : 2048px
 * **4K** : 4096px
 
-<Callout icon="📥" theme="info">
+<Callout icon="" theme="info">
 </Callout>
   **Full quality downloads:** For performance reasons, image previews in the conversation are compressed. Click the download button to get the generated image at maximum quality.
 </Callout>
@@ -55,7 +49,7 @@ Select from multiple aspect ratios to fit your use case:
 
 Use images from previous tool calls or uploaded images as references for new generations. This maintains visual consistency across multiple outputs—essential for creating cohesive brand assets, product variations, or campaign materials.
 
-<Callout icon="🖼️" theme="default">
+<Callout icon="" theme="default">
 </Callout>
   Currently up to 14 references per image generation.
 </Callout>
@@ -64,12 +58,10 @@ Use images from previous tool calls or uploaded images as references for new gen
 
 Agents can run multiple image generations simultaneously. This enables efficient asset pipelines where several variations are created at once, dramatically speeding up workflows that require multiple related images.
 
-<Callout icon="⚡" theme="default">
+<Callout icon="" theme="default">
 </Callout>
   **Power feature:** Combine reference images with parallel execution to create entire asset suites in a single conversation. Generate a hero image, then request multiple variations simultaneously—the agent handles the pipeline automatically.
 </Callout>
-
-# How to Use Image Generation
 
 ## As a tool in an agent
 
@@ -86,7 +78,7 @@ You can directly ask any agent with Image Generation enabled to create images in
 * All generated images are [watermarked with SynthID](https://ai.google.dev/gemini-api/docs/image-generation)
 * NSFW and images including celebrities won't be accepted
 
-<Callout icon="🔒" theme="warning">
+<Callout icon="" theme="warning">
 </Callout>
   **Content policies:** Generated images are automatically filtered for safety. Requests for inappropriate content, celebrity likenesses, or NSFW material will be declined.
 </Callout>
@@ -95,7 +87,7 @@ You can directly ask any agent with Image Generation enabled to create images in
 
 Agents can run multiple image generations **in parallel** and use **reference images** from previous outputs. This enables powerful creative pipelines that maintain consistency while producing multiple assets efficiently.
 
-<Callout icon="💡" theme="default">
+<Callout icon="" theme="default">
 </Callout>
   **How it works:** Simply describe your complete asset needs in a single prompt. The agent automatically identifies what to generate first, what to use as references, and what can be parallelized.
 
@@ -172,7 +164,7 @@ Agents can run multiple image generations **in parallel** and use **reference im
 * **Use references strategically:** When maintaining consistency matters, explicitly tell the agent which previous image to use as reference
 * **Leverage parallel generation:** For pipelines requiring multiple assets, describe all variations in a single request to enable parallel execution
 
-<Callout icon="🔄" theme="default">
+<Callout icon="" theme="default">
 </Callout>
   **Iteration is key:** If the first result isn't quite right, ask the agent to refine specific aspects. You can also use the generated image as a reference for the next iteration to build on what worked.
 </Callout>
