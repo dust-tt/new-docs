@@ -58,9 +58,10 @@
               },
               {
                 "group": "FAQ",
+                "root": "docs/user-documentation/getting-started/faq/index",
                 "pages": [
                   {
-                    "group": "General Questions",
+                    "group": "General questions",
                     "pages": [
                       "docs/user-documentation/getting-started/faq/general-questions/what-data-sources-can-be-connected-to-dust",
                       "docs/user-documentation/getting-started/faq/general-questions/what-ai-models-are-available-in-dust",
