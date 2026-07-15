@@ -29,6 +29,7 @@
               "docs/user-documentation/getting-started/intro-to-dust",
               {
                 "group": "Dust Rollout Guide",
+                "root": "docs/user-documentation/getting-started/dust-rollout-guide/index",
                 "pages": [
                   "docs/user-documentation/getting-started/dust-rollout-guide/welcome-to-dust",
                   "docs/user-documentation/getting-started/dust-rollout-guide/launch-strategy",
@@ -42,6 +43,7 @@
               },
               {
                 "group": "Use Cases & Guides",
+                "root": "docs/user-documentation/getting-started/use-cases-and-guides/index",
                 "pages": [
                   "docs/user-documentation/getting-started/use-cases-and-guides/sales",
                   "docs/user-documentation/getting-started/use-cases-and-guides/customer-support",

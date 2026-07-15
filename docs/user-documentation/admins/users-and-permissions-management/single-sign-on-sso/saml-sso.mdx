@@ -1,17 +1,14 @@
 ---
 title: "SAML SSO"
-description: "Dust supports SAML Single Sign-On (SSO) to manage your team's access to our platform securely and effortlessly using your existing Identity Provider (..."
 ---
 
 Dust supports SAML Single Sign-On (SSO) to manage your team's access to our platform securely and effortlessly using your existing Identity Provider (IdP). This feature simplifies user management and enhances security by centralizing authentication.
 
-<Callout type="info"Supported Identity Providers>
-</Callout>
-While this guide focuses on generic SAML configuration, Dust works seamlessly with all major SAML-compliant Identity Providers including:
-* Okta
-* Azure AD
-* Google Workspace
-* OneLogin
+## Supported Identity Providers
+
+While this guide focuses on generic SAML configuration, Dust works seamlessly
+with all major SAML-compliant Identity Providers including: _ Okta _ Azure AD _
+Google Workspace _ OneLogin
 
 To enable SSO for Dust using SAML, follow these steps to create a custom app integration in your Identity Provider (IdP).
 
@@ -23,8 +20,8 @@ Choose an admin with comprehensive access to both your IdP admin dashboard and D
 
 1. In Dust, navigate to Admin > People & Security > Single Sign-On > Activate Single Sign-On
 2. You'll find all the necessary SAML configuration values that you'll need to set up your IdP:
-   * **ACS (Assertion Consumer Service) URL**
-   * **Entity ID / Audience URI**
+   - **ACS (Assertion Consumer Service) URL**
+   - **Entity ID / Audience URI**
 
 Keep this page open as you'll need these values in the next step.
 
@@ -33,58 +30,55 @@ Keep this page open as you'll need these values in the next step.
 1. Navigate to your IdP's admin dashboard and locate the section for creating new applications or integrations.
 2. Select **SAML 2.0** as the protocol when creating a new application.
 3. Configure the following SAML settings using the values from Dust:
-   * **Application Name:** Enter "Dust" as the app name
-   * **ACS (Assertion Consumer Service) URL:** Copy from Dust
-   * **Entity ID / Audience URI:** Copy from Dust
-   * **Logo:** You can find our logo [here](https://dust.tt/static/AppIcon_228.png).
+   - **Application Name:** Enter "Dust" as the app name
+   - **ACS (Assertion Consumer Service) URL:** Copy from Dust
+   - **Entity ID / Audience URI:** Copy from Dust
+   - **Logo:** You can find our logo [here](https://dust.tt/static/AppIcon_228.png).
 
-<Callout type="warning"Keep your IdP configuration page open>
-</Callout>
-You'll need to copy several pieces of information for the next step:
-* IdP Single Sign-On URL
-* IdP Entity ID
-* X.509 Certificate
+<Callout type="warning" Keep your IdP configuration page open></Callout>
+You'll need to copy several pieces of information for the next step: * IdP
+Single Sign-On URL * IdP Entity ID * X.509 Certificate
 
 ### SAML Attributes Configuration
 
 The following SAML attributes must be properly configured in your IdP for successful login.
 
-<Callout icon="" theme="info">
-</Callout>
-  **All attributes are required** to ensure that the SSO connection is functional
+<Callout icon="" theme="info"></Callout>
+**All attributes are required** to ensure that the SSO connection is functional
 
-  * Make sure that the admin setting up the connection has these fields populated to complete the process
-  * Even if EntraID does not require all fields, users must have values in these fields in order to be able to SSO into Dust.
+- Make sure that the admin setting up the connection has these fields populated to complete the process
+- Even if EntraID does not require all fields, users must have values in these fields in order to be able to SSO into Dust.
 
-    <Image align="center" border={false} width="300px" src="https://files.readme.io/467927f5c5cfc225f6064ffcd54a2ce5585d5c4569beba29357782d203df972a-image.png" />
+      <Image align="center" border={false} width="300px" src="https://files.readme.io/467927f5c5cfc225f6064ffcd54a2ce5585d5c4569beba29357782d203df972a-image.png" />
 
-    <br />
-</Callout>
+      <br />
+
+  </Callout>
 
 #### Required SAML Attributes
 
-* **Email**
-  * Claim name: `email`
-  * Schema URI: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier`
-  * Used for user identification and authentication
-  * Must match the user's email address
+- **Email**
+  - Claim name: `email`
+  - Schema URI: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier`
+  - Used for user identification and authentication
+  - Must match the user's email address
 
-* **First Name**
-  * Claim name: `given_name`
-  * Accepted Schema URIs (any of the following):
-    * `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname`
-    * `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name`
-  * Sets the user's first name in Dust
+- **First Name**
+  - Claim name: `given_name`
+  - Accepted Schema URIs (any of the following):
+    - `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname`
+    - `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name`
+  - Sets the user's first name in Dust
 
-* **Last Name**
-  * Claim name: `family_name`
-  * Schema URI: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`
-  * Sets the user's last name in Dust
+- **Last Name**
+  - Claim name: `family_name`
+  - Schema URI: `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname`
+  - Sets the user's last name in Dust
 
-* **Email verified**
-  * Claim name: `email_verified`
-  * Schema URI: `true`
-  * Mark the user's email has verified. Required to have existing identities merging.
+- **Email verified**
+  - Claim name: `email_verified`
+  - Schema URI: `true`
+  - Mark the user's email has verified. Required to have existing identities merging.
 
 <Callout type="info"Attribute Mapping Reference>
 </Callout>
@@ -103,17 +97,20 @@ For IdP administrators, here's the complete attribute mapping schema in JSON for
 
 <br />
 
- Google Workspace SAML
+Google Workspace SAML
 When [setting up a SAML app in Google Workspace ](https://support.google.com/a/answer/6087519?hl=en), it is not possible to set the `email_verified` claim to `true`. This is a known issue in the Auth0 community, which can be bypassed by mapping a dynamic field such as `nameidentifier` to the `email_verified` field
 
 ## 4. Enabling SAML Single Sign-On (SSO) in Dust
 
 1. Return to the Dust SSO configuration page (Admin > People & Security > Single Sign-On > Activate Single Sign-On)
 2. Enter the following details from your IdP setup:
-   * **IdP Single Sign-On URL**
-   * **X.509 Certificate**
+   - **IdP Single Sign-On URL**
+   - **X.509 Certificate**
 
-<Image border={false} src="https://files.readme.io/94f2c2f73c01287583ab2968de757d5460610d9dccf9ba4d65a9e4c1799744fc-image.png" />
+<Image
+  border={false}
+  src="https://files.readme.io/94f2c2f73c01287583ab2968de757d5460610d9dccf9ba4d65a9e4c1799744fc-image.png"
+/>
 
 Once you've entered this information, click on **Create SAML Configuration**. SAML SSO is now enabled on your workspace.
 
@@ -129,7 +126,13 @@ By default, only SP-initiated flows are allowed on Dust's side. However, if your
 
 ℹ Warning on IdP-initiated flows
 If your company is allowing IdP-initiated flows, the message displayed in Dust will be "invalid_request: IdP-initiated login is not enabled for connection "workspace- not enabled "
-<Image align="center" border={false} width="300px" src="https://files.readme.io/e0946af08c018aa4b9058021e467db937ec7d7ce153c1db9129f57d4f52d460b-image.png" />
+
+<Image
+  align="center"
+  border={false}
+  width="300px"
+  src="https://files.readme.io/e0946af08c018aa4b9058021e467db937ec7d7ce153c1db9129f57d4f52d460b-image.png"
+/>
 
 <br />
 
