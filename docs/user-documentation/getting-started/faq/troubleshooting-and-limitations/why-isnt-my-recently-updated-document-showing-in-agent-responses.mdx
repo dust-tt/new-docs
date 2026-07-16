@@ -1,6 +1,5 @@
 ---
 title: "Why isn't my recently updated document showing in agent responses?"
-description: "If you updated a document but the agent isn't using the new information, here's how to diagnose: 1. Verify when the document was last updated 2. Check..."
 ---
 
 If you updated a document but the agent isn't using the new information, here's how to diagnose:
@@ -18,11 +17,13 @@ If you updated a document but the agent isn't using the new information, here's 
 ## Verify the document is actually synced
 
 **As an admin:**
+
 - Go to `Spaces` > `Connection Admin` > Select connection > `Manage`
 - Navigate to the document in the hierarchy
 - If it's not listed, it wasn't selected for syncing
 
 **As a member:**
+
 - Go to `Spaces` > Select space > `Connected Data`
 - Look for your document in the list
 - If not visible, ask your admin to add it
@@ -30,6 +31,7 @@ If you updated a document but the agent isn't using the new information, here's 
 ## Force a conversation refresh
 
 After data has synced:
+
 - **Start a new conversation** - agents don't automatically refresh data mid-conversation
 - Old conversations use a snapshot of data from when they started
 
@@ -38,18 +40,21 @@ After data has synced:
 Some content isn't indexed:
 
 **Notion:**
+
 - External files not indexed
 - Content behind URLs not indexed
 - Databases must be in table format
 
 **Google Drive:**
+
 - Files over 1MB extracted text not indexed
 - Images in documents not read
 - Shortcuts to documents not followed
 
 **Slack:**
+
 - External files not indexed
 - URLs not indexed
 - Workflow messages not indexed
 
-See full limitations: [Connections Management - What kind of data cannot be read](/docs/managing-datasources#what-kind-of-data-cannot-be-read-by-my-agents)
+See full limitations: [Connections Management - What kind of data cannot be read](docs/user-documentation/admins/connections-management/index/#what-kind-of-data-cannot-be-read-by-my-agents)

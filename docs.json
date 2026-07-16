@@ -124,6 +124,7 @@
               "docs/user-documentation/agents/templates",
               {
                 "group": "Knowledge",
+                "root": "docs/user-documentation/agents/knowledge/index",
                 "pages": [
                   "docs/user-documentation/agents/knowledge/search-data-sources",
                   "docs/user-documentation/agents/knowledge/table-queries",
@@ -133,6 +134,7 @@
               },
               {
                 "group": "Tools",
+                "root": "docs/user-documentation/agents/tools/index",
                 "pages": [
                   "docs/user-documentation/agents/tools/airtable",
                   "docs/user-documentation/agents/tools/agent-memory",
@@ -320,6 +322,7 @@
               "docs/user-documentation/admins/agents-management",
               {
                 "group": "Connections Management",
+                "root": "docs/user-documentation/admins/connections-management/index",
                 "pages": [
                   "docs/user-documentation/admins/connections-management/google-drive",
                   "docs/user-documentation/admins/connections-management/notion",

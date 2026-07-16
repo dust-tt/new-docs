@@ -1,6 +1,5 @@
 ---
 title: "Understanding LLM Limitations: Counting and Parsing Structured Data"
-description: "As a Dust user, you may have encountered situations where a Large Language Model (LLM), struggles with tasks that seem simple to humans. Two everyday..."
 ---
 
 As a Dust user, you may have encountered situations where a Large Language Model (LLM), struggles with tasks that seem simple to humans. Two everyday situations you share with our team are:
@@ -14,7 +13,7 @@ Let's explore why LLMs face challenges with these tasks and how Dust's features 
 
 LLMs are sophisticated pattern recognition systems trained on vast amounts of text data. They operate by predicting the most likely next word in a sequence, based on patterns learned from their training data. This approach has led to remarkable capabilities in natural language processing, but it also results in some limitations.
 
-Researcher Emily Bender coined the term "[stochastic parrots](https://en.wikipedia.org/wiki/Stochastic_parrot)" to describe LLMs, highlighting that while they can generate convincing language, they don't truly understand the meaning behind the words they produce. 
+Researcher Emily Bender coined the term "[stochastic parrots](https://en.wikipedia.org/wiki/Stochastic_parrot)" to describe LLMs, highlighting that while they can generate convincing language, they don't truly understand the meaning behind the words they produce.
 
 The word "stochastic" derives from the ancient Greek word "stokhastikos" meaning "based on guesswork", or "randomly determined". The word "parrot" refers to the idea that LLMs merely repeat words without understanding their meaning.
 
@@ -32,11 +31,11 @@ Moreover, LLMs have a limited "context window" - the amount of text they can pro
 
 LLMs face several challenges when dealing with CSV files and structured data:
 
-* **Sequential Processing**: LLMs are designed to process information sequentially, one token at a time. This works well for natural language but becomes problematic when dealing with multidimensional data structures like CSV files.
+- **Sequential Processing**: LLMs are designed to process information sequentially, one token at a time. This works well for natural language but becomes problematic when dealing with multidimensional data structures like CSV files.
 
-* **Lack of Spatial Understanding**: CSV files organize information in rows and columns, creating relationships between data points. LLMs, trained primarily on linear text, lack the inherent ability to understand these spatial relationships.
+- **Lack of Spatial Understanding**: CSV files organize information in rows and columns, creating relationships between data points. LLMs, trained primarily on linear text, lack the inherent ability to understand these spatial relationships.
 
-* **Training Data Bias**: This limitation extends to structured data like CSV files. LLMs are typically trained on unstructured internet data, which lacks well-labeled and structured content. This results in models that can mimic language about data but struggle with actual data interpretation and manipulation.
+- **Training Data Bias**: This limitation extends to structured data like CSV files. LLMs are typically trained on unstructured internet data, which lacks well-labeled and structured content. This results in models that can mimic language about data but struggle with actual data interpretation and manipulation.
 
 ## Tools and Techniques for Overcoming LLM Limitations
 
@@ -44,12 +43,12 @@ LLMs face several challenges when dealing with CSV files and structured data:
 
 Table Query is a powerful tool in Dust that addresses many of the limitations LLMs face when dealing with structured data. Here's how it works:
 
-* **SQL Generation and Execution**: Table Query enables agents to generate and execute SQL queries on structured data before formulating a response. This capability extends to various data sources, including CSV files, Notion Databases, and Google Sheets.
+- **SQL Generation and Execution**: Table Query enables agents to generate and execute SQL queries on structured data before formulating a response. This capability extends to various data sources, including CSV files, Notion Databases, and Google Sheets.
 
-* **Complement to Search Data Source**: While the Search Data Source action is excellent for retrieving relevant information, it often falls short on quantitative questions. This is because semantic search presents chunks of data ordered by relevance, making it difficult for the agent to answer numerical queries accurately. Table Query fills this gap by allowing agents to perform precise analytical operations on entire datasets.
+- **Complement to Search Data Source**: While the Search Data Source action is excellent for retrieving relevant information, it often falls short on quantitative questions. This is because semantic search presents chunks of data ordered by relevance, making it difficult for the agent to answer numerical queries accurately. Table Query fills this gap by allowing agents to perform precise analytical operations on entire datasets.
 
-* **Analytical Capabilities**: By leveraging SQL, Table Query empowers agents to answer complex analytical questions that require calculations, aggregations, and data manipulations across entire datasets.
+- **Analytical Capabilities**: By leveraging SQL, Table Query empowers agents to answer complex analytical questions that require calculations, aggregations, and data manipulations across entire datasets.
 
-[You can visit this page](././i-try-to-create-an-agent-using-the-table-query-tool-but-it-doesnt-work) if you're experiencing issues with the Table Query tool. 
+[You can visit this page](/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/i-try-to-create-an-agent-using-the-table-query-tool-but-it-doesnt-work) if you're experiencing issues with the Table Query tool.
 
 By following these guidelines and understanding how Table Query works, you can effectively leverage this tool to overcome LLM limitations in handling structured data, enabling your agents to perform complex analytical tasks with precision.
