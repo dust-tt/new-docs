@@ -1,13 +1,10 @@
 ---
 title: "Files"
-description: "The **Files tab** is the shared knowledge library of the Pod. It holds uploaded files, folders, and data linked from Company Data. Agents automaticall..."
 ---
+
 
 The **Files tab** is the shared knowledge library of the Pod. It holds uploaded files, folders, and data linked from Company Data. Agents automatically use everything in it when working inside the Pod.
 
-<Image align="center" border={true} src="https://files.readme.io/48466d4b545e1a188e5e4e3d2de1d2616f6fdeb8c7642e2ef1bd8e8b06ada1e7-image.png" className="border" />
-
-<br />
 
 ## How to add a file
 
@@ -45,9 +42,11 @@ Folders can be nested inside other folders. Navigate into a folder by clicking o
 3. Browse and select the pages, documents, or folders you want to link
 4. Click **Save**
 
-<Callout type="info"**Why only Company Data?** Only data from the Company Data section can be linked. It is the only data guaranteed to be accessible to every Pod member. Other data can be restricted or made private at any time, which would break that guarantee and create inconsistent access within the Pod.>
-</Callout>
+<Info>
+**Why only Company Data?** Only data from the Company Data section can be linked. It is the only data guaranteed to be accessible to every Pod member. Other data can be restricted or made private at any time, which would break that guarantee and create inconsistent access within the Pod.
+
 Linked data appears in the same list as uploaded files and is marked with a sync icon. It is retrieved via search by agents — not directly editable.
+</Info>
 
 ## Importing files from external sources
 
@@ -70,9 +69,11 @@ Example prompt: _"Every Friday at 5pm, fetch the latest version of the Q2 roadma
 
 Since the agent overwrites the same file, the Pod banner, agent context, and member access all update automatically without any manual action.
 
-<Callout type="info"The agent can use the Pods skill by default to write to the Files tab. The appropriate external tool — Google Drive, Notion, Microsoft Drive, etc. — must be available to the agent so it can read the source.>
-</Callout>
-## Managing files
+<Info>
+**The agent can use the Pods skill by default to write to the Files tab. The appropriate external tool — Google Drive, Notion, Microsoft Drive, etc. — must be available to the agent so it can read the source.**
+
+**Managing files**
+</Info>
 
 | Action                    | How                                                                                                          |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -85,9 +86,12 @@ Since the agent overwrites the same file, the Pod banner, agent context, and mem
 
 ***
 
-<Callout type="info"Everything in the Files tab — uploaded files, linked data, and Pod conversations — is indexed* and searchable by agents. There is nothing to configure: agents use it automatically.>
-</Callout>
-*Most common file formats are automatically indexed for semantic search. Some formats are not indexed — agents can still use them directly when referenced in a conversation, but they will not be surfaced automatically via search. If you need a specific file format to be indexed, [contact us](mailto:support@dust.tt).
+<Info>
+**Everything in the Files tab — uploaded files, linked data, and Pod conversations — is indexed* and searchable by agents. There is nothing to configure: agents use it automatically.**
 
-<Callout type="info"**Pods scale to thousands of files.** Semantic search by agents is unaffected by file count — agents retrieve the right content reliably even in large knowledge bases. The only behaviour that changes at scale is UI file listing: browsing the Files tab may become slower when a Pod contains thousands of files. If you are building a large agent-first knowledge base, prefer navigating via search rather than scrolling the list.>
-</Callout>
+*Most common file formats are automatically indexed for semantic search. Some formats are not indexed — agents can still use them directly when referenced in a conversation, but they will not be surfaced automatically via search. If you need a specific file format to be indexed, [contact us](mailto:support@dust.tt).
+</Info>
+
+<Info>
+**Pods scale to thousands of files.** Semantic search by agents is unaffected by file count — agents retrieve the right content reliably even in large knowledge bases. The only behaviour that changes at scale is UI file listing: browsing the Files tab may become slower when a Pod contains thousands of files. If you are building a large agent-first knowledge base, prefer navigating via search rather than scrolling the list.
+</Info>

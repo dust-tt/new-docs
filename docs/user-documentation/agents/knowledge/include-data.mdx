@@ -2,7 +2,8 @@
 title: "Include data"
 ---
 
-With Dust, you can ask your agents to search through your entire selected Data Sources and pick the most relevant documents to tap into to answer. This is the **“Search”** tool (cf. [Understanding Retrieval Augmented Generation (RAG) in Dust](././understanding-retrieval-augmented-generation-rag-and-the-search-method-in-dust))
+
+With Dust, you can ask your agents to search through your entire selected Data Sources and pick the most relevant documents to tap into to answer. This is the **“Search”** tool (cf. [Understanding Retrieval Augmented Generation (RAG) in Dust](/docs/user-documentation/agents/llm-best-practices/understanding-rag))
 
 But sometimes, there are specific files or pieces of context you _want to be sure_ that the agent includes in its context window for every question (i.e. a translation glossary or a set of guidelines that must be followed). The **Include Data** tool gives you the ability to dictate that the agent **always** includes a set of files. Starting with the most recent file, the agent will take into account every document set in Include Data in chronological order (assuming they don't fill the context window of the agent)
 

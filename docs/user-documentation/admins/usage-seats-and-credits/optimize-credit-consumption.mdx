@@ -1,7 +1,7 @@
 ---
 title: "Optimize credit consumption"
-description: "Credit optimization is not about using Dust less. It is about making sure each agent does the right amount of work for the value it creates. As your t..."
 ---
+
 
 Credit optimization is not about using Dust less. It is about making sure each agent does the right amount of work for the value it creates.
 
@@ -24,7 +24,7 @@ A good workflow uses the right model, the right context, the right tools, and th
 
 ## Review usage in Workspace Analytics
 
-Workspace admins can review adoption and usage patterns from **Admin > Analytics**. The dashboard includes workspace activity over time, message sources, tool usage, skill usage, top users, and top agents. Admins can scope the dashboard to the last 7, 14, 30, or 90 days. See [Workspace analytics](././workspace-analytics) for details.
+Workspace admins can review adoption and usage patterns from **Admin > Analytics**. The dashboard includes workspace activity over time, message sources, tool usage, skill usage, top users, and top agents. Admins can scope the dashboard to the last 7, 14, 30, or 90 days. See [Workspace analytics](/docs/user-documentation/admins/workspace-analytics) for details.
 
 Start with these questions:
 
@@ -45,7 +45,7 @@ Programmatic usage should be reviewed separately from regular human usage.
 
 Dust defines programmatic usage as messages sent through a custom Dust API key, or messages that are not manually typed and sent by a person. Examples include API usage, automated workflows in Slack, Zapier or n8n, and batch operations in Google Sheets or Excel. Manually typed messages in the web app, browser extension, Slack, or Teams are not considered programmatic in the usual case.
 
-Workspace admins can review programmatic credit consumption in **Admin > Usage** under the Programmatic usage settings. For details on how programmatic usage draws credits and how to configure the monthly cap, see [Credit management](././credit-management).
+Workspace admins can review programmatic credit consumption in **Admin > Usage** under the Programmatic usage settings. For details on how programmatic usage draws credits and how to configure the monthly cap, see [Credit management](/docs/user-documentation/admins/usage-seats-and-credits/credit-management).
 
 When reviewing programmatic usage, check:
 
@@ -82,7 +82,7 @@ If an agent classifies incoming support tickets and then writes a final customer
 
 More context can feel safer, but it can also make agents less focused.
 
-Focusing on relevant, high-quality information rather than overwhelming the agent with unnecessary data leads to better results. Larger context windows can increase processing time and cost, and can introduce information overload or conflicting information. See [How to write effective instructions](././prompting-101-how-to-talk-to-your-agents) for guidance on writing focused agent instructions.
+Focusing on relevant, high-quality information rather than overwhelming the agent with unnecessary data leads to better results. Larger context windows can increase processing time and cost, and can introduce information overload or conflicting information. See [How to write effective instructions](/docs/user-documentation/agents/llm-best-practices/how-to-write-effective-instructions) for guidance on writing focused agent instructions.
 
 ### What to do
 
@@ -141,7 +141,7 @@ A skill is useful when an agent needs a reusable method, checklist, rubric, or p
 
 ## Use Go Deep for complex research
 
-[Go Deep](././go-deep) gives agents the ability to conduct more comprehensive research across company data, databases, and web sources. It includes capabilities such as sub-agents, company data exploration, data warehouse queries, and web search and browsing.
+[Go Deep](/docs/user-documentation/agents/go-deep) gives agents the ability to conduct more comprehensive research across company data, databases, and web sources. It includes capabilities such as sub-agents, company data exploration, data warehouse queries, and web search and browsing.
 
 Use Go Deep when the question requires broad investigation or synthesis across multiple sources. It is best suited for complex research, market analysis, competitive intelligence, SQL-backed analysis, and work that may take several minutes.
 
@@ -164,7 +164,7 @@ Use Go Deep when the question requires broad investigation or synthesis across m
 
 Automations can create a lot of value, but they can also scale faster than expected.
 
-[Trigger rate limits](././rate-limiting) are designed to prevent individual automations from consuming disproportionate capacity. Triggers can run in fair use mode or programmatic usage mode. Fair use mode has limits such as 42 runs per trigger per 24 hours. Fair-use triggers may also be subject to workspace-level guardrails to preserve capacity for direct user interactions — the specific limits depend on your plan and contract. Programmatic usage mode is billed separately and is intended for high-volume use cases.
+[Trigger rate limits](/docs/user-documentation/agents/triggers/webhooks/rate-limiting) are designed to prevent individual automations from consuming disproportionate capacity. Triggers can run in fair use mode or programmatic usage mode. Fair use mode has limits such as 42 runs per trigger per 24 hours. Fair-use triggers may also be subject to workspace-level guardrails to preserve capacity for direct user interactions — the specific limits depend on your plan and contract. Programmatic usage mode is billed separately and is intended for high-volume use cases.
 
 ### Before scaling an automation
 
@@ -196,7 +196,7 @@ If a legitimate automation needs higher limits, workspace admins can contact Dus
 
 Long conversations are useful when the work is continuous. They become less efficient when they turn into a place for unrelated tasks.
 
-Dust provides [context compaction](././context-compaction) to help long conversations continue with summarized context instead of replaying the full earlier history. The original messages remain stored and visible, but future agent runs use the compaction summary and the messages after the compaction marker.
+Dust provides [context compaction](/docs/user-documentation/agents/context-compaction) to help long conversations continue with summarized context instead of replaying the full earlier history. The original messages remain stored and visible, but future agent runs use the compaction summary and the messages after the compaction marker.
 
 Compaction is user-controlled. Dust shows a context usage indicator in the input bar. The tooltip offers **Compact now** when context usage is high enough, and warnings appear as context usage increases.
 

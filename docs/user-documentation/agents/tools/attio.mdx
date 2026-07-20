@@ -2,6 +2,7 @@
 title: "Attio"
 ---
 
+
 ## Overview
 
 Attio MCP is a hosted Model Context Protocol server by Attio that lets agents search, create, and update CRM data — including people, companies, deals, tasks, notes, meetings, calls, and emails — directly in your Attio workspace. Authentication is handled via OAuth, so actions are performed as the connected user.
@@ -22,18 +23,22 @@ The Attio MCP exposes a range of CRM capabilities. For the authoritative, up-to-
 
 ### Records & Objects
 
-- **search-records** — Search for records (people, companies, deals, etc.) across your workspace.
-- **get-records-by-ids** — Retrieve one or more records by their IDs.
-- **create-record** — Create a new record in an Attio object (e.g., a new company or person).
-- **upsert-record** — Create or update a record based on a matching attribute.
-- **list-attribute-definitions** — List the attribute definitions for an Attio object.
+| Tool | Description |
+| --- | --- |
+| `search-records` | Search for records (people, companies, deals, etc.) across your workspace. |
+| `get-records-by-ids` | Retrieve one or more records by their IDs. |
+| `create-record` | Create a new record in an Attio object (e.g., a new company or person). |
+| `upsert-record` | Create or update a record based on a matching attribute. |
+| `list-attribute-definitions` | List the attribute definitions for an Attio object. |
 
 ### Notes
 
-- **create-note** — Add a note to a record.
-- **search-notes-by-metadata** — Search notes by metadata filters.
-- **semantic-search-notes** — Search notes using semantic (natural language) search.
-- **get-note-body** — Retrieve the full content of a specific note.
+| Tool | Description |
+| --- | --- |
+| `create-note` | Add a note to a record. |
+| `search-notes-by-metadata` | Search notes by metadata filters. |
+| `semantic-search-notes` | Search notes using semantic (natural language) search. |
+| `get-note-body` | Retrieve the full content of a specific note. |
 
 ### Tasks
 
@@ -42,22 +47,28 @@ The Attio MCP exposes a range of CRM capabilities. For the authoritative, up-to-
 
 ### Meetings & Calls
 
-- **search-meetings** — Search for meeting records.
-- **search-call-recordings-by-metadata** — Find call recordings by metadata.
-- **semantic-search-call-recordings** — Search call recordings using semantic search.
-- **get-call-recording** — Retrieve the details of a specific call recording.
+| Tool | Description |
+| --- | --- |
+| `search-meetings` | Search for meeting records. |
+| `search-call-recordings-by-metadata` | Find call recordings by metadata. |
+| `semantic-search-call-recordings` | Search call recordings using semantic search. |
+| `get-call-recording` | Retrieve the details of a specific call recording. |
 
 ### Emails
 
-- **search-emails-by-metadata** — Find emails by metadata filters.
-- **semantic-search-emails** — Search emails using semantic search.
-- **get-email-content** — Retrieve the full content of a specific email.
+| Tool | Description |
+| --- | --- |
+| `search-emails-by-metadata` | Find emails by metadata filters. |
+| `semantic-search-emails` | Search emails using semantic search. |
+| `get-email-content` | Retrieve the full content of a specific email. |
 
 ### Workspace
 
-- **list-workspace-members** — List all members of the Attio workspace.
-- **list-workspace-teams** — List all teams in the workspace.
-- **whoami** — Return information about the currently authenticated user.
+| Tool | Description |
+| --- | --- |
+| `list-workspace-members` | List all members of the Attio workspace. |
+| `list-workspace-teams` | List all teams in the workspace. |
+| `whoami` | Return information about the currently authenticated user. |
 
 ## Security & Approvals
 

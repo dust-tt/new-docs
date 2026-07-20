@@ -1,7 +1,7 @@
 ---
 title: "NetSuite"
-description: "**Requirements**: NetSuite administrator access to install a SuiteApp and create an integration record. *** Required Features and Permissions Go to **..."
 ---
+
 
 **Requirements**: NetSuite administrator access to install a SuiteApp and create an integration record.
 
@@ -9,10 +9,9 @@ description: "**Requirements**: NetSuite administrator access to install a Suite
 
 ### Enable required features
 
-<Callout icon="" theme="default">
-</Callout>
-  [Required Features and Permissions](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714080625.html)
-</Callout>
+<Info>
+[Required Features and Permissions](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714080625.html)
+</Info>
 
 Go to **Setup  Company  Enable Features  SuiteCloud** tab and make sure the following are enabled:
 
@@ -25,10 +24,9 @@ Go to **Setup  Company  Enable Features  SuiteCloud** tab and make sure the foll
 
 ### 2. Install the MCP Standard Tools SuiteApp
 
-<Callout icon="" theme="default">
-</Callout>
-  [Installing the MCP Standard Tools SuiteApp](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_0902023450.html)
-</Callout>
+<Info>
+[Installing the MCP Standard Tools SuiteApp](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_0902023450.html)
+</Info>
 
 Go to **Customization  SuiteBundler  Search & Install Bundles**, search for **MCP Standard Tools** and click **Install**.
 
@@ -36,15 +34,13 @@ Go to **Customization  SuiteBundler  Search & Install Bundles**, search for **MC
 
 ### 3. Create a custom role
 
-<Callout icon="" theme="default">
-</Callout>
-  [Required Features and Permissions – Roles](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714080625.html)
-</Callout>
+<Info>
+[Required Features and Permissions – Roles](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714080625.html)
+</Info>
 
-<Callout icon="" theme="warn">
-</Callout>
-  **Important**: the Administrator role cannot be used with MCP. You must create a dedicated role.
-</Callout>
+<Warning>
+**Important**: the Administrator role cannot be used with MCP. You must create a dedicated role.
+</Warning>
 
 Go to **Setup  Users/Roles  Manage Roles  New** and add the following permissions:
 
@@ -61,12 +57,11 @@ Assign this role to the relevant users via **Setup  Users/Roles  Manage Users**.
 
 ### 4. Create an integration record
 
-<Callout icon="" theme="default">
-</Callout>
-  [Connect to the NetSuite AI Connector Service](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714082142.html)
+<Info>
+[Connect to the NetSuite AI Connector Service](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_0714082142.html)
 
-  [SuiteAnswers – Integration Setup](https://suiteanswers.custhelp.com/app/answers/detail/a_id/1025062)
-</Callout>
+[SuiteAnswers – Integration Setup](https://suiteanswers.custhelp.com/app/answers/detail/a_id/1025062)
+</Info>
 
 Go to **Setup  Integration  Manage Integrations  New** and configure:
 
@@ -97,14 +92,13 @@ You app should be set-up as following:
 
 ## 5. Connect in Dust
 
-<Callout icon="" theme="default">
-</Callout>
-  [Get Started with the NetSuite AI Connector Service](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_3200541651.html)
+<Info>
+[Get Started with the NetSuite AI Connector Service](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_3200541651.html)
 
-  [OAuth 2.0 Authorization Endpoint](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_158081944642.html)
+[OAuth 2.0 Authorization Endpoint](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_158081944642.html)
 
-  [OAuth 2.0 Token Endpoint](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_158081952044.html)
-</Callout>
+[OAuth 2.0 Token Endpoint](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_158081952044.html)
+</Info>
 
 In Dust, go to **Spaces  Tools   Add tools  Add MCP server  Static OAuth**.
 
@@ -128,10 +122,9 @@ Replace `<accountid>` with your NetSuite account ID (visible in your NetSuite UR
 
 Replace `<accountid>` with your NetSuite account ID.
 
-<Callout icon="" theme="warn">
-</Callout>
-  **Important**: copy the Client ID exactly as shown — do not include any prefix such as `ID`.
-</Callout>
+<Warning>
+**Important**: copy the Client ID exactly as shown — do not include any prefix such as `ID`.
+</Warning>
 
 Save, authenticate with your NetSuite account using your custom MCP role, and the tools will appear.
 
@@ -139,10 +132,9 @@ Save, authenticate with your NetSuite account using your custom MCP role, and th
 
 ### Troubleshooting
 
-<Callout icon="" theme="default">
-</Callout>
-  ### [NetSuite AI Connector Service FAQ](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_4160616848.html)
-</Callout>
+<Info>
+**[NetSuite AI Connector Service FAQ](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_4160616848.html)**
+</Info>
 
 | Error                                              | Fix                                                                              |
 | -------------------------------------------------- | -------------------------------------------------------------------------------- |

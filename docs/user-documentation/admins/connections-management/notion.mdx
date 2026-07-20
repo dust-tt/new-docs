@@ -1,35 +1,36 @@
 ---
 title: "Notion"
-description: "Ensure to do the Initial Connection Setup once and then Manage the Connection by adding or unselecting pages directly from Notion. The recommended app..."
 ---
 
-<Callout type="danger"Heads up>
-</Callout>
+
+<Danger>
+**Heads up**
+
 Ensure to do the Initial Connection Setup once and then Manage the Connection by adding or unselecting pages directly from Notion.
-The recommended approach to creating a Notion Connection is to provision a user [dust-admin@yourdomain.com](mailto:dust-admin@yourdomain.com) in your Google workspace and use that identity to connect Dust to your various data sources. The IT/CISO/(name the right function here) will update Dust data access using that account.  
-You will have to ensure that this new 'admin user' has access to the pages/teamspaces that you want to connect.  
+The recommended approach to creating a Notion Connection is to provision a user [dust-admin@yourdomain.com](mailto:dust-admin@yourdomain.com) in your Google workspace and use that identity to connect Dust to your various data sources. The IT/CISO/(name the right function here) will update Dust data access using that account.
+You will have to ensure that this new 'admin user' has access to the pages/teamspaces that you want to connect.
 This will help them control what Dust has access to by managing the permission of that account on Notion.
-If you cannot locate a specific Notion page in Dust, simply add it directly through Notion. To guarantee proper indexing and organization, link all parent pages to reestablish the page hierarchy.  
+If you cannot locate a specific Notion page in Dust, simply add it directly through Notion. To guarantee proper indexing and organization, link all parent pages to reestablish the page hierarchy.
 Notion connections are unique per user, and replacing an existing connection with a new user's permissions disrupts the current data access.
+</Danger>
 
 Dust integrates with Notion to bring your workspace's pages and databases into Dust, allowing for a streamlined data-sharing and collaboration process. Due to permission restrictions, only Notion Admins can set up this connection.
 
 ### Initial Connection Setup
 
-<Callout type="info"User provisionning>
-</Callout>
-The recommended approach to creating a Notion Connection is to provision a user `dust-admin@yourdomain.com` in your Google workspace and use that identity to connect Dust to your various data sources. The IT/CISO/(name the right function here) will update Dust data access using that account.  
-You will have to ensure that this new 'admin user' has access to the pages/teamspaces that you want to connect.  
+<Info>
+**User provisionning**
+
+The recommended approach to creating a Notion Connection is to provision a user `dust-admin@yourdomain.com` in your Google workspace and use that identity to connect Dust to your various data sources. The IT/CISO/(name the right function here) will update Dust data access using that account.
+You will have to ensure that this new 'admin user' has access to the pages/teamspaces that you want to connect.
 This will help them control what Dust has access to by managing the permission of that account on Notion.
+</Info>
 
 The setup process **requires a Notion Admin** who is also a Dust Admin. This ensures full access to the necessary pages and databases that need to be shared with Dust. Follow these steps:
 
 1. A Notion popup to give Dust your Notion workspace data (Teamspace selection).
 2. A modal to select the exact data you want to sync with Dust.
 
-<Image align="center" alt="Notion Authorization popup." caption="Notion Authorization popup." src="https://files.readme.io/b1b8a49-Untitled_34.png" width="300px" />
-
-<Image align="center" alt="Notion modal, to select the data you want to sync with your Dust workspace." caption="Notion modal, to select the data you want to sync with your Dust workspace." src="https://files.readme.io/db4b0ab-Untitled_35.png" width="300px" />
 
 **Managing Permissions**
 
@@ -37,20 +38,22 @@ The setup process **requires a Notion Admin** who is also a Dust Admin. This ens
 * Use Notion's **Top Page selection** to share entire sections that are 100% sharable.
 * Apply a more **granular approach** for sensitive pages, which will be classified under an Orphaned Pages folder in Dust.
 
-<Callout type="danger"Permissions>
-</Callout>
+<Danger>
+**Permissions**
+
 Each connection reflects the permissions of the last user to set it up. To prevent disruptions, avoid changing the designated admin or their permissions in Notion without reviewing the impact on Dust.
+</Danger>
 
 ### Updating the connection
 
 * From Notion, navigate to the settings or page you wish to connect.
 * Select the `...` option, then choose `Connect to` and select `Dust`.
 
-<Image align="center" src="https://files.readme.io/69fe416-Untitled_36.png" />
 
-<Callout type="danger"Missing pages>
-<Callout type="danger"Notion API isn't designed to ease sync with 3rd parties; some pages you think should be indexed can be missing.>
-</Callout>
+<Danger>
+**Missing pages**
+
+Notion API isn't designed to ease sync with 3rd parties; some pages you think should be indexed can be missing.
 Should a Notion **page remain missing in Dust a few hours after direct addition**: to guarantee proper indexing and organization, link all parent pages to reestablish the page hierarchy and check the permission of the page.
 **Check for unlinked share settings:** A Notion page may not sync if its share settings are unlinked from its parent page
 1. Open the page in Notion
@@ -59,29 +62,28 @@ Should a Notion **page remain missing in Dust a few hours after direct addition*
 4. Click the three dots (`...`) menu
 5. Select **Reset to inherited permissions**
 See the Best Practice section below.
+</Danger>
 
-<Image align="center" src="https://files.readme.io/4af8940-Untitled_37.png" />
 
 * **For new top pages:** Refresh occurs once daily.
 * **For new pages within a synced top page or changes in an already synced page:** Refresh is immediate, with a few seconds to minutes latency.
 
-<Callout type="danger"Large workspaces>
-</Callout>
+<Danger>
+**Large workspaces**
+
 Large Notion workspaces can take several days for the initial sync. Plan accordingly and monitor the process.
+</Danger>
 
 * **Restrict Permission Management:** To avoid accidental data access changes, limit the ability to manage Notion permissions to a single identified admin.
-* **Check if the page or Teamspace is restricted:** Ensure the page or Teamspace is not restricted, otherwise Dust wont be able to index the data. If the Notion Teamspace is restricted, then all the child pages are as well.  
+* **Check if the page or Teamspace is restricted:** Ensure the page or Teamspace is not restricted, otherwise Dust wont be able to index the data. If the Notion Teamspace is restricted, then all the child pages are as well.
   Note: when everyone has access to the page but not in full access, the page is considered as restricted. The eye icon at the top of the Notion page can help you identify whether a page is restricted or not.
 
 * **Admin Role Consistency:** Ensure the designated admin has appropriate roles in Notion and Dust, with access to all necessary data.
 * **Orphaned Resources:** Be mindful when adding pages without top pages to avoid misclassification under Orphaned Resources in Dust.
 * **Avoid Multiple Notion Connections:** Ensure the designated admin is the only person to have a connection with the Dust app in Notion. Go to `Setting & member` > `Connections` > `All connections`. If you see `your name +X`, click on `...`and delete all connections except from your admin connections.
 
-<Image align="center" src="https://files.readme.io/e9a634e-Screenshot_from_2024-03-06_14-14-10.png" />
 
-<Image align="center" src="https://files.readme.io/ef887c4-Untitled_38.png" />
-
-# Notion FAQ
+## Notion FAQ
 
 ### **How to correctly share a page with Dust**
 
@@ -113,12 +115,14 @@ By following these guidelines, you can ensure a smooth integration between Dust 
 
 This is a feature that Notion added in October 2025 ([https://www.notion.com/help/data-sources-and-linked-databases](https://www.notion.com/help/data-sources-and-linked-databases)), and Dust does not support it. If syncing these with Dust is important to you, it's best to keep each datasource as a separate database.
 
-# Labels
+## Labels
 
 Dust syncs the custom labels set on the pages from Notion databases and includes them in the documents synced above the content itself. It also automatically adds a label with the name of the author and last editor of the document in `author:Firstname LastName` and `lastEditor:Firstname LastName`.
 
-**Labels**  allow for additional filtering on data sources selected on the [semantic search](././search-your-data) tool.
+**Labels**  allow for additional filtering on data sources selected on the [semantic search](/docs/user-documentation/agents/knowledge/search-data-sources) tool.
 
-<Callout type="info"Labels support was added Feb 13 2025>
-</Callout>
+<Info>
+**Labels support was added Feb 13 2025**
+
 Notion pages that have been synced before this date won't have those labels available for filtering. If you update the pages, then the labels will be synced on the next sync in Dust.
+</Info>

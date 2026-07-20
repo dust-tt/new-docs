@@ -1,7 +1,7 @@
 ---
 title: "Power BI"
-description: "**Requirements**: Microsoft Entra admin access, a Power BI account (free tier works), and the MCP feature enabled in the Power BI admin portal. *** Go..."
 ---
+
 
 **Requirements**: Microsoft Entra admin access, a Power BI account (free tier works), and the MCP feature enabled in the Power BI admin portal.
 
@@ -11,9 +11,11 @@ description: "**Requirements**: Microsoft Entra admin access, a Power BI account
 
 Go to [entra.microsoft.com](https://entra.microsoft.com)  **Identity  Applications  App registrations  New registration**.
 
-* **Name**: `Dust Power BI MCP` (or any name)
-* **Supported account types**: _Accounts in this organizational directory only_
-* **Redirect URI**: leave blank
+| Tool | Description |
+| --- | --- |
+| `Name` | `Dust Power BI MCP` (or any name) |
+| `Supported account types` | _Accounts in this organizational directory only_ |
+| `Redirect URI` | leave blank |
 
 Click **Register**, then note down:
 
@@ -91,7 +93,6 @@ Replace `{TENANT_ID}` with your Directory (tenant) ID.
 
 **Important**: the scope must use `analysis.windows.net`, not `api.fabric.microsoft.com`.
 
-<br />
 
 The `offline_access` scope allows Dust to automatically refresh the authentication token in the background, so users don't have to re-authenticate every time the token expires (typically after one hour).
 

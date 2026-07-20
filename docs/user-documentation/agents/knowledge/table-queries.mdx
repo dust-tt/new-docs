@@ -2,6 +2,7 @@
 title: "Table queries"
 ---
 
+
 Table queries enable agents to generate and execute SQL queries on structured data before replying (Snowflake, BigQuery, CSVs, Notion Databases, Google Sheets). This comes as complement of the Search Data Source agent action which generally falls short on quantitative questions (semantic search presents chunk of data ordered by pertinence to the agent that make it impossible for the agent to properly answer quantitative questions since it does not have access to the entire data). Instead Table Queries allow the agent to query these structured data sources using SQL (query language), enabling the agent to answer analytical questions.
 
 There are multiple ways to use Table Queries:
@@ -83,7 +84,7 @@ This table is an extract from our CRM. Each line represents a potential customer
 
 ### Creating Tables from API
 
-You can create Tables from API on existing Folders Data Sources. Please refer to our API documentation available here: [Upsert a table](https://docs.dust.tt/reference/post_api-v1-w-wid-spaces-spaceid-data-sources-dsid-tables)
+You can create Tables from API on existing Folders Data Sources. Please refer to our API documentation available here: [Upsert a table](/api-reference/post_api-v1-w-wid-spaces-spaceid-data-sources-dsid-tables)
 
 ### Tables from Google Sheets and Notion Databases
 

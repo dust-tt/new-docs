@@ -1,7 +1,7 @@
 ---
 title: "Client Side MCP Server (Preview)"
-description: "Client-side MCP server enables you to dynamically expose tools to Dust conversations through your client applications that interact with Dust's Conver..."
 ---
+
 
 Client-side MCP server enables you to dynamically expose tools to Dust conversations through your client applications that interact with Dust's Conversation API. When your application creates a conversation or post a message, it can register local tools that will be available for that specific interaction. These tools execute in your client's environment (e.g., user's browser).
 
@@ -87,7 +87,7 @@ server.tool(
   async (params) => {
     // Your implementation using ticket system API.
     const ticket = await ticketSystem.update(params);
-    return { 
+    return {
       ticketId: ticket.id,
       status: ticket.status,
       assignee: ticket.assignee
@@ -108,11 +108,11 @@ const serverId = transport.getServerId();
 When starting a conversation or posting a message with Dust, include the server ID you received from getServerId():
 
 ```typescript
-const message = {  
-  content: "Can you help me find all high-priority open tickets?",  
-  context: {  
-    clientSideMCPServerIds: [serverId]  
-  }  
+const message = {
+  content: "Can you help me find all high-priority open tickets?",
+  context: {
+    clientSideMCPServerIds: [serverId]
+  }
 };
 ```
 
@@ -123,7 +123,6 @@ Now Dust can:
 * Reassign tickets
 * Add comments
 
-<br />
 
 In this example:
 
@@ -134,7 +133,6 @@ In this example:
 
 This means that tools are always executed in the context of the user's active session in your application, with access to the same permissions and state as your UI.
 
-<br />
 
 ## Technical Architecture
 
@@ -173,11 +171,11 @@ The response includes a `serverId` that you'll need for all subsequent calls.
 To keep the server active so Dust knows that it can be used by your agent, the transport must implement heartbeat behavior. There must be no more than 5 minutes between two heartbeats. This is required so Dust knows that the server is still active and can still be used:
 
 ```http http
-POST /api/v1/w/:workspaceId/mcp/heartbeat  
+POST /api/v1/w/:workspaceId/mcp/heartbeat
 Content-Type: application/json
 
-{  
-  "serverId": "your-server-id"  
+{
+  "serverId": "your-server-id"
 }
 ```
 

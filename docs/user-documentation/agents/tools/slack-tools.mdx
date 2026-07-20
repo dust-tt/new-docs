@@ -1,10 +1,11 @@
 ---
 title: "Slack tools"
-description: "On May 29, 2025, Slack implemented significant API and policy changes that affect third‑party integrations: - Marketplace requirement: commercial apps..."
 ---
 
-<Callout type="danger"Warning>
-</Callout>
+
+<Danger>
+**Warning**
+
 On May 29, 2025, Slack implemented significant API and policy changes that affect third‑party integrations:
 - Marketplace requirement: commercial apps must be listed on the Slack Marketplace to maintain full API access.
 - Rate limiting: non‑Marketplace and shared apps face drastically reduced limits on key endpoints.
@@ -14,6 +15,7 @@ Current status (January 2026):
 - Slack's Real‑Time Search API remains in closed beta for approved partners, with broader availability expected summer 2026.
 - If you need Slack as a synchronized data source, use the self‑created Slack app flow documented in "Slack connection."
 See our Status Report Page for ongoing updates.
+</Danger>
 
 For data synchronization and higher rate limits via a self‑created Slack app, see the Slack connection guide.
 
@@ -25,12 +27,11 @@ This document provides general information about our Slack tools (available tool
 
 Since this uses personal credentials, all actions performed by agents will appear as if you performed them directly.
 
-<Callout icon="">
-</Callout>
-  **Another way to integrate Dust inside Slack**
+<Info>
+**Another way to integrate Dust inside Slack**
 
-  If you are looking to call Dust directly from Slack, please check [Dust in Slack](https://docs.dust.tt/docs/slack#/)
-</Callout>
+If you are looking to call Dust directly from Slack, please check [Dust in Slack](https://docs.dust.tt/docs/slack#/)
+</Info>
 
 ## :gear: Connection Setup
 
@@ -40,9 +41,6 @@ The setup process requires **personal Slack authentication** and uses OAuth to c
 2. Select **Slack** from the available MCP servers
 3. Complete OAuth authorization with your personal Slack credentials.
 
-<br />
-
-<br />
 
 ## :ok_person: Adding Tools to Agents
 
@@ -126,4 +124,4 @@ Read all messages in a specific thread from public channels, private channels, o
 * Scheduled messages cannot include file attachments (Slack API limitation). Use Post Message to include files.
 
  **Using bot credentials instead of personal credentials?**
-If you need actions to appear as coming from a bot rather than your personal account, see [Slack Bot MCP](././beta-slack-tool-using-bot-credentials) (available on request by contacting support@dust.tt).
+If you need actions to appear as coming from a bot rather than your personal account, see the Slack Bot MCP tool (available on request by contacting support@dust.tt).

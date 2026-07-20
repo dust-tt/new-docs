@@ -1,7 +1,7 @@
 ---
 title: "Train your team on credit optimization"
-description: "Credit optimization is the practice of getting the best possible output from every credit spent. It is about matching the right model, context, tools,..."
 ---
+
 
 Credit optimization is the practice of getting the best possible output from every credit spent. It is about matching the right model, context, tools, and workflow design to each task so that your team maximizes results without waste.
 
@@ -42,7 +42,7 @@ For new users, teach concrete prompting defaults.
 | "Do a deep dive on this customer." | "Give me a lightweight account brief first: company context, recent interactions, open risks, and 3 suggested next steps. If the signal is weak, tell me what would justify a deeper investigation." |
 | "Use everything you can find."     | "Use CRM and call notes first. Only search Slack if the answer is missing recent context."                                                                                                           |
 
-These prompts produce better output. They tell the agent what work matters, where to look, how much depth to use, and when to stop. See [How to write effective instructions](././prompting-101-how-to-talk-to-your-agents) for more guidance.
+These prompts produce better output. They tell the agent what work matters, where to look, how much depth to use, and when to stop. See [How to write effective instructions](/docs/user-documentation/agents/llm-best-practices/how-to-write-effective-instructions) for more guidance.
 
 ### Simple user guidance
 
@@ -62,7 +62,7 @@ Deep workflows produce high-value output. They also consume more credits by desi
 
 A deep dive should be treated like sending a senior analyst into a problem — not like asking for a quick summary. It is the right choice when the question is complex, the answer depends on multiple sources, the stakes are high, or the user needs synthesis rather than retrieval.
 
-[Go Deep](././go-deep) gives agents the ability to conduct comprehensive research across company data, databases, and web sources. It includes sub-agents, company data exploration, data warehouse queries, and web search and browsing.
+[Go Deep](/docs/user-documentation/agents/go-deep) gives agents the ability to conduct comprehensive research across company data, databases, and web sources. It includes sub-agents, company data exploration, data warehouse queries, and web search and browsing.
 
 ### Good reasons to use deep research or a stronger model
 
@@ -86,7 +86,7 @@ A deep dive should be treated like sending a senior analyst into a problem — n
 
 **First pass first. Deep dive second.**
 
-Start lightweight, then escalate only if the first pass shows the problem deserves it. A stronger model is a tool for a class of work — if the task is simple, it may produce a slightly more polished answer at a higher cost without changing the business outcome. See [What settings and model should I use?](././what-settings-model-should-i-use) for guidance on model selection.
+Start lightweight, then escalate only if the first pass shows the problem deserves it. A stronger model is a tool for a class of work — if the task is simple, it may produce a slightly more polished answer at a higher cost without changing the business outcome. See [What settings and model should I use?](/docs/user-documentation/getting-started/faq/managing-agents/what-settings-model-should-i-use) for guidance on model selection.
 
 ## Teach when to use a skill, an agent, or a chain
 
@@ -108,7 +108,7 @@ If you chain it twice, consider turning it into a workflow. If a team chains it 
 
 Manual chaining often hides cost. Each step can add context, trigger tools, use a strong model, or create another long conversation. A reusable workflow can be designed more carefully: lighter models for simple steps, better source scoping, clearer tool usage, and a cleaner output.
 
-[Skills](././skills) in Dust are reusable packages of instructions, knowledge, and tools that you can share across multiple agents. When you update a skill's instructions, every agent using that skill automatically gets the improvement.
+[Skills](/docs/user-documentation/agents/skills/skill-examples) in Dust are reusable packages of instructions, knowledge, and tools that you can share across multiple agents. When you update a skill's instructions, every agent using that skill automatically gets the improvement.
 
 ## Retrain existing users on better habits
 
@@ -149,16 +149,16 @@ A user can make one conversation inefficient. A builder can make hundreds of fut
 | Should this be a reusable skill instead of repeated manual chaining? | Workflow formalization |
 | What does a good output look like on 10 real examples?               | Testing                |
 
-For builders, credit optimization is product design. Every agent has a usage profile. Every model choice, data source, tool, and instruction changes that profile. See [How to write effective instructions](././prompting-101-how-to-talk-to-your-agents), [model settings](././what-settings-model-should-i-use), and [agent troubleshooting](././how-to-optimize-your-dust-agent) for details.
+For builders, credit optimization is product design. Every agent has a usage profile. Every model choice, data source, tool, and instruction changes that profile. See [How to write effective instructions](/docs/user-documentation/agents/llm-best-practices/how-to-write-effective-instructions), [model settings](/docs/user-documentation/getting-started/faq/managing-agents/what-settings-model-should-i-use), and [agent troubleshooting](/docs/user-documentation/agents/troubleshooting-your-agent) for details.
 
 ### Builder best practices
 
 - Use lighter models for structured or repetitive tasks when the output remains reliable.
 - Connect only the sources that matter for the agent's job.
 - Remove tools that are not central to the workflow.
-- Write clear, specific instructions — vague instructions make agents do more guessing. See [How to write effective instructions](././prompting-101-how-to-talk-to-your-agents).
+- Write clear, specific instructions — vague instructions make agents do more guessing. See [How to write effective instructions](/docs/user-documentation/agents/llm-best-practices/how-to-write-effective-instructions).
 - Test model changes on real examples before changing an important workflow.
-- Use [skills](././skills) to share instructions and tools across multiple agents.
+- Use [skills](/docs/user-documentation/agents/skills/skill-examples) to share instructions and tools across multiple agents.
 
 ## Help managers focus on workflow quality
 
@@ -184,7 +184,7 @@ Credit optimization should be a normal operating habit, not a reaction to a surp
 
 | Cadence       | What to do                                                                                                                                                                                                                                         |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Weekly**    | Admins review the shape of usage: top agents, top sources, programmatic growth, expensive model usage, deep research usage, and sudden changes. See [Workspace analytics](././workspace-analytics) and [Credit management](././credit-management). |
+| **Weekly**    | Admins review the shape of usage: top agents, top sources, programmatic growth, expensive model usage, deep research usage, and sudden changes. See [Workspace analytics](/docs/user-documentation/admins/workspace-analytics) and [Credit management](/docs/user-documentation/admins/usage-seats-and-credits/credit-management). |
 | **Monthly**   | Inspect the top workflows and identify one concrete improvement.                                                                                                                                                                                   |
 | **Quarterly** | Refresh the agent map, review automation ownership, retire unused agents, and retrain teams on the habits that matter most.                                                                                                                        |
 
@@ -197,7 +197,7 @@ Keep the assets simple and practical.
 | **Agent map**               | Which agent to use for which workflow, so employees always know where to start.                                                   |
 | **User cheat sheet**        | Examples of lightweight prompts, deep-dive prompts, and "when to start fresh" guidance.                                           |
 | **Builder checklist**       | Model choice, data scope, tools, instructions, output length, test examples, and whether a repeated chain should become a skill.  |
-| **Automation checklist**    | Owner, expected volume, test batch, cost per run, failure behavior, and monitoring. See [trigger rate limits](././rate-limiting). |
+| **Automation checklist**    | Owner, expected volume, test batch, cost per run, failure behavior, and monitoring. See [trigger rate limits](/docs/user-documentation/agents/triggers/webhooks/rate-limiting). |
 | **Monthly review template** | A standard format so credit optimization becomes a normal operating habit rather than a one-off investigation.                    |
 
 ## Summary

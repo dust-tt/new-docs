@@ -1,7 +1,7 @@
 ---
 title: "Salesforce - Notes on API limit and permissions"
-description: "1. You ask a question in plain language (like \"Give me an account summary of xx\" or \"What's the pipeline for this quarter?\"). 2. The agent translates..."
 ---
+
 
 ### How It Works
 
@@ -38,11 +38,12 @@ We are doing the minimum requests possible to keep your Salesforce structure up 
 
 You can define [API Usage notifications](https://help.salesforce.com/s/articleView?id=sf.monitor_rate_limit.htm\&type=5) in your org to monitor your API usage against your API limits. An email notification will be sent when your org exceeds a specified threshold, as a percentage of the Daily API Request Limit, within a specified time period.
 
-<br />
 
-<Callout type="warning"Important>
-</Callout>
+<Warning>
+**Important**
+
 Your actual API limits and costs may vary based on your Salesforce configuration and additional purchased API capacity. Please review your organization's specific Salesforce licensing terms and API allowances to ensure our integration aligns with your available quota and budget
+</Warning>
 
 ### **Data Access Security**
 
@@ -60,7 +61,7 @@ All Dust users will use the dedicated service account to query data from your Sa
 
 As Admin, on top of using restrictions from the connected Salesforce account you are able to define the list of Objects that users are allowed to query on each open or restricted space.
 
-See how [access controls and space permissions](https://docs.dust.tt/docs/access-controls-and-permissions) work in Dust.
+See how [access controls and space permissions](/docs/user-documentation/admins/users-and-permissions-management/access-controls-and-permissions) work in Dust.
 
 Example configurations:
 
@@ -72,7 +73,7 @@ Example configurations:
 
 ### Data Access and Queries
 
-* Salesforce data is available through the tool "[Query Tables](https://docs.dust.tt/docs/table-queries)" in the Agent Builder.
+* Salesforce data is available through the tool "[Query Tables](/docs/user-documentation/agents/knowledge/table-queries)" in the Agent Builder.
 * Note that not all fields are automatically queryable - they may need to be made accessible in your Salesforce configuration first - see [**Dust Salesforce Connection Setup**](https://www.notion.so/Dust-Salesforce-Connection-Setup-1b528599d9418080b0bafd96f30f50e2?pvs=21)
 
 ### Agent Understanding of the Data Structure
