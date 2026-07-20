@@ -1,7 +1,7 @@
 ---
 title: "Creating Google Calendar events from a Dust agent"
-description: "**Dust Apps are being deprecated.** Only Dust Apps that were created before October 2025 are accessible to users. The creation of new Dust Apps is now..."
 ---
+
 
 **Dust Apps are being deprecated.** Only Dust Apps that were created before October 2025 are accessible to users. The creation of new Dust Apps is now deactivated.
 
@@ -10,11 +10,9 @@ This is an advanced use case that will help you understand how anything you can 
 
 ## Create a Dust App
 
-<Image align="center" border={false} src="https://files.readme.io/e0aa8f4-Screenshot_2024-06-17_at_12.32.52.png" />
 
 First, create a Dust App with an “Input” block. The input block will be responsible for collecting the data required to create the calendar event.
 
-<Image align="center" border={false} src="https://files.readme.io/05bfd6d-Screenshot_2024-06-17_at_15.11.09.png" />
 
 After clicking on “Create dataset” we can start filling the expected data schema. The description for each field is very important, as this is what the AI model will use to understand what should go in each of the field.
 
@@ -30,7 +28,6 @@ You should then add some test values in the “Data” section — these will be
 
 ## Create a Zap
 
-<Image align="center" border={false} src="https://files.readme.io/7102418-Screenshot_2024-06-17_at_11.58.08.png" />
 
 On Zapier, we create a new Zap. The Zap should use the “Catch Hook” webhook trigger: this is how your Dust App will be calling your Zap.
 
@@ -38,7 +35,6 @@ Once the Zap trigger is created, go to the “Test” tab and copy the webhook U
 
 ## Call your Zap from your Dust App
 
-<Image align="center" border={false} src="https://files.readme.io/9702273-Screenshot_2024-06-17_at_12.41.17.png" />
 
 In your Dust App, add a CURL block as pictured above. The CURL block is used to call your Zap’s webhook trigger.
 
@@ -48,7 +44,7 @@ To make it easier, you can simply copy and paste this code into your CURL block 
 
 ```jsx
 _fun = (env) => {
-  return JSON.stringify({ 
+  return JSON.stringify({
     name: env.state.INPUT.name,
     start: env.state.INPUT.start,
     end: env.state.INPUT.end,
@@ -60,17 +56,14 @@ _fun = (env) => {
 
 ## Create the Calendar Event from Zapier
 
-<Image align="center" border={false} src="https://files.readme.io/36dc198-Screenshot_2024-06-17_at_12.15.40.png" />
 
 After running your Dust App, you can go back to your Zap. In the “Test” tab of your webhook block, you can now click on “Test trigger”, and you should see that the webhook event sent from Dust has been detected by Zapier. You can now click on “Continue with selected record”.
 
-<Image align="center" border={false} src="https://files.readme.io/a06bcda-Screenshot_2024-06-17_at_12.16.03.png" />
 
 We’re now ready to add the Google Calendar action in Zapier. You should pick the “Create Detailed Event” from the Event dropdown.
 
 Next, you should connect your Google account from the Account tab if not already done.
 
-<Image align="center" border={false} width="400px" src="https://files.readme.io/2430e0b-Screenshot_2024-06-17_at_12.24.10.png" />
 
 Now, navigate to the Tools tab and fill in all the relevant fields using the values from your webhook.
 
@@ -78,17 +71,14 @@ Now, navigate to the Tools tab and fill in all the relevant fields using the val
    As you can see in the screenshot above, we added `+02:00` at the end of our Start/End Date & Time fields. That is because we are in the France timezone. Make sure to pick the right value for your own timezone.
 </aside>
 
-<Image align="center" border={false} width="400px" src="https://files.readme.io/ef8c567-Screenshot_2024-06-17_at_12.24.22.png" />
 
 Finish adding all the values, including the `Attendees` field using the `guests` value from your webhook.
 
-<Image align="center" border={false} width="400px" src="https://files.readme.io/3f4c5d4-Screenshot_2024-06-17_at_12.24.34.png" />
 
 You can now test the Zap Google Calendar action. If everything went according to plan, you should see something similar to the picture above, and your test event should be created in Google Calendar.
 
 ## Test your Dust App
 
-<Image align="center" border={false} src="https://files.readme.io/bcc8dc7-Screenshot_2024-06-17_at_12.26.34.png" />
 
 Go back to your Dust App and add a final CODE block at the end. This code block should simply return a string as pictured above. That will prevent your agent from receiving noisy technical (and useless) information from your CURL block.
 
@@ -109,13 +99,11 @@ When we ask our agents to create events for us, it is annoying to have to specif
 
 To achieve this, I’ll create a spreadsheet with a list of employees at Dust:
 
-<Image align="center" border={false} width="400px" src="https://files.readme.io/90c92b8-Screenshot_2024-06-17_at_13.15.59.png" />
 
 In practice, this could be a Notion Database, a CSV file, a Google Doc, a raw text file, a database or anything where you have a directory of employees that work at your company.
 
 ## Plugging everything together
 
-<Image align="center" border={false} width="500px" src="https://files.readme.io/f106b14-Screenshot_2024-06-17_at_14.56.04.png" />
 
 We can now proceed to create a Dust agent. First, fill in the instructions. These are the ones I have used:
 
@@ -124,30 +112,22 @@ If the email addresses of the attendees is not explicitly specified, you must al
 Never invent or assume email addresses.
 If you can't find the email of an employee, ask the user for confirmation.
 
-<Image align="center" border={false} width="500px" src="https://files.readme.io/4e01e89-Screenshot_2024-06-17_at_14.56.50.png" />
 
 Next, you can add a Query Tables tool to plug your employees spreadsheet. This is what your agent will use to find the right email addresses for your query.
 
-<Image align="center" border={false} width="500px" src="https://files.readme.io/cdf846f-Screenshot_2024-06-17_at_14.58.18.png" />
 
 Finally, add the Dust App you previously created as a tool for your agent.
 
-<Image align="center" border={false} src="https://files.readme.io/87d2338-Screenshot_2024-06-17_at_14.59.04.png" />
 
 This is how your “Tools & Data sources” screen should look like.
 
-<Image align="center" border={false} src="https://files.readme.io/3d279f2-Screenshot_2024-06-17_at_15.00.22.png" />
 
 You should now be ready to save your new agent !
 
 ## Try your agent !
 
-<Image align="center" border={false} src="https://files.readme.io/5e2bdbb-Screenshot_2024-06-17_at_15.37.24.png" />
 
 It worked !
 
-<Image align="center" border={false} width="500px" src="https://files.readme.io/7df8225-Screenshot_2024-06-17_at_15.37.56.png" />
 
 If we inspect the Tools Details, we can see the agent first queried our spreadsheet and then scheduled an event for me and Margaux.
-
-<Image align="center" border={false} width="400px" src="https://files.readme.io/992e144-Screenshot_2024-06-17_at_15.39.48.png" />

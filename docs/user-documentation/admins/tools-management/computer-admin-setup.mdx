@@ -1,9 +1,9 @@
 ---
 title: "Computer admin setup"
-description: "This page explains how workspace admins can configure Computer. For an overview of what Computer does for users and builders, see Computer. The Comput..."
 ---
 
-This page explains how workspace admins can configure Computer. For an overview of what Computer does for users and builders, see [Computer](././computer).
+
+This page explains how workspace admins can configure Computer. For an overview of what Computer does for users and builders, see [Computer](/docs/user-documentation/agents/tools/computer).
 
 The Computer admin page controls workspace-level network access and environment variables for Computer. Only workspace admins can manage these settings.
 
@@ -59,10 +59,9 @@ When this setting is disabled, agents cannot request new domains. They must rely
 
 When this setting is enabled, an agent using Computer can ask the user to approve an additional domain during the conversation. Each request is approval-gated. If the user approves, that domain becomes available only for the current Computer. It does not change the workspace allowlist.
 
-<Callout icon="" theme="warn">
-</Callout>
-  When Agent-requested domains is enabled, a non-admin user can grant temporary network access to a domain that admins did not preapprove. Enable it when you want users to unblock one-off API or website access during a conversation. Keep it disabled when every allowed domain should be reviewed by an admin first.
-</Callout>
+<Warning>
+When Agent-requested domains is enabled, a non-admin user can grant temporary network access to a domain that admins did not preapprove. Enable it when you want users to unblock one-off API or website access during a conversation. Keep it disabled when every allowed domain should be reviewed by an admin first.
+</Warning>
 
 To change this setting:
 
@@ -116,10 +115,9 @@ To add an HTTPS secret:
 
 HTTPS secret names use the `DSEC_` prefix.
 
-<Callout icon="" theme="default">
-</Callout>
-  Values are write-only after saving. Admins can replace or delete them, but cannot view the saved value.
-</Callout>
+<Info>
+Values are write-only after saving. Admins can replace or delete them, but cannot view the saved value.
+</Info>
 
 <details>
 <summary>Technical detail: how HTTPS secrets are used</summary>
@@ -134,10 +132,9 @@ If you already created a configuration variable that should be treated as a cred
 
 Promotion is one-way: use HTTPS secrets for credentials going forward.
 
-<Callout icon="ℹ" theme="default">
-</Callout>
-  Promotion takes effect for new Computers. Already-running Computers keep their previous environment values until they are restarted.
-</Callout>
+<Info>
+Promotion takes effect for new Computers. Already-running Computers keep their previous environment values until they are restarted.
+</Info>
 
 ## Rotate or delete variables
 

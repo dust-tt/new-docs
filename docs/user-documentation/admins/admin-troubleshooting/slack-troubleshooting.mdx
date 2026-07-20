@@ -1,7 +1,7 @@
 ---
 title: "Slack Troubleshooting"
-description: "Dust's Slack integration has two layers: **Slack Apps** and **Features**. A Slack app is the foundation. When you install a Slack app, it creates a bo..."
 ---
+
 
 ## How Dust's Slack Integration Works
 
@@ -17,12 +17,11 @@ A Slack app is the foundation. When you install a Slack app, it creates a bot us
 | **Dust**             | `@Dust` bot           | Interactive chat with agents **directly in Slack**                                                 |
 | **Dust Slack Tools** | -                     | **Slack Tool** or **Slack Bot Tool** capability in Dust                                            |
 
-<Callout icon="" theme="default">
-</Callout>
-  ### Why three Slack Apps?
+<Info>
+**Why three Slack Apps?**
 
-  Each app has a distinct job. **Dust Data Sync** reads and indexes your messages so agents can search them later (see [Slack Connection](https://docs.dust.tt/docs/slack-connection)). **Dust** is the interactive bot that responds when you mention it (see [Dust in Slack](https://docs.dust.tt/docs/slack)). Separating these keeps permissions clear and lets you control each independently.
-</Callout>
+Each app has a distinct job. **Dust Data Sync** reads and indexes your messages so agents can search them later (see [Slack Connection](https://docs.dust.tt/docs/slack-connection)). **Dust** is the interactive bot that responds when you mention it (see [Dust in Slack](https://docs.dust.tt/docs/slack)). Separating these keeps permissions clear and lets you control each independently.
+</Info>
 
 ### Understanding the Features
 
@@ -48,12 +47,11 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 3. Wait 2–5 minutes for Slack to propagate the change
 4. Refresh the connection manager in Dust
 
-<Callout icon="" theme="default">
-</Callout>
-  ### Inviting is not the same as syncing
+<Info>
+**Inviting is not the same as syncing**
 
-  Inviting the bot makes the channel visible in Dust's connection manager. But messages only sync after you explicitly select that channel in **Spaces  Connections  Slack  Add / Remove data** (:doc:`/slack-connection`). This gives you control over exactly what data enters Dust.
-</Callout>
+Inviting the bot makes the channel visible in Dust's connection manager. But messages only sync after you explicitly select that channel in **Spaces  Connections  Slack  Add / Remove data** (:doc:`/slack-connection`). This gives you control over exactly what data enters Dust.
+</Info>
 
 ### Channel not syncing
 
@@ -102,12 +100,11 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 
 **To remove the bot from a channel:** Type `/remove @Dust` and press **Enter**.
 
-<Callout icon="" theme="default">
-</Callout>
-  ### DMs are not supported
+<Info>
+**DMs are not supported**
 
-  `@Dust` works in public and private channels only. It does not respond in direct messages (:doc:`/slack`). This is by design—channels provide shared context that makes agent responses more useful to everyone.
-</Callout>
+`@Dust` works in public and private channels only. It does not respond in direct messages (:doc:`/slack`). This is by design—channels provide shared context that makes agent responses more useful to everyone.
+</Info>
 
 ### Bot doesn't see full conversation
 
@@ -130,9 +127,11 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 
 **For public channels:** You can set a default agent in the agent's settings (the agent must be published). When anyone mentions `@Dust` in that channel, your chosen agent responds automatically (:doc:`/slack`).
 
-<Callout type="warning"Private channel limitation>
-</Callout>
+<Warning>
+**Private channel limitation**
+
 You cannot set a default agent for private channels. In private channels, always use the `+agent-name` or `~agent-name` syntax to call specific agents.
+</Warning>
 
 ### Auto‑reply without @mention
 
@@ -143,9 +142,11 @@ You cannot set a default agent for private channels. In private channels, always
 1. **Agent settings:** Configure a default agent for specific public channels in the agent's settings page (:doc:`/slack`).
 2. **Slack Workflows:** Use [Slack Workflows](https://docs.dust.tt/docs/dust-assistants-in-a-slack-workflow) to trigger agents based on events like emoji reactions or schedules.
 
-<Callout type="warning"Workflows require whitelisting>
-</Callout>
+<Warning>
+**Workflows require whitelisting**
+
 Slack workflows must be enabled for your workspace by Dust. Contact [support@dust.tt](mailto:support@dust.tt) with your workspace URL and workflow name to request access (see [Slack Workflows](https://docs.dust.tt/docs/dust-assistants-in-a-slack-workflow)). When you contact support, include the exact name(s) of any Restricted Space used by the agent (in addition to Company Data). This is indicated by the yellow Restricted Space heads‑up in the Agent Builder.
+</Warning>
 
 ## Slack Tools Issues
 
@@ -168,7 +169,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 
 **Why this happens:** Slack tools use your personal OAuth credentials. When an agent posts a message or performs an action, Slack sees it as coming from you. This is intentional—it means agents can only do what you're allowed to do (:doc:`/slack-mcp`).
 
-**If you need bot identity:** Contact [support@dust.tt](mailto:support@dust.tt) to request access to the **Slack Bot** tool, which posts as a bot instead of you. Note: the bot version only works in public channels where the bot has been invited (:doc:`/beta-slack-tool-using-bot-credentials`).
+**If you need bot identity:** Contact [support@dust.tt](mailto:support@dust.tt) to request access to the **Slack Bot** tool, which posts as a bot instead of you. Note: the bot version only works in public channels where the bot has been invited.
 
 ### Tool not appearing in agent builder
 
@@ -250,12 +251,11 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 | **No default agent in private channels**   | Slack's Terms of Service restrict certain bot behaviors in private channels. Use `@Dust +agent-name` syntax instead.                                                                                                                 |
 | **Thread links sometimes approximate**     | When messages aren't threaded, Dust links to the approximate location in the channel rather than the exact message. Use threads for precise linking. (:doc:`/slack-connection#slack-connection-specificities`)                       |
 
-<Callout icon="" theme="default">
-</Callout>
-  ### Best practice: Use threads
+<Info>
+**Best practice: Use threads**
 
-  Post your topic as the first message, then continue the conversation in a thread. This improves Dust's ability to retrieve relevant context and provides accurate message links (:doc:`/slack-connection#slack-connection-specificities`).
-</Callout>
+Post your topic as the first message, then continue the conversation in a thread. This improves Dust's ability to retrieve relevant context and provides accurate message links (:doc:`/slack-connection#slack-connection-specificities`).
+</Info>
 
 ## Still Stuck?
 

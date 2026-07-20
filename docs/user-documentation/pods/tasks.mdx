@@ -1,15 +1,12 @@
 ---
 title: "Tasks"
-description: "The **Tasks tab** is where work gets defined, assigned, and executed. Tasks are lightweight items that describe something that needs to happen. Any Po..."
 ---
+
 
 The **Tasks tab** is where work gets defined, assigned, and executed. Tasks are lightweight items that describe something that needs to happen. Any Pod member can create them, assign them, and start an agent on them. Agents can do the same — create tasks, start working on them, and mark them done, all without a human in the loop.
 
 This reflects a core principle of Pods: **everything a human can do, an agent can do**. Agent interactions with Tasks are powered by the **Pods skill**, which is available to all agents by default. See the [Overview](https://docs.dust.tt/docs/pods-overview) for more details.
 
-<Image align="center" border={true} src="https://files.readme.io/046908bf6889abbc0ddaf014587a5849567486338599785bd27a77e4a5cf4f5b-image.png" className="border" />
-
-<br />
 
 ## How to create a task
 
@@ -26,9 +23,11 @@ Agents can create tasks directly in a Pod — for example, after analysing a con
 
 Tasks are grouped by assignee. Unassigned tasks appear in their own section.
 
-<Callout type="info"Write task descriptions as clear, self-contained instructions — the agent will read the task text as its starting brief when it begins working.>
-</Callout>
-## Task states
+<Info>
+**Write task descriptions as clear, self-contained instructions — the agent will read the task text as its starting brief when it begins working.**
+
+**Task states**
+</Info>
 
 | State           | What it means                                                          |
 | --------------- | ---------------------------------------------------------------------- |
@@ -44,9 +43,6 @@ Tasks are grouped by assignee. Unassigned tasks appear in their own section.
 2. Optionally add a custom message or select a specific agent
 3. Click **Start** — a conversation linked to the task is created and the task moves to **In progress**
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/384e49e3aeaf2548cdd22a2c169c61ce86dc28aff858b3d1c1dd3396c88b07ef-image.png" className="border" />
-
-<br />
 
 **As an agent:**
 
@@ -61,9 +57,6 @@ The linked conversation is visible in the Conversations tab. You can follow the 
 
 Completed tasks remain visible with a strikethrough. They can be unchecked to reopen if needed.
 
-<Image align="center" border={true} width="50% " src="https://files.readme.io/715939aae090b3ecc9665df870aff48ba5d72572ff7b7c8722ac63737d6dd883-image.png" className="border" />
-
-<br />
 
 ## How to edit or delete a task
 
@@ -103,6 +96,10 @@ For ongoing sync, use the **wake-up tool** to schedule a recurring agent that ru
 
 Example prompt: _"Every weekday morning, check for new open Jira tickets in project XYZ and create a task in this Pod for any that don't already exist. Also check for tasks in this Pod that are marked done and close the corresponding Jira ticket. Use the wake-up tool to schedule this automatically."_
 
-<Callout type="info"The sync agent can use the Pods skill by default to read and write Pod tasks. The relevant external tool — **Jira**, **Asana**, or **Linear** — must be available to the agent so it can read and write external issues.>
+<Info>
+The sync agent can use the Pods skill by default to read and write Pod tasks. The relevant external tool — **Jira**, **Asana**, or **Linear** — must be available to the agent so it can read and write external issues.
+</Info>
 
-<Callout type="warning"Two-way sync requires careful instructions to avoid loops. Specify clearly which system is the source of truth for each type of change, or instruct the agent to only sync in one direction per run.>
+<Warning>
+Two-way sync requires careful instructions to avoid loops. Specify clearly which system is the source of truth for each type of change, or instruct the agent to only sync in one direction per run.
+</Warning>

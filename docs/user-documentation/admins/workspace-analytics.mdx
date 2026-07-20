@@ -2,6 +2,7 @@
 title: "Workspace analytics"
 ---
 
+
 Track adoption, credit consumption, and usage patterns across your workspace from **Admin > Analytics**. Only workspace admins can access this page.
 
 <HTMLBlock>{`
@@ -36,7 +37,7 @@ Use the time range selector at the top right of the page to scope every chart an
 
 ## Accessing analytics via the API
 
-You can pull usage data programmatically through the [Export workspace analytics](https://docs.dust.tt/reference/get_api-v1-w-wid-analytics-export) endpoint. Any Dust API key with the **builder** role (or above) can call it — no special access request needed.
+You can pull usage data programmatically through the [Export workspace analytics](/api-reference/get_api-v1-w-wid-analytics-export) endpoint. Any Dust API key with the **builder** role (or above) can call it — no special access request needed.
 
 Pass the `table` you want along with a `startDate` and `endDate` (both `YYYY-MM-DD`):
 
@@ -55,8 +56,8 @@ Pass the `table` you want along with a `startDate` and `endDate` (both `YYYY-MM-
 
 Responses are returned as CSV by default, or as JSON when `format=json`. Pass an optional `timezone` parameter (an IANA name such as `Europe/Paris` or `America/New_York`) to align daily buckets to your local time rather than UTC.
 
-<Callout type="danger"**Legacy endpoint**>
-</Callout>
-The previous [`workspace-usage`](https://docs.dust.tt/reference/get_api-v1-w-wid-workspace-usage) endpoint is deprecated and will be removed after **2026-06-01**. Migrate to `analytics/export` before then.
+<Danger>
+**Legacy endpoint**
 
-<br />
+The previous [`workspace-usage`](/api-reference/get_api-v1-w-wid-workspace-usage) endpoint is deprecated and will be removed after **2026-06-01**. Migrate to `analytics/export` before then.
+</Danger>

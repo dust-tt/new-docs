@@ -1,23 +1,20 @@
 ---
 title: "Snowflake"
-description: "ℹ️ Dust does not synchronize or store any of your Snowflake data. We only store metadata, such as databases, schemas or tables names. You can connect..."
 ---
+
 
 ℹ Dust does not synchronize or store any of your Snowflake data. We only store metadata, such as databases, schemas or tables names.
 
-You can connect Dust to your Snowflake data warehouse to enable your agents to perform [Table queries](././table-queries) on your Snowflake tables.
+You can connect Dust to your Snowflake data warehouse to enable your agents to perform [Table queries](/docs/user-documentation/agents/knowledge/table-queries) on your Snowflake tables.
 
 Dust agents are able to use the output from these queries to answer quantitative questions:
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/4ece47f861a7961b68fd9f3ec9568bea1b4ef991f758c6882e4501e375e364b2-Screenshot_2024-10-17_at_12.24.45.png" />
 
 The agents can also leverage the results to create visualizations, such as charts:
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/e2df019c1de6c8b386ff9df7b107311793a40a67482b355883774a0828fb3318-Screenshot_2024-10-17_at_12.26.11.png" />
 
 The "Tools inspection" button allows to view the reasoning and SQL query used by the agent to retrieve the data:
 
-<Image align="center" className="border" width="75% " border={true} src="https://files.readme.io/af56babf45529b4891881a8fd90ebb64365775de8e23f46b73379efc3fb6715d-Screenshot_2024-10-17_at_15.24.32.png" />
 
 ## Key Snowflake Concepts
 
@@ -51,11 +48,13 @@ Follow the appropriate setup instructions below based on your chosen authenticat
 ### Setup on Snowflake's side
 
 Note: For configuring access to Snowflake, you may need to whitelist the following Dust static IP: If you're in the US (routes start with [https://dust.tt](https://dust.tt)) the IP is `34.46.9.232`. For the EU customers (routes start with [https://eu.dust.tt](https://eu.dust.tt)) the IP is `35.195.191.222`
-<br />
 
-<Callout type="info"We recommend creating a dedicated Warehouse, User and Role for Dust.>
-</Callout>
-#### Setup the warehouse, role and user for Dust
+
+<Info>
+**We recommend creating a dedicated Warehouse, User and Role for Dust.**
+
+**Setup the warehouse, role and user for Dust**
+</Info>
 
 **Create a new role**
 
@@ -110,20 +109,21 @@ Allow the role to use the warehouse:
 GRANT USAGE ON WAREHOUSE dust_warehouse TO ROLE dust_role;
 ```
 
-<Callout type="info"About permissions for the dust\_role>
-</Callout>
-Make sure you're not adding too many permissions to the *dust\_role* user. Here's the max that we accept: 
+<Info>
+**About permissions for the dust\_role**
+
+Make sure you're not adding too many permissions to the *dust\_role* user. Here's the max that we accept:
 **USAGE** grant on these resources:
 ```
-"TABLE",  
-  "VIEW",  
-  "EXTERNAL_TABLE",  
-  "DYNAMIC_TABLE",  
-  "EVENT_TABLE",  
-  "STREAM",  
-  "MATERIALIZED_VIEW",  
-  "HYBRID_TABLE",  
-  "ICEBERG_TABLE",  
+"TABLE",
+  "VIEW",
+  "EXTERNAL_TABLE",
+  "DYNAMIC_TABLE",
+  "EVENT_TABLE",
+  "STREAM",
+  "MATERIALIZED_VIEW",
+  "HYBRID_TABLE",
+  "ICEBERG_TABLE",
   "STREAM",
 ```
 **SELECT** grant on these resources:
@@ -139,6 +139,7 @@ Make sure you're not adding too many permissions to the *dust\_role* user. Here'
   "MODEL",
 ```
 Even if the Snowflake role has permissions on views, Dust ignores views when listing resources to query; only tables are considered for agent Table queries.
+</Info>
 
 **Grant the new role to the new user**
 
@@ -251,7 +252,6 @@ GRANT SELECT ON TABLE MY_DATABASE.MY_SCHEMA.MY_TABLE TO ROLE dust_role;
 
 #### Setup on Dust's side
 
-<Image align="center" className="border" width="40% " border={true} src="https://files.readme.io/b749c2b6993fd0f3bc04526e41abbdb0384a8dae164df03a5b76c2a557b58828-Screenshot_2024-10-17_at_15.13.14.png" />
 
 Once the Snowflake access has been setup, navigate to Dust's **Spaces** > **Connections**, click on "Add Connections" and select Snowflake.
 
@@ -285,7 +285,7 @@ Press "Connect and select tables" to test the connection.
 
 Once the connection is successful, you can select the tables you want to make available in Dust.
 
-<Callout type="info">>
-</Callout>
-### Tables only (no views)
+<Info>
+**Tables only (no views)**
 The Snowflake connector only syncs and exposes tables for Query Tables (Table queries) in agents. Views (including materialized views) are not supported and will not be exposed to agents.
+</Info>

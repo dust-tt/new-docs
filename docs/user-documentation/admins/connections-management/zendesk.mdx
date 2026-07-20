@@ -1,35 +1,37 @@
 ---
 title: "Zendesk"
-description: "At the moment, Dust is able to sync **Help Center Articles** and **Tickets**. We also have a Dust extension available on the Zendesk marketplace that..."
 ---
+
 
 At the moment, Dust is able to sync **Help Center Articles** and **Tickets**.
 
-<Callout type="info"Zendesk extension>
-</Callout>
-We also have a Dust extension available on the Zendesk marketplace that enables access to Dust agents by your support team directly within Zendesk. Check out the documentation at [Zendesk extension](././zendesk).
+<Info>
+**Zendesk extension**
 
-This page talks about importing Zendesk data to Dust. If you want to install the Dust Zendesk app, please visit this article: [Dust in Zendesk](././zendesk)
+We also have a Dust extension available on the Zendesk marketplace that enables access to Dust agents by your support team directly within Zendesk. Check out the documentation at [Zendesk extension](/docs/user-documentation/admins/connections-management/zendesk).
+</Info>
+
+This page talks about importing Zendesk data to Dust. If you want to install the Dust Zendesk app, please visit this article: [Dust in Zendesk](/docs/user-documentation/admins/connections-management/zendesk)
 
 Setting up the Zendesk connection involves the following steps that must be completed by an individual with admin rights on both Dust and Zendesk (in _Support_ and _Guide_ at least).
 
 1. On dust.tt, navigate to **Spaces** > **Connections** and select Zendesk in the list.
 
-<Image align="center" border={true} width="30% " src="https://files.readme.io/97a6a86a5c870bfbd158c0ed6247b1f9bf6709fc5d412ffe36b61172fd81ddd8-Screenshot_2024-11-28_at_11.14.59_AM.png" className="border" />
 
 2. Enter the subdomain of your Zendesk instance, it can be found in every Zendesk URL: https://**subdomain**.zendesk.com/agent/dashboard.
 3. Authenticate on Zendesk, you will then be redirected to Zendesk in order to give Dust access your Zendesk instance data (only data from _Support_ and _Guide_).
 4. The connection should appear under **Spaces > Connections**. You can then manage the connection by selecting the exact data you want to sync with Dust.
 
-<Image align="center" border={true} width="70% " src="https://files.readme.io/04105a09e548a2224a4f6adaae25cc415856ff34ade7a61a083b6ce9dabffb4c-Screenshot_2025-02-24_at_3.42.26_PM.png" className="border" />
 
 Dust modal to select the data you want to sync with your Dust workspace.
 
-<Callout type="info"How to check if you are an admin in Zendesk>
-</Callout>
+<Info>
+**How to check if you are an admin in Zendesk**
+
 1. Click on your profile picture/icon in the top right corner of your Zendesk interface
 2. Select "View Profile"
 3. Look at your role information - it will show whether you are an: Admin, Agent, End-user, Light agent or Custom role (Enterprise accounts only).
+</Info>
 
 ### Permission granularity: Brands
 
@@ -46,7 +48,6 @@ By default, we synchronize only the tickets meeting all the following conditions
 
 These options can be turned on in **Spaces** > **Connections** > **Zendesk** > **Manage**.
 
-<Image align="center" width="50% " src="https://files.readme.io/323c28c467099af9ae9a8f354bc2a3cd756fda1a115f008bc01b77870ef0cc2c-Screenshot_2026-02-20_at_1.33.01_PM.png" />
 
 #### Sync Unresolved Tickets
 
@@ -73,10 +74,9 @@ Configure tags to include or exclude specific tickets from the sync based on the
 * Add **Included** tags to sync _only_ tickets that have those tags.
 * Add **Excluded** tags to filter out tickets that have those tags.
 
-<Callout icon="" theme="warn">
-</Callout>
-  These filters only apply to **future syncing** and will not retroactively remove already-synced tickets.
-</Callout>
+<Warning>
+These filters only apply to **future syncing** and will not retroactively remove already-synced tickets.
+</Warning>
 
 ***
 
@@ -87,10 +87,9 @@ Configure tags to include or exclude tickets based on the Zendesk organization t
 * Add **Included** tags to sync only tickets from organizations with those tags.
 * Add **Excluded** tags to filter out tickets from organizations with specific tags.
 
-<Callout icon="" theme="warn">
-</Callout>
-  These filters only apply to **future syncing** and will not retroactively remove already-synced tickets.
-</Callout>
+<Warning>
+These filters only apply to **future syncing** and will not retroactively remove already-synced tickets.
+</Warning>
 
 ***
 
@@ -103,10 +102,9 @@ To add a custom field:
 1. Find the numeric ID of the custom field in your **Zendesk Admin** settings under **Fields**.
 2. Enter the ID in the input and click **Add Field**.
 
-<Callout icon="" theme="info">
-</Callout>
-  Custom field tags follow the same `fieldName:value` format as other Dust labels and can be used to filter data sources on the semantic search tool.
-</Callout>
+<Info>
+Custom field tags follow the same `fieldName:value` format as other Dust labels and can be used to filter data sources on the semantic search tool.
+</Info>
 
 ***
 
@@ -130,11 +128,13 @@ When a new ticket is solved or deleted in a Brand you’ve selected, it takes up
 
 Outdated tickets (older than the retention period) and tickets that were unselected in the UI are cleaned on a daily basis.
 
-<Callout type="danger"Quantitative use-cases>
-</Callout>
-The connection is tailored around qualitative analyses such as retrieving key information inside tickets based on semantic meaning. As of now quantitative questions such as _how many tickets about X topic have been assigned to Y_ are not supported out of the box (but could be in the future, stay tuned!).
+<Danger>
+**Quantitative use-cases**
 
-# Sync of Help Center articles
+The connection is tailored around qualitative analyses such as retrieving key information inside tickets based on semantic meaning. As of now quantitative questions such as _how many tickets about X topic have been assigned to Y_ are not supported out of the box (but could be in the future, stay tuned!).
+</Danger>
+
+## Sync of Help Center articles
 
 ### **Permission granularity: Brands and Categories**
 
@@ -163,13 +163,15 @@ If a new article is published on either a selected **Category** or **Brand** **H
 
 Articles that were unselected in the UI or deleted in Zendesk are cleaned on a daily basis.
 
-<Callout type="info"Hiding names and email addresses>
-</Callout>
-By default the names and email addresses of the users involved in a ticket or an article are included in the synced metadata, making them available to Dust agents.
-This option can be disabled in **Spaces** > **Connections** > **Zendesk** > **Manage**.  
-:warning: Doing so will result in the agents having no knowledge of who the users are.
+<Info>
+**Hiding names and email addresses**
 
-# Labels
+By default the names and email addresses of the users involved in a ticket or an article are included in the synced metadata, making them available to Dust agents.
+This option can be disabled in **Spaces** > **Connections** > **Zendesk** > **Manage**.
+:warning: Doing so will result in the agents having no knowledge of who the users are.
+</Info>
+
+## Labels
 
 Dust syncs the custom labels (tags) set on tickets in Zendesk and include them in the document above the content itself. It also automatically adds those labels:
 
@@ -183,4 +185,4 @@ Dust syncs the custom labels (tags) set on tickets in Zendesk and include them i
 * `satisfactionRating`
 * `hasIncidents`
 
-**Labels**  allow for additional filtering on data sources selected on the [semantic search](././search-your-data) tool.
+**Labels**  allow for additional filtering on data sources selected on the [semantic search](/docs/user-documentation/agents/knowledge/search-data-sources) tool.

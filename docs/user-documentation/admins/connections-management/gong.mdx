@@ -1,34 +1,36 @@
 ---
 title: "Gong"
-description: "At the moment, Dust is only syncing **Gong Transcripts**. Dust syncs all transcripts in your Gong workspace. Transcripts marked as Private in Gong are..."
 ---
+
 
 At the moment, Dust is only syncing **[Gong Transcripts](https://help.gong.io/docs/see-a-call-transcript)**.
 
-<Callout type="danger"Scope and privacy>
-</Callout>
+<Danger>
+**Scope and privacy**
+
 Dust syncs all transcripts in your Gong workspace. Transcripts marked as Private in Gong are excluded from sync.
+</Danger>
 
 Setting up the Gong connection involves the following steps that must be completed by an individual with **admin rights on both Dust and Gong** (Technical Administrator).
 
 1. On dust.tt, navigate to **Spaces** > **Connections** and select Gong in the list.
 
-<Image align="center" className="border" width="400em" border={true} src="https://files.readme.io/172fe2ffa4e396f1d7dc726816fbda99a9d8bdd226bca6fdefe08d22c5c85fdb-Screenshot_2025-03-06_at_8.11.18_AM.png" />
 
 2. Authenticate on Gong, you will then be redirected to a Gong consent screen in order to give Dust access your Gong workspace.
 
-   <Image align="center" width="500px" src="https://files.readme.io/f436ff33bbdd46aa8575ace1c7d5a6051d636928645b3456381e0c51d31f6ea2-Screenshot_2025-03-06_at_14.02.32.png" />
-3. That's it! By default, Dust will sync all transcripts in your Gong workspace. Transcripts marked as Private in Gong are not synced. The connection will appear under **Spaces > Connections**. Don't forget that to be able to use this data you need to add it to a [Space](./ref:spaces).
 
-<Image align="center" className="border" width="600em" border={true} src="https://files.readme.io/c982ecc03dcab7252269fc63da4519218cc694037ded0bccf89605b188dfb6cf-Screenshot_2025-03-06_at_14.02.45.png" />
+3. That's it! By default, Dust will sync all transcripts in your Gong workspace. Transcripts marked as Private in Gong are not synced. The connection will appear under **Spaces > Connections**. Don't forget that to be able to use this data you need to add it to a [Space](/api-reference/spaces).
 
-<Callout type="info"How to check if you are an admin on Gong>
-</Callout>
+
+<Info>
+**How to check if you are an admin on Gong**
+
 1. Click on your profile picture/icon in the top right corner of your Gong interface.
 2. Select "My Profile".
 3. Navigate to "Workspaces and permissions" (navigation bar on the left).
 4. Check that the "**Technical administrator**" checkbox is ticked.
-<Image align="center" src="https://files.readme.io/e69178a732e556942cf69f918f391d3fa6a4d9de0d00c67ba55c19d71d73fcb2-Screenshot_2025-03-06_at_8.09.31_AM.png" />
+</Info>
+
 
 ### Data synced in an individual Transcript
 
@@ -56,4 +58,4 @@ When syncing transcripts, Dust attaches the following **labels** to the synced d
 * The participant's emails if exposed by Gong.
 * (Optional) The names of the trackers triggered during a call in the format `tracker:{name}`.
 
-**Labels**  allow for additional filtering on data sources selected on the [semantic search](././search-your-data) tool.
+**Labels**  allow for additional filtering on data sources selected on the [semantic search](/docs/user-documentation/agents/knowledge/search-data-sources) tool.

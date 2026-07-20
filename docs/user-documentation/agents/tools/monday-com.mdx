@@ -2,6 +2,7 @@
 title: "Monday"
 ---
 
+
 Monday tools let your agents interact with Monday.com boards, items, groups, and users. This integration enables powerful automation for CRM workflows, project management, lead tracking, and team coordination. Whether you're managing sales pipelines, tracking projects, or coordinating team activities, Monday.com tools provide comprehensive capabilities to streamline your workflows.
 
 ## :compass: Use Case Examples
@@ -23,7 +24,6 @@ Monday tools let your agents interact with Monday.com boards, items, groups, and
 
 ---
 
-<br />
 
 Go to Spaces > Tools in your Dust workspace, click `Add Tools`, and select Monday.
 
@@ -50,43 +50,53 @@ You will be redirected through an OAuth flow to connect Monday.com. By default, 
 
 ### Board Management
 
-- **get_boards** - Lists all accessible boards (up to 100)
-- **get_board_values** - Retrieves detailed board information including columns and groups
-- **create_board** - Creates a new board with optional workspace and description
-- **get_board_analytics** - Retrieves analytics and statistics for reporting
+| Tool | Description |
+| --- | --- |
+| `get_boards` | Lists all accessible boards (up to 100) |
+| `get_board_values` | Retrieves detailed board information including columns and groups |
+| `create_board` | Creates a new board with optional workspace and description |
+| `get_board_analytics` | Retrieves analytics and statistics for reporting |
 
 ### Item Management
 
-- **get_board_items** - Retrieves items from a specific board (up to 100)
-- **get_item_details** - Retrieves detailed information about a specific item
-- **search_items** - Advanced search with filtering by query, board, status, assignee, group, timeframe, with ordering options
-- **create_item** - Creates a new item with optional group and column values
-- **create_multiple_items** - Bulk creates multiple items across boards
-- **update_item** - Updates column values of an existing item
-- **update_item_name** - Updates the name of an item
-- **delete_item** - Deletes an item
-- **move_item_to_board** - Moves an item between boards (useful for CRM workflows like converting leads to opportunities)
-- **get_items_by_column_value** - Retrieves items filtered by column value
+| Tool | Description |
+| --- | --- |
+| `get_board_items` | Retrieves items from a specific board (up to 100) |
+| `get_item_details` | Retrieves detailed information about a specific item |
+| `search_items` | Advanced search with filtering by query, board, status, assignee, group, timeframe, with ordering options |
+| `create_item` | Creates a new item with optional group and column values |
+| `create_multiple_items` | Bulk creates multiple items across boards |
+| `update_item` | Updates column values of an existing item |
+| `update_item_name` | Updates the name of an item |
+| `delete_item` | Deletes an item |
+| `move_item_to_board` | Moves an item between boards (useful for CRM workflows like converting leads to opportunities) |
+| `get_items_by_column_value` | Retrieves items filtered by column value |
 
 ### Group Management
 
-- **create_group** - Creates a new group in a board
-- **get_group_details** - Retrieves details about a specific group
-- **delete_group** - Deletes a group from a board
-- **duplicate_group** - Duplicates a group with optional positioning and title
+| Tool | Description |
+| --- | --- |
+| `create_group` | Creates a new group in a board |
+| `get_group_details` | Retrieves details about a specific group |
+| `delete_group` | Deletes a group from a board |
+| `duplicate_group` | Duplicates a group with optional positioning and title |
 
 ### Column Management
 
-- **create_column** - Creates a new column with specified type
-- **get_column_values** - Retrieves column values for a specific item and column
-- **get_file_column_values** - Retrieves file column values
-- **upload_file_to_column** - Uploads a file to a column
+| Tool | Description |
+| --- | --- |
+| `create_column` | Creates a new column with specified type |
+| `get_column_values` | Retrieves column values for a specific item and column |
+| `get_file_column_values` | Retrieves file column values |
+| `upload_file_to_column` | Uploads a file to a column |
 
 ### Subitem Management
 
-- **create_subitem** - Creates a new subitem for an item
-- **update_subitem** - Updates column values of a subitem
-- **get_subitem_values** - Retrieves subitems for a specific item
+| Tool | Description |
+| --- | --- |
+| `create_subitem` | Creates a new subitem for an item |
+| `update_subitem` | Updates column values of a subitem |
+| `get_subitem_values` | Retrieves subitems for a specific item |
 
 ### Updates & Comments
 
@@ -120,9 +130,11 @@ When using **Personal credentials**, users will need to authenticate on their fi
 
 From then on, requests will use your personal credentials, automatically inheriting your Monday.com permissions and ensuring all actions are performed with appropriate access controls.
 
-<Callout type="info"**Personal credentials provide better security**>
-</Callout>
+<Info>
+**Personal credentials provide better security**
+
 With personal credentials, each user's actions are tracked individually, and agents can only access what the user can access in Monday.com.
+</Info>
 
 ## CRM Pipeline Management
 
@@ -152,17 +164,19 @@ With personal credentials, each user's actions are tracked individually, and age
 - Add a comment to item #456 mentioning the latest update
 - Get details about all users in the Sales team
 
-# Best Practices
+## Best Practices
 
 When building agents with Monday.com tools:
 
-- **Be specific with board names**: Include exact board names in your agent instructions to avoid confusion
-- **Use bulk operations wisely**: For importing multiple records, use `create_multiple_items` rather than creating items individually
-- **Leverage search**: The `search_items` tool supports advanced filtering - use it to find exactly what you need
-- **Track changes**: Use activity logs to monitor pipeline velocity and team performance
-- **Consider permissions**: When using personal credentials, remember that agents inherit the user's permissions
+| Tool | Description |
+| --- | --- |
+| `Be specific with board names` | Include exact board names in your agent instructions to avoid confusion |
+| `Use bulk operations wisely` | For importing multiple records, use `create_multiple_items` rather than creating items individually |
+| `Leverage search` | The `search_items` tool supports advanced filtering - use it to find exactly what you need |
+| `Track changes` | Use activity logs to monitor pipeline velocity and team performance |
+| `Consider permissions` | When using personal credentials, remember that agents inherit the user's permissions |
 
-# Example Agent Instructions
+## Example Agent Instructions
 
 Here's an example of how to configure a CRM agent with Monday.com tools:
 

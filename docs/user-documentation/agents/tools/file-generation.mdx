@@ -2,6 +2,7 @@
 title: "File Generation"
 ---
 
+
 ## Overview
 
 Dust agents can generate files from text content and convert files between different formats using the File Generation capability. This allows your agents to create downloadable documents in formats like PDF, Word, Excel, and more.
@@ -39,9 +40,11 @@ No additional configuration is required.
 
 The agent can generate files from text content you provide or content it creates. When generating files for binary formats (PDF, DOCX, XLSX, PPTX), the agent can accept content in:
 
-- **Plain text**: Simple text content
-- **Markdown**: Markdown-formatted text that gets converted
-- **HTML**: HTML content for more complex formatting
+| Tool | Description |
+| --- | --- |
+| `Plain text` | Simple text content |
+| `Markdown` | Markdown-formatted text that gets converted |
+| `HTML` | HTML content for more complex formatting |
 
 ### Converting Files
 
@@ -80,4 +83,4 @@ Create an Excel file with the project timeline we outlined.
 
 - Maximum file content size is 64,000 characters for generated content
 - Complex formatting in source content may not always convert perfectly between formats
-- For interactive data visualizations, consider using [Frames](https://docs.dust.tt/docs/frames) instead
+- For interactive data visualizations, consider using [Frames](/docs/user-documentation/pods/frames) instead

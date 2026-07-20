@@ -1,9 +1,7 @@
 ---
 title: "Dev : pre-configuring a custom MCP server"
-description: "<br /> When doing regular function calling the agent exposes to the LLM what parameters the function needs through a schema. The LLM then answers with..."
 ---
 
-<br />
 
 ## Pre-configuration
 
@@ -28,7 +26,7 @@ const server = new McpServer({
 
 server.tool(
   "tool-name",
-  "Tool description", 
+  "Tool description",
   {
     paramName: z.string().describe("Parameter description")
   },
@@ -87,7 +85,6 @@ server.tool(
 
 This server definition will lead to the following screen in the Agent Builder.
 
-<Image align="center" border={false} width="60% " src="https://files.readme.io/11f87e139058fef0924101db73fb2ea6da961ef20623706f77f3fb09821d8f21-Screenshot_2025-04-15_at_6.28.05_PM.png" />
 
 The configuration input here is tied to the agent configuration and will be returned as is when running the tool.
 

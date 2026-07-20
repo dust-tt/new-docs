@@ -1,7 +1,7 @@
 ---
 title: "Computer"
-description: "Computer is a base capability of Dust agents. It gives an agent a safe, temporary workspace where it can run code, inspect files, create new files, pr..."
 ---
+
 
 Computer is a base capability of Dust agents. It gives an agent a safe, temporary workspace where it can run code, inspect files, create new files, process data, and return finished artifacts to the conversation.
 
@@ -9,10 +9,9 @@ You do not need to ask for Computer explicitly. When you work with files, Dust w
 
 Computer is useful when the final output is a real file, such as a cleaned spreadsheet or a generated slide deck. It is also useful when the final output is text, but that text needs to be computed deterministically, for example a calculation, a mathematical result, or an analysis computed from an Excel file.
 
-<Callout icon="" theme="default">
-</Callout>
-  Think of Computer as a controlled workbench for your agent. The agent can open files with software, transform them with code, and bring the finished result back into the conversation.
-</Callout>
+<Info>
+Think of Computer as a controlled workbench for your agent. The agent can open files with software, transform them with code, and bring the finished result back into the conversation.
+</Info>
 
 ## When Computer helps
 
@@ -130,10 +129,9 @@ A domain can be allowed in two ways:
 
 If you do not approve a requested domain, Computer cannot use that domain. If a request is blocked, the agent can see which domain was denied and explain what needs to be allowed.
 
-<Callout icon="" theme="default">
-</Callout>
-  Temporary user-approved domains apply only to the current Computer. They do not change workspace-wide admin settings.
-</Callout>
+<Info>
+Temporary user-approved domains apply only to the current Computer. They do not change workspace-wide admin settings.
+</Info>
 
 <details>
 <summary>Technical detail: how domain access works</summary>
@@ -142,7 +140,7 @@ Computer checks outbound requests against allowed domains. A domain can be allow
 
 </details>
 
-For admin setup instructions, see [Computer admin setup](././computer-admin).
+For admin setup instructions, see [Computer admin setup](/docs/user-documentation/admins/tools-management/computer-admin-setup).
 
 ## Configuration variables and secrets
 
@@ -165,7 +163,7 @@ A configuration variable is like a label on the workbench: it tells Computer whi
 
 </details>
 
-For setup instructions, see [Computer admin setup](././computer-admin).
+For setup instructions, see [Computer admin setup](/docs/user-documentation/admins/tools-management/computer-admin-setup).
 
 ## Advanced workflows with dsbx
 

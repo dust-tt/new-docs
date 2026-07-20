@@ -1,9 +1,9 @@
 ---
 title: "Filter webhooks payload"
-description: "Dust can generate a filter with a Large Language Model to help you determine precisely which events should be triggering your agent, and create new co..."
 ---
 
-Dust can generate a filter with a Large Language Model to help you determine precisely which events should be triggering your agent, and create new conversation.  
+
+Dust can generate a filter with a Large Language Model to help you determine precisely which events should be triggering your agent, and create new conversation.
 
 Just describe when you want your agent to act, and Dust takes it from here.
 
@@ -19,7 +19,6 @@ The Webhook Filter Expression is a declarative language for filtering webhook pa
 
 The language uses **Lisp-style S-expression syntax**, where expressions are written as parenthesized prefix notation: `(operator arguments...)`.
 
-<br />
 
 ## Syntax Basics
 
@@ -71,7 +70,6 @@ Field references:
 * `"issue.labels"`  `["bug", "critical"]`
 * `"tags.*.name"`  `["bug", "feature"]`
 
-<br />
 
 ## Operators
 
@@ -127,7 +125,6 @@ Returns the **negation** of its single sub-expression.
 
 Returns `true` if issue state is NOT "closed".
 
-<br />
 
 ### Equality Operator
 
@@ -145,7 +142,6 @@ Checks for **exact equality** between a field and a value.
 (eq "issue.locked" true)         ; Boolean comparison
 ```
 
-<br />
 
 ### String Operators
 
@@ -165,7 +161,6 @@ Returns `true` if the branch name starts with "feature/".
 
 **Note:** Only works on string fields.
 
-<br />
 
 ### Array Operators
 
@@ -191,7 +186,6 @@ Returns `true` if the labels array contains "bug".
 
 Returns `true` if any tag object has `name` equal to "important".
 
-<br />
 
 ***
 
@@ -217,7 +211,6 @@ Returns `true` only if the labels array contains both "bug" AND "critical".
 
 Returns `true` if tags include objects with both names.
 
-<br />
 
 ***
 
@@ -243,7 +236,6 @@ Returns `true` if the labels array contains either "bug" OR "enhancement" (or bo
 
 Returns `true` if any tag has id 1, 2, or 3.
 
-<br />
 
 ### Numeric Operators
 
@@ -263,7 +255,6 @@ Returns `true` if the issue has more than 10 comments.
 
 ***
 
-<br />
 
 #### `gte` (Greater Than or Equal)
 
@@ -279,7 +270,6 @@ Checks if a numeric field is greater than or equal to a value.
 
 Returns `true` if the PR changed 5 or more files.
 
-<br />
 
 ***
 
@@ -297,7 +287,6 @@ Checks if a numeric field is less than a value.
 
 Returns `true` if the issue has fewer than 3 comments.
 
-<br />
 
 ***
 
@@ -315,7 +304,6 @@ Checks if a numeric field is less than or equal to a value.
 
 Returns `true` if the PR added 100 lines or fewer.
 
-<br />
 
 ### Existence Operator
 
@@ -333,7 +321,6 @@ Checks if a field exists and is not null or undefined.
 
 Returns `true` if the issue has a milestone assigned.
 
-<br />
 
 ## Common Patterns
 
@@ -345,7 +332,6 @@ To express "not equal", combine `not` and `eq`:
 (not (eq "issue.state" "closed"))
 ```
 
-<br />
 
 ### Has None
 
@@ -355,7 +341,6 @@ To check that an array contains none of the specified values:
 (not (has-any "issue.labels" ("wontfix" "duplicate")))
 ```
 
-<br />
 
 ### Multiple Conditions
 
@@ -368,7 +353,6 @@ Combine conditions with `and`:
   (has "issue.labels" "urgent"))
 ```
 
-<br />
 
 ### Any of Multiple Conditions
 
@@ -381,7 +365,6 @@ Use `or` for alternatives:
   (eq "sender.login" "charlie"))
 ```
 
-<br />
 
 ## Complete Examples
 
@@ -393,7 +376,6 @@ Use `or` for alternatives:
 (eq "action" "opened")
 ```
 
-<br />
 
 ### Example 2: Multiple Conditions
 
@@ -405,7 +387,6 @@ Use `or` for alternatives:
   (eq "sender.login" "alice"))
 ```
 
-<br />
 
 ### Example 3: Label-Based Routing
 
@@ -415,7 +396,6 @@ Use `or` for alternatives:
 (has-any "issue.labels" ("bug" "enhancement"))
 ```
 
-<br />
 
 ### Example 4: Complex Criteria
 
@@ -427,7 +407,6 @@ Use `or` for alternatives:
   (gt "pull_request.changed_files" 20))
 ```
 
-<br />
 
 ### Example 5: Advanced Multi-Condition
 
@@ -450,7 +429,6 @@ Use `or` for alternatives:
     (gt "issue.comments" 5)))
 ```
 
-<br />
 
 ## Important Notes
 
@@ -488,7 +466,7 @@ Use `or` for alternatives:
 4. **Use wildcards**: Leverage `.*` notation for arrays of objects instead of complex nested logic
 5. **Document complex filters**: Add comments (outside the expression) explaining the logic for complex filters
 6. **Prefer `has-any` over multiple `or` statements**: `(has-any "labels" ("a" "b" "c"))` is cleaner than `(or (has "labels" "a") (has "labels" "b") (has "labels" "c"))`
-   <br />
+
 
 ## Testing Your Filters
 
@@ -505,9 +483,7 @@ When writing filters:
 ```
 Payload: {"action": "opened", "issue": {"labels": ["bug"]}}
 
-Step 1: (eq "action" "opened")  
-Step 2: (has "issue.labels" "bug")  
-Step 3: (and (eq "action" "opened") (has "issue.labels" "bug"))  
+Step 1: (eq "action" "opened")
+Step 2: (has "issue.labels" "bug")
+Step 3: (and (eq "action" "opened") (has "issue.labels" "bug"))
 ```
-
-<br />

@@ -1,23 +1,25 @@
 ---
 title: "Credit management"
-description: "Credits are the unit of AI work on Dust — see Credits for how they're calculated and what each seat type includes. When using Dust, members can draw c..."
 ---
 
-Credits are the unit of AI work on Dust — see [Credits](./credits) for how they're calculated and what each seat type includes.
+
+Credits are the unit of AI work on Dust — see [Credits](/docs/user-documentation/admins/usage-seats-and-credits/credits) for how they're calculated and what each seat type includes.
 
 When using Dust, members can draw credits from different sources depending on their plan and seat type. This page explains how those sources work, in what order they are consumed, how admins can set limits, and how to monitor your workspace's usage.
 
 When a user or automated workflow consumes credits, they are drawn in this order:
 
-1. **Individual credits** — from the user's seat credit pool (see [Credits](./credits))
+1. **Individual credits** — from the user's seat credit pool (see [Credits](/docs/user-documentation/admins/usage-seats-and-credits/credits))
 2. **Workspace credit pool** — a shared pool managed by your admin
 3. **Overage / Pay As You Go** — Enterprise plans only
 
 A user is only blocked when all available sources are exhausted or when a personal spend limit is reached.
 
-<Callout type="info"Free seat users only have individual credits. They cannot draw from the workspace pool and are blocked once their 500 lifetime credits are exhausted.>
-</Callout>
-## Individual credits (seat credit pool)
+<Info>
+**Free seat users only have individual credits. They cannot draw from the workspace pool and are blocked once their 500 lifetime credits are exhausted.**
+
+**Individual credits (seat credit pool)**
+</Info>
 
 Each member's individual credit allocation comes from their seat type:
 
@@ -88,7 +90,7 @@ There is no free credit baseline for programmatic usage.
 
 Admins can configure a monthly cap on programmatic credit consumption from **Admin > Usage**. An email notification is sent when 80% of the cap is reached.
 
-# Tracking usage
+## Tracking usage
 
 Workspace admins can view and manage everything credit-related from **Admin > Usage**.
 
@@ -132,4 +134,4 @@ The Members section lists all workspace members with their usage details. Admins
 * Use the **···** menu on each member row to adjust their personal spend limit or seat type individually.
 * Review pending upgrade requests in the **Requests** tab.
 
-For a broader view of how your team uses Dust — agent activity, conversation trends, and adoption over time — see [Workspace analytics](././workspace-analytics).
+For a broader view of how your team uses Dust — agent activity, conversation trends, and adoption over time — see [Workspace analytics](/docs/user-documentation/admins/workspace-analytics).

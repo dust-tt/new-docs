@@ -1,7 +1,7 @@
 ---
 title: "Context Compaction"
-description: "Interactions with agents can get long. Today, when such interactions exceed the \"context\" of the agent, older messages are pruned automatically. This..."
 ---
+
 
 Interactions with agents can get long. Today, when such interactions exceed the "context" of the agent, older messages are pruned automatically. This is invisible to users and can lead to unexpected loss of information about previous interactions. To solve that problem we introduce context compaction.
 
@@ -9,7 +9,7 @@ Context compaction summarises the earlier part of a long interaction so the agen
 
 ## When to Compact
 
-Use compaction when a conversation has become long or close to its context limit to avoid unexpected interactions pruning. In the conversation input bar, the circular context indicator shows the current context usage percentage.  
+Use compaction when a conversation has become long or close to its context limit to avoid unexpected interactions pruning. In the conversation input bar, the circular context indicator shows the current context usage percentage.
 
 Compaction is controlled by the user. When usage is high enough (33%), the tooltip offers a **Compact now** button. When usage is high (70%) a warning message is displayed to the user to invite them to compact. When usage is very high (80%) compaction is required before sending new user messages.
 

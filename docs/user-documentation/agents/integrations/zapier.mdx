@@ -1,7 +1,7 @@
 ---
 title: "Zapier"
-description: "In this article, we will guide you through how to use the Dust block in Zapier to automatically trigger your Dust Agent from any other application. Cr..."
 ---
+
 
 In this article, we will guide you through how to use the Dust block in Zapier to automatically trigger your Dust Agent from any other application.
 
@@ -11,29 +11,27 @@ Create a new Zap on Zapier, and choose what event should trigger your Dust Agent
 
 A common example of a trigger for a Dust Agent is: `A new row inserted in a Google Spreadsheet`
 
-<Image align="center" src="https://files.readme.io/419ab29875babc07803d8c58edcf10fc949aadce9ef112d5e75b222074bfaab0-Screenshot_2024-08-28_at_11.33.18.png" />
 
 ## 2. Add your `Action` event
 
 * To do so, search for Dust among Zapier integrations:\
-    
+
 
 * Then in the `App & event`tab, select **“Talk to an Agent”:**
 
-  <Image align="center" src="https://files.readme.io/60bc2555d40b610efd1a3b98e3ef6e2ccdd45d58ba5ee354044f079f9c8028a1-Screenshot_2024-08-28_at_11.36.19.png" />
 
 * In the `Account`tab, **follow the instructions to connect Zapier with your Dust account:** you will need your **Workspace ID** (which can be found in your Dust tab URL, right after *dust.tt/w/*), as well as your **Dust API key**, which can be found in `Admin > API Keys > Create an API Key`\
-    
+
 
 * In the `Action`tab, you’ll be prompted to fill the following fields:
   * **The message to send to the Agent**: this is the message to send to the agent
   * **Timezone**: this is the timezone in which you want to operate, you can choose from the list (eg: `Europe/Paris` or `America/Los_Angeles`)
   * **username**: put the name to be displayed in the conversation. eg: `Daily summary Zap`
-  * **email**: This one is optional, put an email if needed. 
+  * **email**: This one is optional, put an email if needed.
   * **Agent**: Select the name of your Agent from the list. Your Dust Agent must be a "Shared" or "Company" Agent. Personal Agents are not visible in this list.
 
 ## 5. Run the Tests, and Publish your Zap
 
-You’re all set! 
+You’re all set!
 
 Once launched, new content in the *Trigger* will automatically run your Agent. To extract the output of the Agent and send it to your next block, you must use the `AgentMessage` property from the Dust block.
