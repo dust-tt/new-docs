@@ -1,44 +1,44 @@
 ---
 title: "[Deprecated] Google Sheets"
-description: "The Google Sheets tool is deprecated. Migrate to the Google Drive tool, which supports reading and editing Google Sheets via tools like Get Spreadshee..."
 ---
 
-<Callout type="warning"Deprecated — Use the Google Drive tool for Google Sheets workflows.>
-</Callout>
+## Overview
+
+<Warning>
+  **Deprecated - Use the Google Drive tool for Google Sheets workflows**.
+</Warning>
+
 The Google Sheets tool is deprecated. Migrate to the Google Drive tool, which supports reading and editing Google Sheets via tools like Get Spreadsheet, Get Worksheet, Append to Spreadsheet, and Update Spreadsheet.
 
-<Callout type="info"This tool uses personal credentials.>
-</Callout>
-This tool interacts with Google Sheets using the user accounts: it adapts to each user.
+<Info>This tool uses personal credentials.</Info>
+This tool interacts with Google Sheets using the user accounts: it adapts to
+each user.
 
- **Migrate to the Google Drive tool**: https://docs.dust.tt/docs/google-drive
+**Migrate to the Google Drive tool**: https://docs.dust.tt/docs/google-drive
 Common replacements:
-- **List Spreadsheets**  Use Google Drive: Search Files (filter to spreadsheets) or Get Spreadsheet when you know the ID.
-- **Get Spreadsheet / Get Worksheet**  Use Google Drive: Get Spreadsheet / Get Worksheet.
-- **Append Data / Update Cells / Format Cells / Clear Range / Copy Sheet / Add/Delete/Rename/Move Worksheet**  Use Google Drive: Append to Spreadsheet / Update Spreadsheet.
+
+- **List Spreadsheets** Use Google Drive: Search Files (filter to spreadsheets) or Get Spreadsheet when you know the ID.
+- **Get Spreadsheet / Get Worksheet** Use Google Drive: Get Spreadsheet / Get Worksheet.
+- **Append Data / Update Cells / Format Cells / Clear Range / Copy Sheet / Add/Delete/Rename/Move Worksheet** Use Google Drive: Append to Spreadsheet / Update Spreadsheet.
+
+## Admin: Setup in Google Cloud
 
 A Google Workspace account is required for the following steps.
 
-### **Create a Client App**
+### Create a Client App
 
-Go to [Google Cloud](https://console.cloud.google.com). Pick one of your project or create a new one. Then in the search bar, type "*Google Auth platform*" and pick "Clients".
-
-<Image align="center" className="border" border={true} src="https://files.readme.io/4949ddddf2efdf3c9c52ad32aaa1e74a9ca3d792589f622a39ccbb9e82814670-image.png" />
+Go to [Google Cloud](https://console.cloud.google.com). Pick one of your project or create a new one. Then in the search bar, type "_Google Auth platform_" and pick "Clients".
 
 Create a new client:
 
-<Image align="center" className="border" border={true} src="https://files.readme.io/449d7236ea432ac74ee30761eb9db1124541d8d05721cef82843baef9ecadec5-image.png" />
-
-<br />
-
 **Fill in basic information**
 
-* Application type: "Web application".
-* External Client App Name: "Dust Gsheets Integration".
-* Authorized javascript origins: [https://dust.tt](https://dust.tt) and [https://eu.dust.tt](https://eu.dust.tt)
-* Authorized redirect URIs: [https://dust.tt/oauth/gmail/finalize](https://dust.tt/oauth/gmail/finalize) and [https://eu.dust.tt/oauth/gmail/finalize](https://eu.dust.tt/oauth/gmail/finalize)
+- Application type: "Web application".
+- External Client App Name: "Dust Gsheets Integration".
+- Authorized javascript origins: [https://dust.tt](https://dust.tt) and [https://eu.dust.tt](https://eu.dust.tt)
+- Authorized redirect URIs: [https://dust.tt/oauth/gmail/finalize](https://dust.tt/oauth/gmail/finalize) and [https://eu.dust.tt/oauth/gmail/finalize](https://eu.dust.tt/oauth/gmail/finalize)
 
-<Image align="center" src="https://files.readme.io/21a5dc58cd12bedf961436ccfe0b11d4a049ce445403326a79499e4ef3b8498c-Screenshot_2025-07-20_at_8.02.51_PM.png" />
+## Admin: Setup in Dust
 
 Pick Create and on the next screen, copy the Client ID and Client Secret (you'll need them for the Dust setup):
 
@@ -48,55 +48,30 @@ You will then be redirected to an oAuth flow to connect an admin Google Sheets A
 
 By default this tool is added to the Company data Space, so accessible in all the workspace.
 
-##  Available Tools
+## Available Tools
 
-**List Spreadsheets**
-List Google Sheets spreadsheets accessible by the user from both personal drive and shared drives. Supports pagination and search.
+| Tool               | Description                                                                                                                        |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| List Spreadsheets  | List Google Sheets spreadsheets accessible by the user from both personal drive and shared drives. Supports pagination and search. |
+| Get Spreadsheet    | Get metadata and properties of a specific Google Sheets spreadsheet.                                                               |
+| Get Worksheet      | Get data from a specific worksheet in a Google Sheets spreadsheet.                                                                 |
+| Update Cells       | Update cells in a Google Sheets spreadsheet.                                                                                       |
+| Append Data        | Append data to a Google Sheets spreadsheet.                                                                                        |
+| Clear Range        | Clear values from a range in a Google Sheets spreadsheet.                                                                          |
+| Create Spreadsheet | Create a new Google Sheets spreadsheet.                                                                                            |
+| Add Worksheet      | Add a new worksheet to an existing Google Sheets spreadsheet.                                                                      |
+| Delete Worksheet   | Delete a worksheet from a Google Sheets spreadsheet.                                                                               |
+| Format Cells       | Apply formatting to cells in a Google Sheets spreadsheet.                                                                          |
+| Copy Sheet         | Copy a sheet from one Google Sheets spreadsheet to another spreadsheet.                                                            |
+| Rename Worksheet   | Rename a worksheet in a Google Sheets spreadsheet.                                                                                 |
+| Move Worksheet     | Move a worksheet to a new position in a Google Sheets spreadsheet.                                                                 |
 
-**Get Spreadsheet**
-Get metadata and properties of a specific Google Sheets spreadsheet.
+## Usage
 
-**Get Worksheet**
-Get data from a specific worksheet in a Google Sheets spreadsheet.
+Once the tool has been configured by the admin as described before, it can be configured for any agent. In the Agent Builder, simply click on `Add Tool` and select Google Sheets.
 
-**Update Cells**
-Update cells in a Google Sheets spreadsheet.
+When users use an agent with the Google Sheets tool for the first time, they will get this notification:
 
-**Append Data**
-Append data to a Google Sheets spreadsheet.
-
-**Clear Range**
-Clear values from a range in a Google Sheets spreadsheet.
-
-**Create Spreadsheet**
-Create a new Google Sheets spreadsheet.
-
-**Add Worksheet**
-Add a new worksheet to an existing Google Sheets spreadsheet.
-
-**Delete Worksheet**
-Delete a worksheet from a Google Sheets spreadsheet.
-
-**Format Cells**
-Apply formatting to cells in a Google Sheets spreadsheet.
-
-**Copy Sheet**
-Copy a sheet from one Google Sheets spreadsheet to another spreadsheet.
-
-**Rename Worksheet**
-Rename a worksheet in a Google Sheets spreadsheet.
-
-**Move Worksheet**
-Move a worksheet to a new position in a Google Sheets spreadsheet.
-
-Once the tool has been configured by the admin as described before, it can be configured for any agent. In the Agent Builder, simply click on `Add Tool` and select Google Sheets. 
-
-When users use an agent with the Google Sheets tool for the first time, they will get this notification: 
-
-<Image align="center" src="https://files.readme.io/86d6c70f0772685cc08403204a0af8aaae117b79a9f2f0ef602601063fc688b3-Screenshot_2025-07-08_at_10.10.03_AM.png" />
-
-They will have to click on the `Connect` button to connect their own Google Calendar credentials. After it will look like this: 
+They will have to click on the `Connect` button to connect their own Google Calendar credentials. After it will look like this:
 
 And they can click on the `Retry` button to replay the agent answer if not done automatically.
-
-<Image align="center" src="https://files.readme.io/49af63545c0b091a079178a9b754dbbcd09d24c099fdb68949366e71d4feb230-Screenshot_2025-07-08_at_10.10.50_AM.png" />

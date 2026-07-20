@@ -1,9 +1,9 @@
 ---
-title: "Monday.com"
-description: "Monday.com tools let your agents interact with Monday.com boards, items, groups, and users. This integration enables powerful automation for CRM workf..."
+title: "Monday"
+description: "Monday tools let your agents interact with Monday.com boards, items, groups, and users. This integration enables powerful automation for CRM workf..."
 ---
 
-Monday.com tools let your agents interact with Monday.com boards, items, groups, and users. This integration enables powerful automation for CRM workflows, project management, lead tracking, and team coordination. Whether you're managing sales pipelines, tracking projects, or coordinating team activities, Monday.com tools provide comprehensive capabilities to streamline your workflows.
+Monday tools let your agents interact with Monday.com boards, items, groups, and users. This integration enables powerful automation for CRM workflows, project management, lead tracking, and team coordination. Whether you're managing sales pipelines, tracking projects, or coordinating team activities, Monday.com tools provide comprehensive capabilities to streamline your workflows.
 
 ## :compass: Use Case Examples
 
@@ -12,16 +12,17 @@ Monday.com tools let your agents interact with Monday.com boards, items, groups,
     Automatically create and update deals, move leads to opportunities, and track your sales pipeline
   </Card>
 
-  <Card title="Project Tracking" icon="fa-tasks">
-    Search items by status, create tasks, add updates, and keep your projects organized
-  </Card>
+<Card title="Project Tracking" icon="fa-tasks">
+  Search items by status, create tasks, add updates, and keep your projects
+  organized
+</Card>
 
   <Card title="Bulk Operations" icon="fa-layer-group">
     Import multiple leads or opportunities efficiently using bulk creation tools
   </Card>
 </Cards>
 
-***
+---
 
 <br />
 
@@ -50,57 +51,57 @@ You will be redirected through an OAuth flow to connect Monday.com. By default, 
 
 ### Board Management
 
-* **get_boards** - Lists all accessible boards (up to 100)
-* **get_board_values** - Retrieves detailed board information including columns and groups
-* **create_board** - Creates a new board with optional workspace and description
-* **get_board_analytics** - Retrieves analytics and statistics for reporting
+- **get_boards** - Lists all accessible boards (up to 100)
+- **get_board_values** - Retrieves detailed board information including columns and groups
+- **create_board** - Creates a new board with optional workspace and description
+- **get_board_analytics** - Retrieves analytics and statistics for reporting
 
 ### Item Management
 
-* **get_board_items** - Retrieves items from a specific board (up to 100)
-* **get_item_details** - Retrieves detailed information about a specific item
-* **search_items** - Advanced search with filtering by query, board, status, assignee, group, timeframe, with ordering options
-* **create_item** - Creates a new item with optional group and column values
-* **create_multiple_items** - Bulk creates multiple items across boards
-* **update_item** - Updates column values of an existing item
-* **update_item_name** - Updates the name of an item
-* **delete_item** - Deletes an item
-* **move_item_to_board** - Moves an item between boards (useful for CRM workflows like converting leads to opportunities)
-* **get_items_by_column_value** - Retrieves items filtered by column value
+- **get_board_items** - Retrieves items from a specific board (up to 100)
+- **get_item_details** - Retrieves detailed information about a specific item
+- **search_items** - Advanced search with filtering by query, board, status, assignee, group, timeframe, with ordering options
+- **create_item** - Creates a new item with optional group and column values
+- **create_multiple_items** - Bulk creates multiple items across boards
+- **update_item** - Updates column values of an existing item
+- **update_item_name** - Updates the name of an item
+- **delete_item** - Deletes an item
+- **move_item_to_board** - Moves an item between boards (useful for CRM workflows like converting leads to opportunities)
+- **get_items_by_column_value** - Retrieves items filtered by column value
 
 ### Group Management
 
-* **create_group** - Creates a new group in a board
-* **get_group_details** - Retrieves details about a specific group
-* **delete_group** - Deletes a group from a board
-* **duplicate_group** - Duplicates a group with optional positioning and title
+- **create_group** - Creates a new group in a board
+- **get_group_details** - Retrieves details about a specific group
+- **delete_group** - Deletes a group from a board
+- **duplicate_group** - Duplicates a group with optional positioning and title
 
 ### Column Management
 
-* **create_column** - Creates a new column with specified type
-* **get_column_values** - Retrieves column values for a specific item and column
-* **get_file_column_values** - Retrieves file column values
-* **upload_file_to_column** - Uploads a file to a column
+- **create_column** - Creates a new column with specified type
+- **get_column_values** - Retrieves column values for a specific item and column
+- **get_file_column_values** - Retrieves file column values
+- **upload_file_to_column** - Uploads a file to a column
 
 ### Subitem Management
 
-* **create_subitem** - Creates a new subitem for an item
-* **update_subitem** - Updates column values of a subitem
-* **get_subitem_values** - Retrieves subitems for a specific item
+- **create_subitem** - Creates a new subitem for an item
+- **update_subitem** - Updates column values of a subitem
+- **get_subitem_values** - Retrieves subitems for a specific item
 
 ### Updates & Comments
 
-* **create_update** - Adds an update (comment) to an item
+- **create_update** - Adds an update (comment) to an item
 
 ### User Management
 
-* **find_user_by_name** - Finds a user by name
-* **get_user_details** - Retrieves details about a specific user
+- **find_user_by_name** - Finds a user by name
+- **get_user_details** - Retrieves details about a specific user
 
 ### Analytics & Activity
 
-* **get_activity_logs** - Retrieves activity logs for tracking pipeline velocity and user actions
-* **get_board_analytics** - Retrieves board statistics by status, group, and assignee for CRM reporting
+- **get_activity_logs** - Retrieves activity logs for tracking pipeline velocity and user actions
+- **get_board_analytics** - Retrieves board statistics by status, group, and assignee for CRM reporting
 
 Once the tool has been configured by the admin as described above, it can be added to any agent in the Agent Builder.
 
@@ -126,41 +127,41 @@ With personal credentials, each user's actions are tracked individually, and age
 
 ## CRM Pipeline Management
 
-* Create a new deal in my sales pipeline for Acme Corp worth $50,000
-* Move the lead "TechStart Inc" to the opportunities board
-* Show me all deals in the "Proposal Sent" stage
-* Update the status of deal #12345 to "Closed Won"
+- Create a new deal in my sales pipeline for Acme Corp worth $50,000
+- Move the lead "TechStart Inc" to the opportunities board
+- Show me all deals in the "Proposal Sent" stage
+- Update the status of deal #12345 to "Closed Won"
 
 ## Project Tracking
 
-* Create a new task called "Design homepage mockup" in the Marketing board
-* Search for all items assigned to me with status "In Progress"
-* Get all overdue items from the Development board
-* Add an update to task #789 saying "Completed initial review"
+- Create a new task called "Design homepage mockup" in the Marketing board
+- Search for all items assigned to me with status "In Progress"
+- Get all overdue items from the Development board
+- Add an update to task #789 saying "Completed initial review"
 
 ## Analytics & Reporting
 
-* Show me the activity logs for the Sales board from last week
-* Get analytics on deal distribution by status
-* How many items are assigned to each team member?
-* Track pipeline velocity for Q4
+- Show me the activity logs for the Sales board from last week
+- Get analytics on deal distribution by status
+- How many items are assigned to each team member?
+- Track pipeline velocity for Q4
 
 ## Team Coordination
 
-* Find user John Smith in Monday
-* Create a task and assign it to Sarah Johnson
-* Add a comment to item #456 mentioning the latest update
-* Get details about all users in the Sales team
+- Find user John Smith in Monday
+- Create a task and assign it to Sarah Johnson
+- Add a comment to item #456 mentioning the latest update
+- Get details about all users in the Sales team
 
 # Best Practices
 
 When building agents with Monday.com tools:
 
-* **Be specific with board names**: Include exact board names in your agent instructions to avoid confusion
-* **Use bulk operations wisely**: For importing multiple records, use `create_multiple_items` rather than creating items individually
-* **Leverage search**: The `search_items` tool supports advanced filtering - use it to find exactly what you need
-* **Track changes**: Use activity logs to monitor pipeline velocity and team performance
-* **Consider permissions**: When using personal credentials, remember that agents inherit the user's permissions
+- **Be specific with board names**: Include exact board names in your agent instructions to avoid confusion
+- **Use bulk operations wisely**: For importing multiple records, use `create_multiple_items` rather than creating items individually
+- **Leverage search**: The `search_items` tool supports advanced filtering - use it to find exactly what you need
+- **Track changes**: Use activity logs to monitor pipeline velocity and team performance
+- **Consider permissions**: When using personal credentials, remember that agents inherit the user's permissions
 
 # Example Agent Instructions
 

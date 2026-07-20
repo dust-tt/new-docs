@@ -1,64 +1,48 @@
 ---
 title: "Search data sources"
-description: "With Dust, you can ask your agents to search through your entire selected Data Sources and pick the most relevant documents to tap into to answer. Dus..."
 ---
 
-With Dust, you can ask your agents to search through your entire selected Data Sources and pick the most relevant documents to tap into to answer. Dust provides **RAG capabilities**  and agents are able to search your data semantically before sending your message to the chosen model (cf. [Understanding Retrieval Augmented Generation (RAG) in Dust](././understanding-retrieval-augmented-generation-rag-and-the-search-method-in-dust)).
+With Dust, you can ask your agents to search through your entire selected Data Sources and pick the most relevant documents to tap into to answer. Dust provides **RAG capabilities** and agents are able to search your data semantically before sending your message to the chosen model (cf. [Understanding Retrieval Augmented Generation (RAG) in Dust](././understanding-retrieval-augmented-generation-rag-and-the-search-method-in-dust)).
 
 To be able to use this, you need to have created some [Datasources](./ref:data-sources) first - Connections, Folders and/or websites.
 
-<Image align="center" src="https://files.readme.io/dc1b1b906961cb0e510859c7d21cb1bf65eb5baf600508e2276aa641bbd0b834-Screenshot_2025-05-21_at_14.10.36.png" />
-
 You will then need to select from your data sources exactly what you want this agent to be able to search from. This means any of your **Connections, Folders or Websites** and you can even pick sub-pages or specific channels.
 
-<Image alt="Pick from any of your data sources" align="center" width="500px" src="https://files.readme.io/37fbfe953ab9d8da3db0c13987c5a12935f59ff6a1cc40373398814a3df68b5d-Screenshot_2025-05-21_at_14.11.17.png">
-  Pick from any of your data sources
-</Image>
-
-<Image alt="Once you picked a data source, you can fine-tune the pages available to your assistant" align="center" width="600px" src="https://files.readme.io/a81756b0ac29de341ca1879724ca232c0049558087930d70182ad486474dd01c-Screenshot_2025-05-21_at_14.11.47.png">
-  Once you've picked a data source, you can fine-tune the pages available to your agent
-</Image>
-
-## **Additional filtering with labels**
-
-<HTMLBlock>{`
-<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"></div></div>
-<script src="https://fast.wistia.net/player.js" async></script>
-`}</HTMLBlock>
+## Additional filtering with labels
 
 After selecting your data sources, you can apply additional filtering using labels to refine what content is available to your agent:
 
-* *Exclude specific content* : Filter out pages with certain labels (e.g., "deprecated").
-* *Include specific content* : Only include pages with specific labels (e.g., from a particular author).
-* *In-conversation filtering* : Enable dynamic filtering based on conversation context. This requires exact tag matching. For example, you could ask "What projects currently have the label 'status:review'?".
+- _Exclude specific content_ : Filter out pages with certain labels (e.g., "deprecated").
+- _Include specific content_ : Only include pages with specific labels (e.g., from a particular author).
+- _In-conversation filtering_ : Enable dynamic filtering based on conversation context. This requires exact tag matching. For example, you could ask "What projects currently have the label 'status:review'?".
 
 The filtering system works with the following logic:
 
-* Documents must have at least one of the "must-have" labels to be included (including those determined from in-conversation filtering).
-* Documents with any "must-not-have" labels will be excluded (including those determined from in-conversation filtering).
+- Documents must have at least one of the "must-have" labels to be included (including those determined from in-conversation filtering).
+- Documents with any "must-not-have" labels will be excluded (including those determined from in-conversation filtering).
 
-<Image align="center" src="https://files.readme.io/b4b19b135462a776a9c0d0d1275ca3043bb2a1a7dbc60e19bdf231838c5694d4-Screenshot_2025-02-20_at_14.39.18.png" />
+<Info>
+  Labels are supported on Folders and on most of our Connections (see "Labels"
+  section on the Connections pages of our documentation).
+</Info>
 
-<Callout type="info"Note>
-</Callout>
-Labels are supported on Folders and on most of our Connections (see "Labels" section on the Connections pages of our documentation).
-
-## **Searching my data, how exactly?**
+## Searching my data, how exactly?
 
 When this method is activated, the agent will search your data for the right information by understanding the context of the user's question. This is possible through a process called **Semantic search**.
 
-<Callout type="info"Semantic search>
-</Callout>
+## Semantic search
+
 Semantic search in [RAG](././understanding-retrieval-augmented-generation-rag-and-the-search-method-in-dust) is a method for finding relevant information based on meaning and context, not just keywords. It uses advanced techniques like embeddings and similarity measures to understand query intent and retrieve contextually appropriate information from a knowledge base. This enhances RAG models' ability to generate more accurate and informed responses by augmenting the language model with pertinent, up-to-date information.
 
 Let’s take an example:
 
 Imagine you are creating an agent whose goal is to expose HR documentation to your employees. They can search for anything regarding their holidays (PTO), hiring policies, parental leave, etc. They already have access to your documentation (Confluence, Notion, etc.) but this information is lost somewhere in a sea of articles and a lot of them can't find it easily. The agent will:
-1. Understand the user question (e.g. "*what should I prepare for a parental leave?*") and search for the right articles and the right chunks inside of the articles that will actually have the answer.
+
+1. Understand the user question (e.g. "_what should I prepare for a parental leave?_") and search for the right articles and the right chunks inside of the articles that will actually have the answer.
 2. It will then feed this content to the model with the full query of the user.
 3. The model will will generate a response to the user's question, taking into account the results from the data source and giving the links to the right sources.
 
-## **Advanced search mode**
+## Advanced search mode
 
 Advanced search mode can be enabled in the agent builder under **Search > Advanced settings**. When enabled, agents gain filesystem-level access to your data sources **in addition to** semantic search.
 
@@ -78,7 +62,7 @@ This method is particularly useful in scenarios where the data might be coming f
 
 ## Granularity
 
-While it is tempting to add all of your data sources to an agent, it is not always the right choice! (And you can already query all of your data sources using the `@dust` agent if your workspace is configured with it. 
+While it is tempting to add all of your data sources to an agent, it is not always the right choice! (And you can already query all of your data sources using the `@dust` agent if your workspace is configured with it.
 
 LLMs perform best when provided with the right data. So agents that are plugged to a constrained number of data will usually perform better than the ones with access to everything.
 

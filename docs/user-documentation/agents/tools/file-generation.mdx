@@ -1,7 +1,8 @@
 ---
 title: "File Generation"
-description: "Dust agents can generate files from text content and convert files between different formats using the File Generation capability. This allows your ag..."
 ---
+
+## Overview
 
 Dust agents can generate files from text content and convert files between different formats using the File Generation capability. This allows your agents to create downloadable documents in formats like PDF, Word, Excel, and more.
 
@@ -9,18 +10,18 @@ Dust agents can generate files from text content and convert files between diffe
 
 The File Generation capability supports the following output formats:
 
-| Format | Extension | Description |
-| ------ | --------- | ----------- |
-| PDF | .pdf | Portable Document Format |
-| Word | .docx | Microsoft Word Document |
-| Excel | .xlsx, .xls | Microsoft Excel Spreadsheet |
-| PowerPoint | .pptx | Microsoft PowerPoint Presentation |
-| CSV | .csv | Comma-Separated Values |
-| Markdown | .md | Markdown text |
-| Plain Text | .txt | Plain text file |
-| HTML | .html | Web page format |
-| XML | .xml | Extensible Markup Language |
-| Images | .jpg, .png, .gif, .webp | Image formats |
+| Format     | Extension               | Description                       |
+| ---------- | ----------------------- | --------------------------------- |
+| PDF        | .pdf                    | Portable Document Format          |
+| Word       | .docx                   | Microsoft Word Document           |
+| Excel      | .xlsx, .xls             | Microsoft Excel Spreadsheet       |
+| PowerPoint | .pptx                   | Microsoft PowerPoint Presentation |
+| CSV        | .csv                    | Comma-Separated Values            |
+| Markdown   | .md                     | Markdown text                     |
+| Plain Text | .txt                    | Plain text file                   |
+| HTML       | .html                   | Web page format                   |
+| XML        | .xml                    | Extensible Markup Language        |
+| Images     | .jpg, .png, .gif, .webp | Image formats                     |
 
 ## How to Enable File Generation
 
@@ -37,6 +38,7 @@ No additional configuration is required.
 ### Generating Files
 
 The agent can generate files from text content you provide or content it creates. When generating files for binary formats (PDF, DOCX, XLSX, PPTX), the agent can accept content in:
+
 - **Plain text**: Simple text content
 - **Markdown**: Markdown-formatted text that gets converted
 - **HTML**: HTML content for more complex formatting
@@ -44,6 +46,7 @@ The agent can generate files from text content you provide or content it creates
 ### Converting Files
 
 The agent can also convert files between different formats. For example:
+
 - Convert a Markdown file to PDF
 - Convert HTML to Word document
 - Convert CSV to Excel
@@ -51,24 +54,27 @@ The agent can also convert files between different formats. For example:
 ## Example Use Cases
 
 **Creating a Report:**
+
 ```
 Please create a PDF report summarizing the quarterly sales data we discussed.
 ```
 
 **Converting a Document:**
+
 ```
 Convert this markdown file to a Word document.
 ```
 
 **Generating a Spreadsheet:**
+
 ```
 Create an Excel file with the project timeline we outlined.
 ```
 
-<Callout icon="" theme="default">
-</Callout>
-  **Tip:** Generated files appear in the conversation and can be downloaded directly. All files in a conversation are accessible via the folder icon.
-</Callout>
+<Tip>
+  Generated files appear in the conversation and can be downloaded directly. All
+  files in a conversation are accessible via the folder icon.
+</Tip>
 
 ## Limitations
 

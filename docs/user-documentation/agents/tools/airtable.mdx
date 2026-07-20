@@ -1,11 +1,14 @@
 ---
 title: "Airtable"
-description: "Two authentication methods are available: **Personal Access Token (PAT)** for a quick setup, and **OAuth** for a per-user authentication (recommended..."
 ---
+
+## Overview
+
+Airtable's MCP server lets your Dust assistants read and write records, explore base schemas, and interact with your Airtable data directly from conversations.
 
 Two authentication methods are available: **Personal Access Token (PAT)** for a quick setup, and **OAuth** for a per-user authentication (recommended for teams).
 
-***
+---
 
 ## Method 1 — Personal Access Token (PAT)
 
@@ -15,37 +18,37 @@ Two authentication methods are available: **Personal Access Token (PAT)** for a 
 
 Go to [airtable.com/create/tokens](https://airtable.com/create/tokens) and click **"Create new token"**.
 
-* **Name**: `Dust` (or any name)
-* We recommend to add the following **scopes**:
-  * `data.records:read`
-  * `data.records:write`
-  * `data.recordComments:read`
-  * `data.recordComments:write`
-  * `schema.bases:read`
-  * `schema.bases:write`
-  * `user.email:read`
-* Select the **bases** you want Dust to access
-* Click **"Create token"** and **copy it immediately** (it won't be shown again)
+- **Name**: `Dust` (or any name)
+- We recommend to add the following **scopes**:
+  - `data.records:read`
+  - `data.records:write`
+  - `data.recordComments:read`
+  - `data.recordComments:write`
+  - `schema.bases:read`
+  - `schema.bases:write`
+  - `user.email:read`
+- Select the **bases** you want Dust to access
+- Click **"Create token"** and **copy it immediately** (it won't be shown again)
 
 ### 2. Connect in Dust
 
-In Dust, go to **Spaces  Tools  Add tools  Add MCP server**.
+In Dust, go to **Spaces Tools Add tools Add MCP server**.
 
-* **Server URL**: `https://mcp.airtable.com/mcp`
-* **Authentication**: Shared secret
+- **Server URL**: `https://mcp.airtable.com/mcp`
+- **Authentication**: Shared secret
 
 Paste your Personal Access Token as the shared secret and save.
 
-***
+---
 
 ## Method 2 — OAuth (Recommended)
 
 With OAuth, each user authenticates with their own Airtable account. Airtable permissions are enforced per user.
 
-<Callout icon="" theme="default">
-</Callout>
-  ### [Official Airtable OAuth documentation](https://airtable.com/developers/web/guides/oauth-integrations)
-</Callout>
+<Info>
+  [Official Airtable OAuth
+  documentation](https://airtable.com/developers/web/guides/oauth-integrations)
+</Info>
 
 ### 1. Create an OAuth integration in Airtable
 
@@ -103,7 +106,7 @@ Click **"Save changes"**.
 
 ### 6. Connect in Dust
 
-In Dust, go to **Spaces  Tools  Add tools  Add MCP server  Static OAuth**.
+In Dust, go to **Spaces Tools Add tools Add MCP server Static OAuth**.
 
 **Server URL**:
 

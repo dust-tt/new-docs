@@ -1,15 +1,15 @@
 ---
 title: "Gmail"
-description: "The Gmail tool interacts with Gmail using each user's account, adapting to individual access permissions. <br /> <br /> Navigate to Spaces > Tools in..."
 ---
 
-<Callout type="info"Personal credentials required>
-</Callout>
-The Gmail tool interacts with Gmail using each user's account, adapting to individual access permissions.
+## Overview
 
-<br />
+Connect Gmail to Dust agents to read messages, create drafts, and send emails using user credentials.
 
-<br />
+<Info>
+  The Gmail tool interacts with Gmail using each user's account, adapting to
+  individual access permissions.
+</Info>
 
 Navigate to Spaces > Tools in your Dust workspace, click `Add Tools`, and select Gmail.
 
@@ -17,17 +17,9 @@ The setup redirects you to an `OAuth flow` to connect an admin Gmail account. Du
 
 The Gmail tool is added to the Company data Space, making it accessible across the entire workspace.
 
-<br />
-
-<br />
-
 In the @Agent Builder, click `Add Tool` and select Gmail.
 
-<br />
-
 When users first use an agent with the Gmail tool, a connection error appears:
-
-<Image border={false} src="https://files.readme.io/a97f24f9918165029dc1164dc51b9513c615578ee9805e75e3a7cf075092eb7d-image.png" />
 
 Click the `Connect` button.
 
@@ -43,21 +35,24 @@ The Gmail tool provides the following capabilities:
 | **`create_draft`**       | Creates a new email draft in Gmail                                        | Medium      |
 | **`create_reply_draft`** | Creates a reply draft to an existing email thread in Gmail                | Medium      |
 | **`delete_draft`**       | Deletes a draft email from Gmail                                          | Low         |
-| **`send_mail`**          | Sends an email directly from Gmail _(new)_                                | High*       |
+| **`send_mail`**          | Sends an email directly from Gmail _(new)_                                | High\*      |
 
 ** Note:**`send_mail` is disabled by default on existing workspaces. Admins must manually enable it in **Spaces > Tools > Gmail**. It is enabled by default on new Gmail tool installations.
 
 Gmail tools use specific approval levels ("stakes") to control automation:
 
-* **High stake** (e.g., `send_mail`): Requires explicit user approval every time the tool is used
-* **Medium stake** (e.g., `create_draft`, `create_reply_draft`): Requires approval once per agent + recipient combination. Once approved, the agent can repeat the action without interruption for that specific combination
-* **Low stake** (e.g., `delete_draft`): Users can disable confirmations
-* **Never ask** (e.g., `get_messages`, `get_drafts`): Executes automatically without confirmation
+- **High stake** (e.g., `send_mail`): Requires explicit user approval every time the tool is used
+- **Medium stake** (e.g., `create_draft`, `create_reply_draft`): Requires approval once per agent + recipient combination. Once approved, the agent can repeat the action without interruption for that specific combination
+- **Low stake** (e.g., `delete_draft`): Users can disable confirmations
+- **Never ask** (e.g., `get_messages`, `get_drafts`): Executes automatically without confirmation
 
 Admins can modify the stake level of each tool in **Spaces > Tools > Gmail** to match their team's workflows and risk tolerance.
 
 **Learn more about tool management and stake levels in the [Tools Management documentation](https://docs.dust.tt/docs/tools-management).**
 
-** Email Reputation Warning**: Dust is not designed for bulk email campaigns. Using it for mass outreach can harm your domain's email reputation, affecting deliverability across your entire organization. Keep automation targeted and workflow-driven for best results.
-
-<br />
+<Warning>
+  Dust is not designed for bulk email campaigns. Using it for mass outreach can
+  harm your domain's email reputation, affecting deliverability across your
+  entire organization. Keep automation targeted and workflow-driven for best
+  results.
+</Warning>

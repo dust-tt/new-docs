@@ -1,26 +1,24 @@
 ---
 title: "Microsoft Outlook (Mail, Calendar)"
-description: "This tool interact with Outlook using the user's account: it adapts to each user. Oulook tools let you add to your agent the capability to interact wi..."
 ---
-
-<Callout type="info"This tool uses personal credentials.>
-</Callout>
-This tool interact with Outlook using the user's account: it adapts to each user.
 
 ## Overview
 
-Oulook tools let you add to your agent the capability to interact with your email inbox on Outlook. This provides the ability to read emails, as well as create and delete drafts.
+Outlook tools let you add to your agent the capability to interact with your email inbox on Outlook. This provides the ability to read emails, as well as create and delete drafts.
 
 This document provides general information about our Outlook tool (available tools, setup, and authentication).
 
+<Info>
+  **This tool uses personal credentials.** This tool interacts with Outlook
+  using the user's account: it adapts to each user.
+</Info>
+
 ## Setting up the Connection
 
-The setup process **requires an Outlook Admin** (Microsoft Entra ID 'privileged role administrator' or 'application administrator') who is also a Dust Admin. This ensures full access to the necessary permissions
+The setup process **requires an Outlook Admin** (Microsoft Entra ID 'privileged role administrator' or 'application administrator') who is also a Dust Admin. This ensures full access to the necessary permissions.
 
-1. Under Spaces -> Tools, Select `Add Tools`. Then select `Outlook`.
-2. A modal will show to allow you to allow Dust to access your Outlook data. On the first connection, tick the box **Consent on behalf of your authorization**
-
-<Image align="center" border={false} width="400px" src="https://files.readme.io/7962a6fbf2ec334a107cc21097af606948324d5dff859ecd1ec1407d49ff57e7-Screenshot_2025-07-30_at_13.01.02.png" />
+1. Under **Spaces → Tools**, select `Add Tools`. Then select `Outlook`.
+2. A modal will show to allow you to allow Dust to access your Outlook data. On the first connection, tick the box **Consent on behalf of your organization**.
 
 ## Adding Outlook Tools to agents
 
@@ -30,59 +28,37 @@ After admin set-up, Outlook tools can simply be added to an agent by selecting t
 
 ### Outlook Mail
 
-**Get Messages**  
-Get messages from Outlook inbox. Supports search queries to filter messages.
-
-**Get Drafts**  
-Get all draft emails from Outlook.
-
-**Create Draft**  
-Create a new email draft in Outlook. - The draft will be saved in the user's Outlook account and can be reviewed and sent later. - The draft will include proper email headers and formatting
-
-**Delete Draft**  
-Delete a draft email from Outlook.
-
-**Create Reply Draft**  
-Create a reply draft to an existing email in Outlook. - The draft will be saved in the user's Outlook account and can be reviewed and sent later. - The reply will be properly formatted with the original message quoted. - The draft will include proper email headers and threading information.
+| Tool               | Description                                                                                                                                                                                                                                                                                   |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Get Messages       | Get messages from Outlook inbox. Supports search queries to filter messages.                                                                                                                                                                                                                  |
+| Get Drafts         | Get all draft emails from Outlook.                                                                                                                                                                                                                                                            |
+| Create Draft       | Create a new email draft in Outlook. The draft will be saved in the user's Outlook account and can be reviewed and sent later. The draft will include proper email headers and formatting.                                                                                                    |
+| Delete Draft       | Delete a draft email from Outlook.                                                                                                                                                                                                                                                            |
+| Create Reply Draft | Create a reply draft to an existing email in Outlook. The draft will be saved in the user's Outlook account and can be reviewed and sent later. The reply will be properly formatted with the original message quoted. The draft will include proper email headers and threading information. |
 
 ### Outlook Calendar
 
-**List Calendars**  
-List all calendars accessible by the user in Outlook.
+| Tool               | Description                                                                                      |
+| ------------------ | ------------------------------------------------------------------------------------------------ |
+| List Calendars     | List all calendars accessible by the user in Outlook.                                            |
+| List Events        | List or search events from an Outlook Calendar. Supports filtering and searching.                |
+| Get Event          | Get a single event from an Outlook Calendar by event ID.                                         |
+| Create Event       | Create a new event in an Outlook Calendar.                                                       |
+| Update Event       | Update an existing event in an Outlook Calendar.                                                 |
+| Delete Event       | Delete an event from an Outlook Calendar.                                                        |
+| Check Availability | Check the calendar availability of specific people for a given time slot using Outlook Calendar. |
 
-**List Events**  
-List or search events from an Outlook Calendar. Supports filtering and searching.
+## Permissions needed
 
-**Get Event**  
-Get a single event from an Outlook Calendar by event ID.
+If your users struggle with approval requirements, you can go in the Azure Admin portal and grant permissions at admin level.
 
-**Create Event**  
-Create a new event in an Outlook Calendar.
-
-**Update Event**  
-Update an existing event in an Outlook Calendar.
-
-**Delete Event**  
-Delete an event from an Outlook Calendar.
-
-**Check Availability**  
-Check the calendar availability of specific people for a given time slot using Outlook Calendar.
-
-If your users struggle with approval requirements, you can go in the Azure Admin portal and grant permissions at admin level here:
-
-<Image align="center" border={false} src="https://files.readme.io/27f94d1657ad7ba665d30aac83f37883efa4e8aba0114c51335a6b11ed2e91d4-Screenshot_2025-08-06_at_11.19.49.png" />
-
-For that go to the Azure Admin Portal, then **Enterprise applications** (you can follow this <Anchor label="link" target="_blank" href="https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview">link</Anchor> instead), then **Dust - Tools**, then **Permissions** and click the **Grant admin consent** blue button.
+For that go to the Azure Admin Portal, then **Enterprise applications** (you can follow this [link](https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview) instead), then **Dust - Tools**, then **Permissions** and click the **Grant admin consent** blue button.
 
 **Still not working?**
 
 Try this other process:
 
-1. Go to this <Anchor label="link" target="_blank" href="https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AccessRequests">link</Anchor>
-2. Click on "All (preversion)"
+1. Go to this [link](https://portal.azure.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AccessRequests)
+2. Click on "All (preview)"
 3. Click on the "Dust - Tools" app
-4. Click "Revoir les autorisations et le consentement" (or equivalent in English) in the right panel
-
-<Image border={false} src="https://files.readme.io/2def7ea416fcdcf0bebf84796c4d4d1c4a55954a1637711d1dc98939fc357e89-image.png" />
-
-<br />
+4. Click "Review permissions and consent" (or equivalent in your language) in the right panel
