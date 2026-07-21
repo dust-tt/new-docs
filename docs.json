@@ -165,7 +165,6 @@
                   "docs/user-documentation/agents/tools/miro",
                   "docs/user-documentation/agents/tools/monday-com",
                   "docs/user-documentation/agents/tools/netsuite",
-                  "docs/user-documentation/agents/tools/notion",
                   "docs/user-documentation/agents/tools/power-bi",
                   "docs/user-documentation/agents/tools/productboard",
                   "docs/user-documentation/agents/tools/slack-tools",
@@ -176,11 +175,9 @@
                   "docs/user-documentation/agents/tools/salesloft",
                   "docs/user-documentation/agents/tools/semrush",
                   "docs/user-documentation/agents/tools/slab",
-                  "docs/user-documentation/agents/tools/snowflake",
                   "docs/user-documentation/agents/tools/statuspage",
                   "docs/user-documentation/agents/tools/run-agent",
                   "docs/user-documentation/agents/tools/web-search-and-browse",
-                  "docs/user-documentation/agents/tools/zendesk",
                   "docs/user-documentation/agents/tools/wake-ups",
                   "docs/user-documentation/agents/tools/computer"
                 ]
@@ -221,8 +218,6 @@
                   "docs/user-documentation/agents/integrations/n8n",
                   "docs/user-documentation/agents/integrations/power-automate",
                   "docs/user-documentation/agents/integrations/meeting-transcripts",
-                  "docs/user-documentation/agents/integrations/google-sheets-add-on",
-                  "docs/user-documentation/agents/integrations/dust-in-zendesk",
                   "docs/user-documentation/agents/integrations/browser-extension",
                   "docs/user-documentation/agents/integrations/raycast-extension",
                   "docs/user-documentation/agents/integrations/dust-in-teams"
@@ -248,7 +243,6 @@
           {
             "group": "Pods",
             "pages": [
-              "docs/user-documentation/pods/overview",
               "docs/user-documentation/pods/getting-started",
               "docs/user-documentation/pods/members-and-roles",
               "docs/user-documentation/pods/tasks",
@@ -280,7 +274,6 @@
               {
                 "group": "Conversation Files",
                 "pages": [
-                  "docs/user-documentation/data-sources/conversation-files/conversation-files",
                   "docs/user-documentation/data-sources/conversation-files/read-images"
                 ]
               },
@@ -311,7 +304,6 @@
                   {
                     "group": "Single Sign-On (SSO)",
                     "pages": [
-                      "docs/user-documentation/admins/users-and-permissions-management/single-sign-on-sso/single-sign-on-sso",
                       "docs/user-documentation/admins/users-and-permissions-management/single-sign-on-sso/saml-sso"
                     ]
                   },
@@ -344,7 +336,6 @@
                   {
                     "group": "Salesforce",
                     "pages": [
-                      "docs/user-documentation/admins/tools-management/salesforce/salesforce",
                       "docs/user-documentation/admins/tools-management/salesforce/salesforce-notes-on-api-limit-and-permissions"
                     ]
                   },
@@ -356,7 +347,6 @@
               {
                 "group": "Audit Logs",
                 "pages": [
-                  "docs/user-documentation/admins/audit-logs/audit-logs",
                   "docs/user-documentation/admins/audit-logs/audit-logs-events-reference"
                 ]
               },
@@ -379,7 +369,6 @@
               {
                 "group": "Admin Troubleshooting",
                 "pages": [
-                  "docs/user-documentation/admins/admin-troubleshooting/admin-troubleshooting",
                   "docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting"
                 ]
               }
@@ -412,16 +401,7 @@
           {
             "group": "Overview",
             "pages": [
-              "docs/developer-platform/overview/developer-platform",
-              "docs/developer-platform/overview/javascript-sdk"
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "pages": [
-              "docs/developer-platform/core-concepts/datasources",
-              "docs/developer-platform/core-concepts/chunks-and-documents",
-              "docs/developer-platform/core-concepts/rate-limits"
+              "docs/developer-platform/overview/developer-platform"
             ]
           },
           {
@@ -433,31 +413,17 @@
           },
           {
             "group": "Dust Labs",
-            "pages": ["docs/developer-platform/dust-labs/dust-labs-repository"]
-          },
-          {
-            "group": "Dust CLI",
-            "pages": ["docs/developer-platform/dust-cli/dust-cli"]
-          },
-          {
-            "group": "[Legacy] Dust Apps",
             "pages": [
-              "docs/developer-platform/legacy-dust-apps/what-is-a-dust-app",
-              "docs/developer-platform/legacy-dust-apps/dust-apps-core-concepts",
-              "docs/developer-platform/legacy-dust-apps/build-your-first-dust-app",
-              {
-                "group": "Blocks",
-                "pages": [
-                  "docs/developer-platform/legacy-dust-apps/blocks/core-blocks"
-                ]
-              }
+              "docs/developer-platform/dust-labs/dust-labs-repository"
             ]
           }
         ]
       },
       {
         "group": "Latest Updates",
-        "pages": ["docs/changelog"]
+        "pages": [
+          "docs/changelog"
+        ]
       }
     ]
   },
