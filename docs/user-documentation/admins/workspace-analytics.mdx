@@ -37,7 +37,7 @@ Use the time range selector at the top right of the page to scope every chart an
 
 ## Accessing analytics via the API
 
-You can pull usage data programmatically through the [Export workspace analytics](/api-reference/get_api-v1-w-wid-analytics-export) endpoint. Any Dust API key with the **builder** role (or above) can call it — no special access request needed.
+You can pull usage data programmatically through the [Export workspace analytics](/api-reference/workspace/export-workspace-analytics) endpoint. Any Dust API key with the **builder** role (or above) can call it — no special access request needed.
 
 Pass the `table` you want along with a `startDate` and `endDate` (both `YYYY-MM-DD`):
 
@@ -59,5 +59,5 @@ Responses are returned as CSV by default, or as JSON when `format=json`. Pass an
 <Danger>
 **Legacy endpoint**
 
-The previous [`workspace-usage`](/api-reference/get_api-v1-w-wid-workspace-usage) endpoint is deprecated and will be removed after **2026-06-01**. Migrate to `analytics/export` before then.
+The previous [`workspace-usage`](/api-reference/workspace/get-workspace-usage-data) endpoint is deprecated and will be removed after **2026-06-01**. Migrate to `analytics/export` before then.
 </Danger>
