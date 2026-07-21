@@ -461,5 +461,1007 @@
     "website": "https://dust.tt",
     "x": "https://x.com/dust4ai",
     "github": "https://github.com/dust-tt"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/changelog",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/adomik-integration-ad-revenue-analytics-knowledge-directly-in-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/agents-can-now-ask-you-clarifying-questions-available-everywhere",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/agents-can-now-ask-you-questions-to-clarify-their-next-steps",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/agents-can-now-export-frames-as-pdf-or-png",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/agents-can-now-see-and-analyze-images-in-conversations",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/apify-mcp-is-now-available-in-dusthttpsapifycomstorecategoriesmcp-servers",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/asana-mcp-update",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/audit-logs-for-enterprise-workspaces",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/branching-conversations",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/changelog-update-1",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/changelog-update-2",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/changelog-update-3",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/changelog-update-4",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/clari-copilot-integration-now-available-for-all-workspaces",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/claude-opus-48-now-available-in-the-agent-builder",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/claude-sonnet-5-is-now-available-on-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/collapsing-input-bar-on-mobile-for-better-reading",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/confluence-mcp-is-now-generally-available",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/contentsquare-remote-mcp-now-available-in-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/context-compaction-keep-your-agents-sharp-in-long-conversations",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/costory-mcp-now-available-in-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/dust-can-now-build-skills",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/dust-is-now-a-remote-mcp-serverhttpsdocsdustttdocsdust-mcp-server",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/dust-support-get-instant-grounded-support-answers-from-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/email-threads-now-stay-in-a-single-conversation",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/gamma-mcp-now-available-in-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/gemini-35-flash-now-available-on-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/glm-52-now-available-in-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/gmail-labels-management-and-email-archiving",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/gong-tools-integration-via-mcp",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/gpt-55-now-available-on-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/gpt-image-2-enhanced-image-generation-now-default-on-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/inline-text-editing-in-frames-tweak-your-content-without-reprompting",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/lemlist-mcp-server-now-available",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/llm-model-refresh-grok-43-upgrade-and-anthropic-model-migrations",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/luma-mcp-server-now-generally-available",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/mondaycom-mcp-now-available-for-all-workspaces",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/pods-a-shared-workspace-for-your-team-and-your-agents",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/pods-now-apply-your-agentsmd-to-every-conversation",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/praiz-is-now-available-as-a-remote-mcp-tool-in-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/select-a-custom-default-agent-in-pods",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/six-new-integrations-now-available-in-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/skills-in-skills-compose-skills-and-tools-directly-within-your-instructions",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/slash-commands-now-available-in-the-input-bar",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/snowflake-mcp-server-now-generally-available",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/speech-to-text-for-audio-video-files",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/the-computer-let-your-agents-work-safely-with-files-code-and-more",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/triggers-now-run-inside-pods",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/wake-ups-agents-can-now-schedule-themselves-to-continue-work-later",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/changelog/youtrust-remote-mcp-server-now-available-in-dust",
+      "destination": "/docs/changelog"
+    },
+    {
+      "source": "/docs/access-controls-and-permissions",
+      "destination": "/docs/user-documentation/admins/users-and-permissions-management/access-controls-and-permissions"
+    },
+    {
+      "source": "/docs/admin-guide-set-up-your-dust-workspace",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/admin-guide-set-up-your-dust-workspace"
+    },
+    {
+      "source": "/docs/admin-troubleshooting",
+      "destination": "/docs/user-documentation/admins/admin-troubleshooting/admin-troubleshooting"
+    },
+    {
+      "source": "/docs/agent-builder-sidekick",
+      "destination": "/docs/user-documentation/agents/agent-builder-sidekick"
+    },
+    {
+      "source": "/docs/agent-memory",
+      "destination": "/docs/user-documentation/agents/tools/agent-memory"
+    },
+    {
+      "source": "/docs/airtable",
+      "destination": "/docs/user-documentation/agents/tools/airtable"
+    },
+    {
+      "source": "/docs/allowing-an-assistant-to-send-an-email",
+      "destination": "/docs/user-documentation/deprecated/legacy-dust-apps/allowing-an-agent-to-send-an-email"
+    },
+    {
+      "source": "/docs/asana",
+      "destination": "/docs/user-documentation/agents/tools/asana"
+    },
+    {
+      "source": "/docs/ashby-mcp",
+      "destination": "/docs/user-documentation/agents/tools/ashby"
+    },
+    {
+      "source": "/docs/attio-mcp",
+      "destination": "/docs/user-documentation/agents/tools/attio"
+    },
+    {
+      "source": "/docs/audit-logs",
+      "destination": "/docs/user-documentation/admins/audit-logs/audit-logs"
+    },
+    {
+      "source": "/docs/audit-logs-events-reference",
+      "destination": "/docs/user-documentation/admins/audit-logs/audit-logs-events-reference"
+    },
+    {
+      "source": "/docs/automations",
+      "destination": "/docs/user-documentation/agents/triggers/schedules"
+    },
+    {
+      "source": "/docs/beta-deep-dive-agent-for-comprehensive-work",
+      "destination": "/docs/user-documentation/agents/deep-dive-agent"
+    },
+    {
+      "source": "/docs/beta-google-spreadsheets",
+      "destination": "/docs/user-documentation/agents/integrations/google-sheets-add-on"
+    },
+    {
+      "source": "/docs/beta-import-dropbox-files",
+      "destination": "/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files"
+    },
+    {
+      "source": "/docs/beta-import-front-conversations",
+      "destination": "/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations"
+    },
+    {
+      "source": "/docs/bigquery",
+      "destination": "/docs/user-documentation/admins/connections-management/bigquery"
+    },
+    {
+      "source": "/docs/branching-conversations",
+      "destination": "/docs/user-documentation/agents/steering-conversations"
+    },
+    {
+      "source": "/docs/build-your-builder-community",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/build-your-builder-community"
+    },
+    {
+      "source": "/docs/can-agents-create-a-new-file-or-document-directly-into-notion-google-drive-or-other-connected-platforms",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/can-agents-create-a-new-file-or-document-directly-into-notion-google-drive-or-other-connected-platforms"
+    },
+    {
+      "source": "/docs/can-dust-remember-and-incorporate-my-feedback-in-the-future",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/can-dust-remember-and-incorporate-my-feedback-in-the-future"
+    },
+    {
+      "source": "/docs/can-i-delete-or-rename-a-conversation",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/can-i-delete-or-rename-a-conversation"
+    },
+    {
+      "source": "/docs/can-i-share-a-conversation",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/can-i-share-a-conversation"
+    },
+    {
+      "source": "/docs/can-i-use-the-dust-agents-in-different-languages",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/can-i-use-the-dust-agents-in-different-languages"
+    },
+    {
+      "source": "/docs/canva-mcp",
+      "destination": "/docs/user-documentation/agents/tools/canva"
+    },
+    {
+      "source": "/docs/chrome-extension",
+      "destination": "/docs/user-documentation/agents/integrations/browser-extension"
+    },
+    {
+      "source": "/docs/client-side-mcp-server",
+      "destination": "/docs/user-documentation/developers/client-side-mcp-server"
+    },
+    {
+      "source": "/docs/collaboration",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/collaboration"
+    },
+    {
+      "source": "/docs/computer",
+      "destination": "/docs/user-documentation/agents/tools/computer"
+    },
+    {
+      "source": "/docs/computer-admin",
+      "destination": "/docs/user-documentation/admins/tools-management/computer-admin-setup"
+    },
+    {
+      "source": "/docs/confluence-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/confluence"
+    },
+    {
+      "source": "/docs/confluence-tool",
+      "destination": "/docs/user-documentation/agents/tools/confluence"
+    },
+    {
+      "source": "/docs/connections",
+      "destination": "/docs/user-documentation/data-sources/connections"
+    },
+    {
+      "source": "/docs/context-compaction",
+      "destination": "/docs/user-documentation/agents/context-compaction"
+    },
+    {
+      "source": "/docs/creating-google-calendar-events-from-a-dust-assistant",
+      "destination": "/docs/user-documentation/deprecated/legacy-dust-apps/creating-google-calendar-events-from-a-dust-agent"
+    },
+    {
+      "source": "/docs/credit-management",
+      "destination": "/docs/user-documentation/admins/usage-seats-and-credits/credit-management"
+    },
+    {
+      "source": "/docs/credits",
+      "destination": "/docs/user-documentation/admins/usage-seats-and-credits/credits"
+    },
+    {
+      "source": "/docs/customer-support",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/customer-support"
+    },
+    {
+      "source": "/docs/data",
+      "destination": "/docs/user-documentation/admins/spaces-management"
+    },
+    {
+      "source": "/docs/data-analysis",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/data-analytics"
+    },
+    {
+      "source": "/docs/databricks",
+      "destination": "/docs/user-documentation/agents/tools/databricks"
+    },
+    {
+      "source": "/docs/designing-use-cases",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/designing-use-cases"
+    },
+    {
+      "source": "/docs/dev-pre-configuring-a-custom-mcp-server",
+      "destination": "/docs/user-documentation/deprecated/dev-pre-configuring-a-custom-mcp-server"
+    },
+    {
+      "source": "/docs/do-the-agents-have-access-to-the-internet",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/do-the-agents-have-access-to-the-internet"
+    },
+    {
+      "source": "/docs/does-the-dust-agent-give-accurate-and-safe-responses",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/does-the-dust-agent-give-accurate-and-safe-responses"
+    },
+    {
+      "source": "/docs/dust-assistants-in-a-slack-workflow",
+      "destination": "/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows"
+    },
+    {
+      "source": "/docs/dust-enterprise-rollout-guide",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/index"
+    },
+    {
+      "source": "/docs/dust-folders",
+      "destination": "/docs/user-documentation/data-sources/folders"
+    },
+    {
+      "source": "/docs/dust-for-knowledge-management",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/knowledge"
+    },
+    {
+      "source": "/docs/dust-for-sales",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/sales"
+    },
+    {
+      "source": "/docs/dust-in-teams",
+      "destination": "/docs/user-documentation/agents/integrations/dust-in-teams"
+    },
+    {
+      "source": "/docs/dust-mcp-server",
+      "destination": "/docs/user-documentation/agents/integrations/dust-mcp-server"
+    },
+    {
+      "source": "/docs/dust-salesforce-connection-admin-guide-for-beta-testers",
+      "destination": "/docs/user-documentation/admins/tools-management/salesforce/salesforce-notes-on-api-limit-and-permissions"
+    },
+    {
+      "source": "/docs/educate-activate",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/educate-activate"
+    },
+    {
+      "source": "/docs/email-agents",
+      "destination": "/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents"
+    },
+    {
+      "source": "/docs/engineering",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/engineering"
+    },
+    {
+      "source": "/docs/examples-of-skills",
+      "destination": "/docs/user-documentation/agents/skills/skill-examples"
+    },
+    {
+      "source": "/docs/extract-data",
+      "destination": "/docs/user-documentation/agents/knowledge/extract-data"
+    },
+    {
+      "source": "/docs/faq",
+      "destination": "/docs/user-documentation/getting-started/faq/index"
+    },
+    {
+      "source": "/docs/fathom-mcp",
+      "destination": "/docs/user-documentation/agents/tools/fathom"
+    },
+    {
+      "source": "/docs/file-generation",
+      "destination": "/docs/user-documentation/agents/tools/file-generation"
+    },
+    {
+      "source": "/docs/file-size-limits",
+      "destination": "/docs/user-documentation/getting-started/faq/file-size-limits"
+    },
+    {
+      "source": "/docs/filter-webhooks-payload",
+      "destination": "/docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload"
+    },
+    {
+      "source": "/docs/folders-copy",
+      "destination": "/docs/user-documentation/data-sources/folders"
+    },
+    {
+      "source": "/docs/frames",
+      "destination": "/docs/user-documentation/pods/frames"
+    },
+    {
+      "source": "/docs/freshservice",
+      "destination": "/docs/user-documentation/agents/tools/freshservice"
+    },
+    {
+      "source": "/docs/front-mcp",
+      "destination": "/docs/user-documentation/agents/tools/front"
+    },
+    {
+      "source": "/docs/github",
+      "destination": "/docs/user-documentation/admins/connections-management/github"
+    },
+    {
+      "source": "/docs/github-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/github"
+    },
+    {
+      "source": "/docs/gmail",
+      "destination": "/docs/user-documentation/agents/tools/gmail"
+    },
+    {
+      "source": "/docs/go-deep",
+      "destination": "/docs/user-documentation/agents/go-deep"
+    },
+    {
+      "source": "/docs/gong-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/gong"
+    },
+    {
+      "source": "/docs/gong-mcp",
+      "destination": "/docs/user-documentation/agents/tools/gong"
+    },
+    {
+      "source": "/docs/google-calendar",
+      "destination": "/docs/user-documentation/agents/tools/google-calendar"
+    },
+    {
+      "source": "/docs/google-drive",
+      "destination": "/docs/user-documentation/admins/connections-management/google-drive"
+    },
+    {
+      "source": "/docs/google-drive-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/google-drive"
+    },
+    {
+      "source": "/docs/google-sheets",
+      "destination": "/docs/user-documentation/agents/tools/google-sheets-deprecated"
+    },
+    {
+      "source": "/docs/how-can-i-find-the-id-of-an-agent",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/how-can-i-find-the-id-of-an-agent"
+    },
+    {
+      "source": "/docs/how-do-i-edit-a-custom-agent",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/how-do-i-edit-a-custom-agent"
+    },
+    {
+      "source": "/docs/how-to-automatically-add-data-sources-to-dust-folders-with-zapier",
+      "destination": "/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource"
+    },
+    {
+      "source": "/docs/how-to-change-your-email-address-in-dust",
+      "destination": "/docs/user-documentation/getting-started/faq/how-to-change-your-email-address-in-dust"
+    },
+    {
+      "source": "/docs/how-to-optimize-your-dust-agent",
+      "destination": "/docs/user-documentation/agents/llm-best-practices/how-to-write-effective-instructions"
+    },
+    {
+      "source": "/docs/hubspot",
+      "destination": "/docs/user-documentation/agents/tools/hubspot"
+    },
+    {
+      "source": "/docs/i-dont-know-how-to-start-creating-an-agent-what-should-i-do",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/i-dont-know-how-to-start-creating-an-agent-what-should-i-do"
+    },
+    {
+      "source": "/docs/i-havent-received-a-login-or-i-am-having-trouble-logging-in",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/i-havent-received-a-login-or-i-am-having-trouble-logging-in"
+    },
+    {
+      "source": "/docs/i-try-to-create-an-agent-using-the-table-query-tool-but-it-doesnt-work",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/i-try-to-create-an-agent-using-the-table-query-tool-but-it-doesnt-work"
+    },
+    {
+      "source": "/docs/image-generation",
+      "destination": "/docs/user-documentation/agents/tools/image-generation"
+    },
+    {
+      "source": "/docs/image-processing-vision",
+      "destination": "/docs/user-documentation/data-sources/conversation-files/read-images"
+    },
+    {
+      "source": "/docs/import-guru",
+      "destination": "/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards"
+    },
+    {
+      "source": "/docs/import-hubspot",
+      "destination": "/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data"
+    },
+    {
+      "source": "/docs/import-jira",
+      "destination": "/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues"
+    },
+    {
+      "source": "/docs/import-linear",
+      "destination": "/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues"
+    },
+    {
+      "source": "/docs/import-salesforce",
+      "destination": "/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data"
+    },
+    {
+      "source": "/docs/include-data",
+      "destination": "/docs/user-documentation/agents/knowledge/include-data"
+    },
+    {
+      "source": "/docs/intercom-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/intercom"
+    },
+    {
+      "source": "/docs/intro",
+      "destination": "/docs/user-documentation/getting-started/intro-to-dust"
+    },
+    {
+      "source": "/docs/is-dust-down",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/is-dust-down"
+    },
+    {
+      "source": "/docs/is-there-a-dust-conversation-api",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-dust-conversation-api"
+    },
+    {
+      "source": "/docs/jira",
+      "destination": "/docs/user-documentation/agents/tools/jira"
+    },
+    {
+      "source": "/docs/jit-tools",
+      "destination": "/docs/user-documentation/agents/tools/jit-tools"
+    },
+    {
+      "source": "/docs/knowledge",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/knowledge"
+    },
+    {
+      "source": "/docs/launch-strategy",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/launch-strategy"
+    },
+    {
+      "source": "/docs/make-dust-integration",
+      "destination": "/docs/user-documentation/agents/integrations/make-com"
+    },
+    {
+      "source": "/docs/managing-agents",
+      "destination": "/docs/user-documentation/admins/agents-management"
+    },
+    {
+      "source": "/docs/managing-datasources",
+      "destination": "/docs/user-documentation/data-sources/overview"
+    },
+    {
+      "source": "/docs/managing-microsoft-tools",
+      "destination": "/docs/user-documentation/admins/tools-management/managing-microsoft-tools"
+    },
+    {
+      "source": "/docs/marketing-content",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/marketing"
+    },
+    {
+      "source": "/docs/measure-expand",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/measure-expand"
+    },
+    {
+      "source": "/docs/meeting-transcripts",
+      "destination": "/docs/user-documentation/agents/integrations/meeting-transcripts"
+    },
+    {
+      "source": "/docs/microsoft-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/microsoft"
+    },
+    {
+      "source": "/docs/microsoft-drive-tool-setup",
+      "destination": "/docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive"
+    },
+    {
+      "source": "/docs/microsoft-excel-tool",
+      "destination": "/docs/user-documentation/agents/tools/microsoft-excel"
+    },
+    {
+      "source": "/docs/microsoft-teams-tool-setup",
+      "destination": "/docs/user-documentation/agents/tools/microsoft-teams"
+    },
+    {
+      "source": "/docs/miro-mcp",
+      "destination": "/docs/user-documentation/agents/tools/miro"
+    },
+    {
+      "source": "/docs/monday",
+      "destination": "/docs/user-documentation/agents/tools/monday-com"
+    },
+    {
+      "source": "/docs/n8n",
+      "destination": "/docs/user-documentation/agents/integrations/n8n"
+    },
+    {
+      "source": "/docs/netsuite",
+      "destination": "/docs/user-documentation/agents/tools/netsuite"
+    },
+    {
+      "source": "/docs/notion-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/notion"
+    },
+    {
+      "source": "/docs/notion-mcp",
+      "destination": "/docs/user-documentation/agents/tools/notion"
+    },
+    {
+      "source": "/docs/optimize-credit-consumption",
+      "destination": "/docs/user-documentation/admins/usage-seats-and-credits/optimize-credit-consumption"
+    },
+    {
+      "source": "/docs/outlook-tool-setup",
+      "destination": "/docs/user-documentation/agents/tools/microsoft-outlook"
+    },
+    {
+      "source": "/docs/personal-vs-workspace-credentials-for-tools-mcp-servers",
+      "destination": "/docs/user-documentation/admins/tools-management/personal-vs-shared-credentials"
+    },
+    {
+      "source": "/docs/power-automate",
+      "destination": "/docs/user-documentation/agents/integrations/power-automate"
+    },
+    {
+      "source": "/docs/power-bi",
+      "destination": "/docs/user-documentation/agents/tools/power-bi"
+    },
+    {
+      "source": "/docs/product",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/product-and-design"
+    },
+    {
+      "source": "/docs/productboard",
+      "destination": "/docs/user-documentation/agents/tools/productboard"
+    },
+    {
+      "source": "/docs/prompting-101-how-to-talk-to-your-agents",
+      "destination": "/docs/user-documentation/agents/llm-best-practices/how-to-write-effective-instructions"
+    },
+    {
+      "source": "/docs/quickstart-admin",
+      "destination": "/docs/user-documentation/admins/quickstart"
+    },
+    {
+      "source": "/docs/quickstart-agent",
+      "destination": "/docs/user-documentation/agents/create-your-first-agent"
+    },
+    {
+      "source": "/docs/rate-limiting",
+      "destination": "/docs/user-documentation/agents/triggers/webhooks/rate-limiting"
+    },
+    {
+      "source": "/docs/raycast",
+      "destination": "/docs/user-documentation/agents/integrations/raycast-extension"
+    },
+    {
+      "source": "/docs/recruiting-hr",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/recruiting-and-people"
+    },
+    {
+      "source": "/docs/remote-mcp-server",
+      "destination": "/docs/user-documentation/admins/tools-management/adding-an-mcp-server"
+    },
+    {
+      "source": "/docs/run-agent",
+      "destination": "/docs/user-documentation/agents/tools/run-agent"
+    },
+    {
+      "source": "/docs/salesforce",
+      "destination": "/docs/user-documentation/admins/tools-management/salesforce/salesforce"
+    },
+    {
+      "source": "/docs/salesloft-mcp",
+      "destination": "/docs/user-documentation/agents/tools/salesloft"
+    },
+    {
+      "source": "/docs/saml-sso",
+      "destination": "/docs/user-documentation/admins/users-and-permissions-management/single-sign-on-sso/saml-sso"
+    },
+    {
+      "source": "/docs/scheduling-your-agent-beta",
+      "destination": "/docs/user-documentation/agents/triggers/schedules"
+    },
+    {
+      "source": "/docs/search-your-data",
+      "destination": "/docs/user-documentation/agents/knowledge/search-data-sources"
+    },
+    {
+      "source": "/docs/seat-management",
+      "destination": "/docs/user-documentation/admins/usage-seats-and-credits/seat-management"
+    },
+    {
+      "source": "/docs/self-improving-skills",
+      "destination": "/docs/user-documentation/agents/self-improving-skills"
+    },
+    {
+      "source": "/docs/semrush",
+      "destination": "/docs/user-documentation/agents/tools/semrush"
+    },
+    {
+      "source": "/docs/setting-up-your-workspace",
+      "destination": "/docs/user-documentation/admins/users-and-permissions-management/memberships-and-roles"
+    },
+    {
+      "source": "/docs/single-sign-on-sso",
+      "destination": "/docs/user-documentation/admins/users-and-permissions-management/single-sign-on-sso/single-sign-on-sso"
+    },
+    {
+      "source": "/docs/skills",
+      "destination": "/docs/user-documentation/agents/skills/skill-examples"
+    },
+    {
+      "source": "/docs/slab-mcp",
+      "destination": "/docs/user-documentation/agents/tools/slab"
+    },
+    {
+      "source": "/docs/slack",
+      "destination": "/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows"
+    },
+    {
+      "source": "/docs/slack-auto-join-channel-to-synchronize",
+      "destination": "/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join"
+    },
+    {
+      "source": "/docs/slack-mcp",
+      "destination": "/docs/user-documentation/agents/tools/slack-tools"
+    },
+    {
+      "source": "/docs/slack-troubleshooting",
+      "destination": "/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting"
+    },
+    {
+      "source": "/docs/snowflake-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/snowflake"
+    },
+    {
+      "source": "/docs/snowflake-tool",
+      "destination": "/docs/user-documentation/agents/tools/snowflake"
+    },
+    {
+      "source": "/docs/statuspage-mcp",
+      "destination": "/docs/user-documentation/agents/tools/statuspage"
+    },
+    {
+      "source": "/docs/steering-conversations-that-keep-up-with-you",
+      "destination": "/docs/user-documentation/agents/steering-conversations"
+    },
+    {
+      "source": "/docs/structured-output-format",
+      "destination": "/docs/user-documentation/agents/structured-output-format"
+    },
+    {
+      "source": "/docs/subscriptions",
+      "destination": "/docs/user-documentation/admins/billing/subscriptions-and-payments"
+    },
+    {
+      "source": "/docs/table-queries",
+      "destination": "/docs/user-documentation/agents/knowledge/table-queries"
+    },
+    {
+      "source": "/docs/templates",
+      "destination": "/docs/user-documentation/agents/templates"
+    },
+    {
+      "source": "/docs/the-agent-is-producing-links-that-dont-work-and-falsely-claiming-something-untrue-whats-going-on",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/the-agent-is-producing-links-that-dont-work-and-falsely-claiming-something-untrue-whats-going-on"
+    },
+    {
+      "source": "/docs/tools",
+      "destination": "/docs/user-documentation/agents/tools/index"
+    },
+    {
+      "source": "/docs/tools-management",
+      "destination": "/docs/user-documentation/admins/tools-management/adding-an-mcp-server"
+    },
+    {
+      "source": "/docs/train-team-credit-optimization",
+      "destination": "/docs/user-documentation/admins/usage-seats-and-credits/train-team-credit-optimization"
+    },
+    {
+      "source": "/docs/training-material",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/team-onboarding-material"
+    },
+    {
+      "source": "/docs/trigger-your-dust-agent-from-anywhere-using-zapier",
+      "destination": "/docs/user-documentation/agents/integrations/zapier"
+    },
+    {
+      "source": "/docs/triggers",
+      "destination": "/docs/user-documentation/agents/triggers/schedules"
+    },
+    {
+      "source": "/docs/ukg-ready",
+      "destination": "/docs/user-documentation/agents/tools/ukg-ready"
+    },
+    {
+      "source": "/docs/understanding-llm-limitations-counting-and-parsing-structured-data",
+      "destination": "/docs/user-documentation/agents/llm-best-practices/understanding-llm-limitations"
+    },
+    {
+      "source": "/docs/understanding-llms-context-windows",
+      "destination": "/docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows"
+    },
+    {
+      "source": "/docs/understanding-retrieval-augmented-generation-rag-and-the-search-method-in-dust",
+      "destination": "/docs/user-documentation/agents/llm-best-practices/understanding-rag"
+    },
+    {
+      "source": "/docs/use-cases",
+      "destination": "/docs/user-documentation/getting-started/use-cases-and-guides/index"
+    },
+    {
+      "source": "/docs/users-and-groups-provisioning",
+      "destination": "/docs/user-documentation/admins/users-and-permissions-management/users-and-groups-provisioning"
+    },
+    {
+      "source": "/docs/val-town",
+      "destination": "/docs/user-documentation/agents/tools/val-town"
+    },
+    {
+      "source": "/docs/vanta",
+      "destination": "/docs/user-documentation/agents/tools/vanta"
+    },
+    {
+      "source": "/docs/voice-and-sound-generation",
+      "destination": "/docs/user-documentation/agents/tools/voice-and-sound-generation"
+    },
+    {
+      "source": "/docs/wake-ups",
+      "destination": "/docs/user-documentation/agents/tools/wake-ups"
+    },
+    {
+      "source": "/docs/web-navigation",
+      "destination": "/docs/user-documentation/agents/tools/web-search-and-browse"
+    },
+    {
+      "source": "/docs/webhooks",
+      "destination": "/docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload"
+    },
+    {
+      "source": "/docs/website-connection",
+      "destination": "/docs/user-documentation/data-sources/websites"
+    },
+    {
+      "source": "/docs/welcome-to-dust",
+      "destination": "/docs/user-documentation/getting-started/dust-rollout-guide/welcome-to-dust"
+    },
+    {
+      "source": "/docs/what-are-data-sources",
+      "destination": "/docs/user-documentation/data-sources/overview"
+    },
+    {
+      "source": "/docs/what-data-do-the-agents-have-access-to",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/what-data-do-the-agents-have-access-to"
+    },
+    {
+      "source": "/docs/what-settings-model-should-i-use",
+      "destination": "/docs/user-documentation/getting-started/faq/managing-agents/what-settings-model-should-i-use"
+    },
+    {
+      "source": "/docs/when-asking-a-question-about-data-within-slack-the-link-to-the-thread-isnt-always-the-right-one",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/when-asking-a-question-about-data-within-slack-the-link-to-the-thread-isnt-always-the-right-one"
+    },
+    {
+      "source": "/docs/white-labeled-frames",
+      "destination": "/docs/user-documentation/agents/frames/white-labeled-frames"
+    },
+    {
+      "source": "/docs/why-doesnt-the-agent-remember-what-i-said-earlier-in-a-conversation",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/why-doesnt-the-agent-remember-what-i-said-earlier-in-a-conversation"
+    },
+    {
+      "source": "/docs/why-is-dust-slow-or-my-agent-taking-too-long-to-respond",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/why-is-dust-slow-or-my-agent-taking-too-long-to-respond"
+    },
+    {
+      "source": "/docs/why-isnt-my-recently-updated-document-showing-in-agent-responses",
+      "destination": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/why-isnt-my-recently-updated-document-showing-in-agent-responses"
+    },
+    {
+      "source": "/docs/workspace-analytics",
+      "destination": "/docs/user-documentation/admins/workspace-analytics"
+    },
+    {
+      "source": "/docs/zendesk",
+      "destination": "/docs/user-documentation/agents/integrations/dust-in-zendesk"
+    },
+    {
+      "source": "/docs/zendesk-connection",
+      "destination": "/docs/user-documentation/admins/connections-management/zendesk"
+    },
+    {
+      "source": "/docs/zendesk-tools",
+      "destination": "/docs/user-documentation/agents/tools/zendesk"
+    },
+    {
+      "source": "/reference/:slug*",
+      "destination": "/api-reference/dust-api-documentation"
+    },
+    {
+      "source": "/reference/cli",
+      "destination": "/docs/developer-platform/dust-cli/dust-cli"
+    },
+    {
+      "source": "/reference/core-blocks",
+      "destination": "/docs/developer-platform/legacy-dust-apps/blocks/core-blocks"
+    },
+    {
+      "source": "/reference/data-sources",
+      "destination": "/docs/developer-platform/core-concepts/datasources"
+    },
+    {
+      "source": "/reference/developer-platform-overview",
+      "destination": "/docs/developer-platform/overview/developer-platform"
+    },
+    {
+      "source": "/reference/javascript-sdk",
+      "destination": "/docs/developer-platform/overview/javascript-sdk"
+    },
+    {
+      "source": "/reference/rate-limits",
+      "destination": "/docs/developer-platform/core-concepts/rate-limits"
+    }
+  ]
 }
