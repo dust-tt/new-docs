@@ -27,7 +27,7 @@
         ]
       },
       {
-        "group": "Getting Started",
+        "group": "Use cases",
         "pages": [
           "docs/user-documentation/getting-started/intro-to-dust",
           {
@@ -189,12 +189,6 @@
             ]
           },
           {
-            "group": "Skills",
-            "pages": [
-              "docs/user-documentation/agents/skills/skill-examples"
-            ]
-          },
-          {
             "group": "Triggers",
             "pages": [
               "docs/user-documentation/agents/triggers/schedules",
@@ -246,6 +240,12 @@
           "docs/user-documentation/agents/branch-a-conversation",
           "docs/user-documentation/agents/context-compaction",
           "docs/user-documentation/agents/self-improving-skills"
+        ]
+      },
+      {
+        "group": "Skills",
+        "pages": [
+          "docs/user-documentation/agents/skills/skill-examples"
         ]
       },
       {
@@ -395,19 +395,6 @@
         ]
       },
       {
-        "group": "Deprecated",
-        "pages": [
-          {
-            "group": "[LEGACY] Dust Apps",
-            "pages": [
-              "docs/user-documentation/deprecated/legacy-dust-apps/creating-google-calendar-events-from-a-dust-agent",
-              "docs/user-documentation/deprecated/legacy-dust-apps/allowing-an-agent-to-send-an-email"
-            ]
-          },
-          "docs/user-documentation/deprecated/dev-pre-configuring-a-custom-mcp-server"
-        ]
-      },
-      {
         "group": "Developer Platform",
         "pages": [
           {
@@ -454,6 +441,19 @@
               }
             ]
           }
+        ]
+      },
+      {
+        "group": "Deprecated",
+        "pages": [
+          {
+            "group": "[LEGACY] Dust Apps",
+            "pages": [
+              "docs/user-documentation/deprecated/legacy-dust-apps/creating-google-calendar-events-from-a-dust-agent",
+              "docs/user-documentation/deprecated/legacy-dust-apps/allowing-an-agent-to-send-an-email"
+            ]
+          },
+          "docs/user-documentation/deprecated/dev-pre-configuring-a-custom-mcp-server"
         ]
       }
     ]
