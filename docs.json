@@ -125,6 +125,26 @@
             ]
           },
           "docs/user-documentation/agents/templates",
+          "docs/user-documentation/agents/deep-dive-agent",
+          "docs/user-documentation/agents/troubleshooting-your-agent",
+          "docs/user-documentation/agents/structured-output-format",
+          "docs/user-documentation/agents/agent-builder-sidekick",
+          "docs/user-documentation/agents/steering-conversations",
+          "docs/user-documentation/agents/branch-a-conversation",
+          "docs/user-documentation/agents/context-compaction",
+          "docs/user-documentation/agents/self-improving-skills"
+        ]
+      },
+      {
+        "group": "Skills",
+        "pages": [
+          "docs/user-documentation/agents/skills/skill-examples",
+          "docs/user-documentation/agents/go-deep"
+        ]
+      },
+      {
+        "group": "Capabilities",
+        "pages": [
           {
             "group": "Knowledge",
             "root": "docs/user-documentation/agents/knowledge/index",
@@ -202,6 +222,12 @@
             ]
           },
           {
+            "group": "Frames",
+            "pages": [
+              "docs/user-documentation/agents/frames/white-labeled-frames"
+            ]
+          },
+          {
             "group": "Integrations",
             "pages": [
               "docs/user-documentation/agents/integrations/dust-mcp-server",
@@ -225,27 +251,35 @@
               "docs/user-documentation/agents/integrations/dust-in-teams"
             ]
           },
-          "docs/user-documentation/agents/go-deep",
           {
-            "group": "Frames",
+            "group": "Data Sources",
             "pages": [
-              "docs/user-documentation/agents/frames/white-labeled-frames"
+              "docs/user-documentation/data-sources/overview",
+              "docs/user-documentation/data-sources/connections",
+              "docs/user-documentation/data-sources/websites",
+              "docs/user-documentation/data-sources/folders",
+              {
+                "group": "Conversation Files",
+                "pages": [
+                  "docs/user-documentation/data-sources/conversation-files/conversation-files",
+                  "docs/user-documentation/data-sources/conversation-files/read-images"
+                ]
+              },
+              {
+                "group": "Custom connections",
+                "pages": [
+                  "docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations"
+                ]
+              }
             ]
-          },
-          "docs/user-documentation/agents/deep-dive-agent",
-          "docs/user-documentation/agents/troubleshooting-your-agent",
-          "docs/user-documentation/agents/structured-output-format",
-          "docs/user-documentation/agents/agent-builder-sidekick",
-          "docs/user-documentation/agents/steering-conversations",
-          "docs/user-documentation/agents/branch-a-conversation",
-          "docs/user-documentation/agents/context-compaction",
-          "docs/user-documentation/agents/self-improving-skills"
-        ]
-      },
-      {
-        "group": "Skills",
-        "pages": [
-          "docs/user-documentation/agents/skills/skill-examples"
+          }
         ]
       },
       {
@@ -269,35 +303,6 @@
               "docs/user-documentation/pods/examples/one-pod-per-customer",
               "docs/user-documentation/pods/examples/content-and-editorial-production",
               "docs/user-documentation/pods/examples/competitive-intelligence"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Data Sources",
-        "pages": [
-          "docs/user-documentation/data-sources/overview",
-          "docs/user-documentation/data-sources/connections",
-          "docs/user-documentation/data-sources/websites",
-          "docs/user-documentation/data-sources/folders",
-          {
-            "group": "Conversation Files",
-            "pages": [
-              "docs/user-documentation/data-sources/conversation-files/conversation-files",
-              "docs/user-documentation/data-sources/conversation-files/read-images"
-            ]
-          },
-          {
-            "group": "Custom connections",
-            "pages": [
-              "docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource",
-              "docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues",
-              "docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data",
-              "docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data",
-              "docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards",
-              "docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues",
-              "docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files",
-              "docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations"
             ]
           }
         ]
@@ -395,38 +400,50 @@
         ]
       },
       {
-        "group": "Developer Platform",
+        "group": "Overview",
+        "pages": [
+          "docs/developer-platform/overview/developer-platform",
+          "docs/developer-platform/overview/javascript-sdk"
+        ]
+      },
+      {
+        "group": "Core Concepts",
+        "pages": [
+          "docs/developer-platform/core-concepts/datasources",
+          "docs/developer-platform/core-concepts/chunks-and-documents",
+          "docs/developer-platform/core-concepts/rate-limits"
+        ]
+      },
+      {
+        "group": "Dust API Documentation",
+        "openapi": "docs/developer-platform/dust-api-documentation/openapi.json",
+        "pages": [
+          "docs/developer-platform/dust-api-documentation/openapi-and-postman"
+        ]
+      },
+      {
+        "group": "Dust Labs",
+        "pages": [
+          "docs/developer-platform/dust-labs/dust-labs-repository"
+        ]
+      },
+      {
+        "group": "Dust CLI",
+        "pages": [
+          "docs/developer-platform/dust-cli/dust-cli"
+        ]
+      },
+      {
+        "group": "Deprecated",
         "pages": [
           {
-            "group": "Overview",
+            "group": "[LEGACY] Dust Apps",
             "pages": [
-              "docs/developer-platform/overview/developer-platform",
-              "docs/developer-platform/overview/javascript-sdk"
+              "docs/user-documentation/deprecated/legacy-dust-apps/creating-google-calendar-events-from-a-dust-agent",
+              "docs/user-documentation/deprecated/legacy-dust-apps/allowing-an-agent-to-send-an-email"
             ]
           },
-          {
-            "group": "Core Concepts",
-            "pages": [
-              "docs/developer-platform/core-concepts/datasources",
-              "docs/developer-platform/core-concepts/chunks-and-documents",
-              "docs/developer-platform/core-concepts/rate-limits"
-            ]
-          },
-          {
-            "group": "Dust API Documentation",
-            "pages": [
-              "docs/developer-platform/dust-api-documentation/openapi-and-postman"
-            ],
-            "openapi": "docs/developer-platform/dust-api-documentation/openapi.json"
-          },
-          {
-            "group": "Dust Labs",
-            "pages": ["docs/developer-platform/dust-labs/dust-labs-repository"]
-          },
-          {
-            "group": "Dust CLI",
-            "pages": ["docs/developer-platform/dust-cli/dust-cli"]
-          },
+          "docs/user-documentation/deprecated/dev-pre-configuring-a-custom-mcp-server",
           {
             "group": "[Legacy] Dust Apps",
             "pages": [
@@ -441,19 +458,6 @@
               }
             ]
           }
-        ]
-      },
-      {
-        "group": "Deprecated",
-        "pages": [
-          {
-            "group": "[LEGACY] Dust Apps",
-            "pages": [
-              "docs/user-documentation/deprecated/legacy-dust-apps/creating-google-calendar-events-from-a-dust-agent",
-              "docs/user-documentation/deprecated/legacy-dust-apps/allowing-an-agent-to-send-an-email"
-            ]
-          },
-          "docs/user-documentation/deprecated/dev-pre-configuring-a-custom-mcp-server"
         ]
       }
     ]
