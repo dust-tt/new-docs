@@ -50,7 +50,7 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 <Info>
 **Inviting is not the same as syncing**
 
-Inviting the bot makes the channel visible in Dust's connection manager. But messages only sync after you explicitly select that channel in **Spaces  Connections  Slack  Add / Remove data** (:doc:`/docs/user-documentation/data-sources/connections`). This gives you control over exactly what data enters Dust.
+Inviting the bot makes the channel visible in Dust's connection manager. But messages only sync after you explicitly select that channel in **Spaces  Connections  Slack  Add / Remove data** ([Connections](/docs/user-documentation/data-sources/connections)). This gives you control over exactly what data enters Dust.
 </Info>
 
 ### Channel not syncing
@@ -84,7 +84,7 @@ Inviting the bot makes the channel visible in Dust's connection manager. But mes
 
 * Verify you're a Dust workspace admin
 * If your connection was set up before December 2024, follow the [Slack Connection setup guide](/docs/user-documentation/data-sources/connections) to create your own Slack App.
-* To enable the interactive bot, go to **Workspace Management  Workspace Settings  Integrations** and toggle Slack on (:doc:`/slack`).
+* To enable the interactive bot, go to **Workspace Management  Workspace Settings  Integrations** and toggle Slack on ([Dust in Slack](/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows)).
 
 ## @Dust Bot Issues
 
@@ -94,7 +94,7 @@ Inviting the bot makes the channel visible in Dust's connection manager. But mes
 
 **How to fix it:**
 
-1. In Dust, go to **Workspace Management  Workspace Settings  Integrations** and verify Slack is toggled on (:doc:`/slack`).
+1. In Dust, go to **Workspace Management  Workspace Settings  Integrations** and verify Slack is toggled on ([Dust in Slack](/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows)).
 2. In the Slack channel, type `/invite @Dust` and press **Enter**
 3. Mention the bot: `@Dust your question here`
 
@@ -103,7 +103,7 @@ Inviting the bot makes the channel visible in Dust's connection manager. But mes
 <Info>
 **DMs are not supported**
 
-`@Dust` works in public and private channels only. It does not respond in direct messages (:doc:`/slack`). This is by design—channels provide shared context that makes agent responses more useful to everyone.
+`@Dust` works in public and private channels only. It does not respond in direct messages ([Dust in Slack](/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows)). This is by design—channels provide shared context that makes agent responses more useful to everyone.
 </Info>
 
 ### Bot doesn't see full conversation
@@ -125,7 +125,7 @@ Inviting the bot makes the channel visible in Dust's connection manager. But mes
 @Dust ~hr-helper What's the PTO policy?
 ```
 
-**For public channels:** You can set a default agent in the agent's settings (the agent must be published). When anyone mentions `@Dust` in that channel, your chosen agent responds automatically (:doc:`/slack`).
+**For public channels:** You can set a default agent in the agent's settings (the agent must be published). When anyone mentions `@Dust` in that channel, your chosen agent responds automatically ([Dust in Slack](/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows)).
 
 <Warning>
 **Private channel limitation**
@@ -139,7 +139,7 @@ You cannot set a default agent for private channels. In private channels, always
 
 **Options:**
 
-1. **Agent settings:** Configure a default agent for specific public channels in the agent's settings page (:doc:`/slack`).
+1. **Agent settings:** Configure a default agent for specific public channels in the agent's settings page ([Dust in Slack](/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows)).
 2. **Slack Workflows:** Use [Slack Workflows](https://docs.dust.tt/docs/dust-assistants-in-a-slack-workflow) to trigger agents based on events like emoji reactions or schedules.
 
 <Warning>
@@ -167,7 +167,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 
 ### Actions appear from my name
 
-**Why this happens:** Slack tools use your personal OAuth credentials. When an agent posts a message or performs an action, Slack sees it as coming from you. This is intentional—it means agents can only do what you're allowed to do (:doc:`/slack-mcp`).
+**Why this happens:** Slack tools use your personal OAuth credentials. When an agent posts a message or performs an action, Slack sees it as coming from you. This is intentional—it means agents can only do what you're allowed to do ([Slack Tools](/docs/user-documentation/agents/tools/slack-tools)).
 
 **If you need bot identity:** Contact [support@dust.tt](mailto:support@dust.tt) to request access to the **Slack Bot** tool, which posts as a bot instead of you. Note: the bot version only works in public channels where the bot has been invited.
 
@@ -180,7 +180,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 1. Go to **Spaces  Tools  Add Tools**
 2. Select **Slack** from the list
 3. Complete the OAuth flow with your Slack account
-4. The Slack tools now appear when building agents (:doc:`/slack-mcp`).
+4. The Slack tools now appear when building agents ([Slack Tools](/docs/user-documentation/agents/tools/slack-tools)).
 
 ## Setup and Migration Issues
 
@@ -191,7 +191,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 **How to fix it:**
 
 1. Verify you're a Slack **Owner** or **Admin** (not just a member)
-2. Copy the manifest exactly as provided in the Dust docs—do not edit it (:doc:`/docs/user-documentation/data-sources/connections`)
+2. Copy the manifest exactly as provided in the Dust docs—do not edit it ([Connections](/docs/user-documentation/data-sources/connections))
 3. When Slack prompts you to select a workspace, choose the correct one
 
 **How to check your Slack role:**
@@ -210,11 +210,11 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 * Redirect URLs
 * Credentials (Client ID, Client Secret, Signing Secret)
 
-**If you rotated credentials for security reasons:** Update them immediately in **Spaces  Connections  Slack  Manage  Edit** (:doc:`/docs/user-documentation/data-sources/connections#managing-permissions`). Enter the new credentials from your Slack app's Basic Information page. The connection should resume automatically.
+**If you rotated credentials for security reasons:** Update them immediately in **Spaces  Connections  Slack  Manage  Edit** ([Connections](/docs/user-documentation/data-sources/connections)). Enter the new credentials from your Slack app's Basic Information page. The connection should resume automatically.
 
 ### Legacy connection migration
 
-**Why this matters:** Slack connections created before December 2024 use a shared Dust app. These connections work until **March 3, 2026**, but must be migrated to your own Slack app before that deadline (:doc:`/docs/user-documentation/data-sources/connections`).
+**Why this matters:** Slack connections created before December 2024 use a shared Dust app. These connections work until **March 3, 2026**, but must be migrated to your own Slack app before that deadline ([Connections](/docs/user-documentation/data-sources/connections)).
 
 **How to fix it:** Follow the [Slack Connection setup guide](/docs/user-documentation/data-sources/connections). The process takes about 2 minutes and involves creating your own Slack app from a manifest.
 
@@ -230,7 +230,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 
 **Why this happens:** Dust has its own permission layer that controls who can select which channels for syncing.
 
-**How to fix it:** Check **Spaces  Connections  Slack** to see access restrictions and which spaces receive which data (:doc:`/docs/user-documentation/data-sources/connections#managing-permissions`).
+**How to fix it:** Check **Spaces  Connections  Slack** to see access restrictions and which spaces receive which data ([Connections](/docs/user-documentation/data-sources/connections)).
 
 ### "You don't have permission" error
 
@@ -247,14 +247,14 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 | Limitation                                 | Why It Exists                                                                                                                                                                                                                        |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **One interactive bot per Dust workspace** | You can sync multiple Slack workspaces as data sources, but only one can have the `@Dust` bot active. This prevents confusion about which bot responds.                                                                              |
-| **Bot messages not synced**                | Messages from `@Dust` and other bots are intentionally excluded from sync. This prevents AI‑generated content from being treated as source material, which could propagate mistakes. (:doc:`/docs/user-documentation/data-sources/connections#data-synchronization`) |
+| **Bot messages not synced**                | Messages from `@Dust` and other bots are intentionally excluded from sync. This prevents AI‑generated content from being treated as source material, which could propagate mistakes. ([Connections](/docs/user-documentation/data-sources/connections)) |
 | **No default agent in private channels**   | Slack's Terms of Service restrict certain bot behaviors in private channels. Use `@Dust +agent-name` syntax instead.                                                                                                                 |
-| **Thread links sometimes approximate**     | When messages aren't threaded, Dust links to the approximate location in the channel rather than the exact message. Use threads for precise linking. (:doc:`/docs/user-documentation/data-sources/connections#slack-connection-specificities`)                       |
+| **Thread links sometimes approximate**     | When messages aren't threaded, Dust links to the approximate location in the channel rather than the exact message. Use threads for precise linking. ([Connections](/docs/user-documentation/data-sources/connections))                       |
 
 <Info>
 **Best practice: Use threads**
 
-Post your topic as the first message, then continue the conversation in a thread. This improves Dust's ability to retrieve relevant context and provides accurate message links (:doc:`/docs/user-documentation/data-sources/connections#slack-connection-specificities`).
+Post your topic as the first message, then continue the conversation in a thread. This improves Dust's ability to retrieve relevant context and provides accurate message links ([Connections](/docs/user-documentation/data-sources/connections)).
 </Info>
 
 ## Still Stuck?
