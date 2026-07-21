@@ -396,41 +396,41 @@
       {
         "group": "Developers",
         "pages": [
-          "docs/user-documentation/developers/client-side-mcp-server"
-        ]
-      },
-      {
-        "group": "Overview",
-        "pages": [
-          "docs/developer-platform/overview/developer-platform",
-          "docs/developer-platform/overview/javascript-sdk"
-        ]
-      },
-      {
-        "group": "Core Concepts",
-        "pages": [
-          "docs/developer-platform/core-concepts/datasources",
-          "docs/developer-platform/core-concepts/chunks-and-documents",
-          "docs/developer-platform/core-concepts/rate-limits"
-        ]
-      },
-      {
-        "group": "Dust API Documentation",
-        "openapi": "docs/developer-platform/dust-api-documentation/openapi.json",
-        "pages": [
-          "docs/developer-platform/dust-api-documentation/openapi-and-postman"
-        ]
-      },
-      {
-        "group": "Dust Labs",
-        "pages": [
-          "docs/developer-platform/dust-labs/dust-labs-repository"
-        ]
-      },
-      {
-        "group": "Dust CLI",
-        "pages": [
-          "docs/developer-platform/dust-cli/dust-cli"
+          "docs/user-documentation/developers/client-side-mcp-server",
+          {
+            "group": "Overview",
+            "pages": [
+              "docs/developer-platform/overview/developer-platform",
+              "docs/developer-platform/overview/javascript-sdk"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "docs/developer-platform/core-concepts/datasources",
+              "docs/developer-platform/core-concepts/chunks-and-documents",
+              "docs/developer-platform/core-concepts/rate-limits"
+            ]
+          },
+          {
+            "group": "Dust API Documentation",
+            "openapi": "docs/developer-platform/dust-api-documentation/openapi.json",
+            "pages": [
+              "docs/developer-platform/dust-api-documentation/openapi-and-postman"
+            ]
+          },
+          {
+            "group": "Dust Labs",
+            "pages": [
+              "docs/developer-platform/dust-labs/dust-labs-repository"
+            ]
+          },
+          {
+            "group": "Dust CLI",
+            "pages": [
+              "docs/developer-platform/dust-cli/dust-cli"
+            ]
+          }
         ]
       },
       {
