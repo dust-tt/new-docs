@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "name": "Dust Docs",
+  "name": "Multiplayer AI",
   "theme": "mint",
   "logo": {
     "light": "/branding/logo/light.svg",
@@ -1463,5 +1463,8 @@
       "source": "/reference/rate-limits",
       "destination": "/docs/developer-platform/core-concepts/rate-limits"
     }
-  ]
+  ],
+  "thumbnails": {
+    "appearance": "light"
+  }
 }
