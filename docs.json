@@ -126,20 +126,20 @@
           },
           "docs/user-documentation/agents/templates",
           "docs/user-documentation/agents/deep-dive-agent",
+          "docs/user-documentation/agents/agent-builder-sidekick",
           "docs/user-documentation/agents/troubleshooting-your-agent",
           "docs/user-documentation/agents/structured-output-format",
-          "docs/user-documentation/agents/agent-builder-sidekick",
           "docs/user-documentation/agents/steering-conversations",
           "docs/user-documentation/agents/branch-a-conversation",
-          "docs/user-documentation/agents/context-compaction",
-          "docs/user-documentation/agents/self-improving-skills"
+          "docs/user-documentation/agents/context-compaction"
         ]
       },
       {
         "group": "Skills",
         "pages": [
           "docs/user-documentation/agents/skills/skill-examples",
-          "docs/user-documentation/agents/go-deep"
+          "docs/user-documentation/agents/go-deep",
+          "docs/user-documentation/agents/self-improving-skills"
         ]
       },
       {
@@ -152,7 +152,31 @@
               "docs/user-documentation/agents/knowledge/search-data-sources",
               "docs/user-documentation/agents/knowledge/table-queries",
               "docs/user-documentation/agents/knowledge/extract-data",
-              "docs/user-documentation/agents/knowledge/include-data"
+              "docs/user-documentation/agents/knowledge/include-data",
+              "docs/user-documentation/data-sources/overview",
+              "docs/user-documentation/data-sources/connections",
+              "docs/user-documentation/data-sources/websites",
+              "docs/user-documentation/data-sources/folders",
+              {
+                "group": "Conversation Files",
+                "pages": [
+                  "docs/user-documentation/data-sources/conversation-files/conversation-files",
+                  "docs/user-documentation/data-sources/conversation-files/read-images"
+                ]
+              },
+              {
+                "group": "Custom connections",
+                "pages": [
+                  "docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files",
+                  "docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations"
+                ]
+              }
             ]
           },
           {
@@ -249,35 +273,6 @@
               "docs/user-documentation/agents/integrations/browser-extension",
               "docs/user-documentation/agents/integrations/raycast-extension",
               "docs/user-documentation/agents/integrations/dust-in-teams"
-            ]
-          },
-          {
-            "group": "Data Sources",
-            "pages": [
-              "docs/user-documentation/data-sources/overview",
-              "docs/user-documentation/data-sources/connections",
-              "docs/user-documentation/data-sources/websites",
-              "docs/user-documentation/data-sources/folders",
-              {
-                "group": "Conversation Files",
-                "pages": [
-                  "docs/user-documentation/data-sources/conversation-files/conversation-files",
-                  "docs/user-documentation/data-sources/conversation-files/read-images"
-                ]
-              },
-              {
-                "group": "Custom connections",
-                "pages": [
-                  "docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource",
-                  "docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues",
-                  "docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data",
-                  "docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data",
-                  "docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards",
-                  "docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues",
-                  "docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files",
-                  "docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations"
-                ]
-              }
             ]
           }
         ]
