@@ -3,6 +3,27 @@ title: "Changelog"
 description: "New updates and improvements to Dust"
 ---
 
+<Update label="July 22nd, 2026" tags={["Added"]}>
+## Personal account support for the Zendesk tool
+
+What is it?
+
+Users can now connect their own personal Zendesk account to the Zendesk tool, alongside the existing workspace-level connection. The Zendesk subdomain is automatically inherited from the admin’s workspace connection - so users never have to re-enter it. Mirrors the existing Jira personal auth pattern.
+
+Why is it useful?
+
+So users can act in Zendesk as themselves (their own agent identity), rather than going through a single shared workspace account.
+
+How does it work?
+
+Zendesk can use either the workspace-level connection or a user's personal connection. The Zendesk subdomain is inherited from the workspace connection, so users do not need to enter it again.
+
+How to access it?
+
+In a workspace where the Zendesk tool is configured, connect your personal Zendesk account when setting up the tool. This feature is live for all such workspaces and does not require a feature flag.
+
+</Update>
+
 <Update label="July 10th, 2026" tags={["Added"]}>
 ## Slack MCP Improvements: Reactions, Status Updates, and Optional "Sent by Agent" Footer
 
