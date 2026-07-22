@@ -138,6 +138,9 @@
         "group": "Skills",
         "pages": [
           "docs/user-documentation/agents/skills/skill-examples",
+          "docs/user-documentation/agents/discover-knowledge",
+          "docs/user-documentation/agents/discover-skills",
+          "docs/user-documentation/agents/discover-tools",
           "docs/user-documentation/agents/go-deep",
           "docs/user-documentation/agents/self-improving-skills"
         ]
