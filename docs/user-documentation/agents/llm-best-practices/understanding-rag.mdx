@@ -3,13 +3,13 @@ title: "Understanding Retrieval Augmented Generation (RAG) and the search method
 ---
 
 
-One of the most powerful is the **Retrieval Augmented Generation (RAG) agent**, which uses **semantic search** to find relevant information and generate answers to your questions.
+One of the most useful is the **Retrieval Augmented Generation (RAG) agent**, which uses **semantic search** to find relevant information and generate answers to your questions.
 
 You create this type of agent when you use the `Search` action.
 
-In this guide, we'll dive into how RAG works, its strengths and limitations, and how you can effectively leverage it in Dust.
+In this guide, we'll dive into how RAG works, its strengths and limitations, and how to use it effectively in Dust.
 
-**Retrieval Augmented Generation**, or **RAG**, is a powerful technology that combines the capabilities of large language models (LLMs) with an extensive knowledge base. It's like having a personal researcher who can:
+**Retrieval Augmented Generation**, or **RAG**, is a technology that combines the capabilities of large language models (LLMs) with an extensive knowledge base. It's like having a personal researcher who can:
 
 - quickly scan through a vast library of documents,
 - find the most relevant pieces of information,
@@ -23,9 +23,9 @@ Here's a step-by-step breakdown of what happens when you ask a question to a RAG
 
 3. **LLM Processing:** The retrieved documents, along with your original question and your agent's instructions, are fed into the large language model (LLM) you selected. The LLM uses its understanding of language + the context you provided in the prompt + the instruction to analyze the information and generate a response.
 
-4. **Answer Generation:** The LLM synthesizes an answer based on the retrieved information, aiming to provide a clear and comprehensive response to your question.
+4. **Answer Generation:** The LLM synthesizes an answer based on the retrieved information, aiming to provide a clear and complete response to your question.
 
-The power of RAG lies in its ability to access a vast amount of information without needing to store it all within the model itself. By combining semantic search with the generative capabilities of LLMs, RAG can provide informed, context-aware answers to a wide range of questions.
+RAG's strength is that it can access a vast amount of information without needing to store it all within the model itself. By combining semantic search with the generative capabilities of LLMs, RAG can provide informed, context-aware answers to a wide range of questions.
 
 ## **The Detective Metaphor**
 
@@ -49,11 +49,11 @@ Here’s why:
 
 ## Strengths and Limitations of RAG
 
-While RAG is a powerful technique for accessing and understanding your data, it's important to be aware of its strengths and limitations:
+While RAG works well for accessing and understanding your data, it's important to be aware of its strengths and limitations:
 
 **Strengths:**
 
-- **Accesses a large knowledge base:** RAG can draw from a vast corpus of information to provide comprehensive answers.
+- **Accesses a large knowledge base:** RAG can draw from a vast corpus of information to provide detailed answers.
 - **Understands context:** Using semantic search, RAG can find information relevant to your question's meaning and context, not just direct keyword matches.
 - **Generates natural language answers:** The LLM component allows RAG to provide answers in clear, coherent language.
 
@@ -89,9 +89,9 @@ To get the most out of the RAG agents you create in Dust, it's important to unde
 
 1. **Formulating Questions:** Ask clear, specific questions that focus on the information you need. Avoid hashtags and overly broad or vague queries that may retrieve less relevant documents.
 2. **Understanding the Output:** Keep in mind that RAG provides a synthesized answer based on the retrieved documents. It's not pulling a pre-written response from the knowledge base. Be prepared for some variability in how answers are phrased.
-3. **Iterating and Refining:** If the first answer isn't quite what you were looking for, try rephrasing your prompt or providing more context in your question— or even the agent's instructions. If given more specific guidance, your RAG agent can often provide more targeted answers. Learn more in our guide: [How to write effective instructions](/docs/user-documentation/agents/llm-best-practices/how-to-write-effective-instructions)
+3. **Iterating and Refining:** If the first answer isn't quite what you were looking for, try rephrasing your prompt or providing more context in your question, or even the agent's instructions. If given more specific guidance, your RAG agent can often provide more targeted answers. Learn more in our guide: [How to write effective instructions](/docs/user-documentation/agents/llm-best-practices/how-to-write-effective-instructions)
 4. **Knowing When to Use Other Tools:** Use RAG for open-ended questions and [Table queries](/docs/user-documentation/agents/knowledge/table-queries) for quantitative analysis. For questions that require precise, numerical answers (like "How many users mentioned Feature X last month?"), consider using Dust's structured data query tools instead of RAG. These allow you to interrogate databases and spreadsheets for specific data points directly.
 
 ## **Conclusion**
 
-RAG is a potent tool for synthesizing knowledge from vast information pools and answering complex questions. However, for quantitative tasks, leveraging Dust’s structured query capabilities will provide more precise and actionable data. Understanding when and how to use these tools will maximize your efficiency and effectiveness in managing information and making data-driven decisions.
+RAG works well for synthesizing knowledge from vast information pools and answering complex questions. However, for quantitative tasks, using Dust’s structured query capabilities will provide more precise and actionable data. Understanding when and how to use these tools will maximize your efficiency and effectiveness in managing information and making data-driven decisions.

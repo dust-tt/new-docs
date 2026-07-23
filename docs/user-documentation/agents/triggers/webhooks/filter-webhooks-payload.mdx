@@ -463,7 +463,7 @@ Use `or` for alternatives:
 1. **Keep it simple**: Use the simplest expression that meets your requirements
 2. **Be specific**: Reference the most specific fields available to avoid false positives
 3. **Test thoroughly**: Verify your filter against sample payloads before deployment
-4. **Use wildcards**: Leverage `.*` notation for arrays of objects instead of complex nested logic
+4. **Use wildcards**: Use `.*` notation for arrays of objects instead of complex nested logic
 5. **Document complex filters**: Add comments (outside the expression) explaining the logic for complex filters
 6. **Prefer `has-any` over multiple `or` statements**: `(has-any "labels" ("a" "b" "c"))` is cleaner than `(or (has "labels" "a") (has "labels" "b") (has "labels" "c"))`
 

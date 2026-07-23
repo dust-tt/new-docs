@@ -16,10 +16,10 @@ First, create a Dust App with an “Input” block. The input block will be resp
 
 After clicking on “Create dataset” we can start filling the expected data schema. The description for each field is very important, as this is what the AI model will use to understand what should go in each of the field.
 
-You should then add some test values in the “Data” section — these will be used to test your Dust App before making it available to a Dust agent.
+You should then add some test values in the “Data” section: these will be used to test your Dust App before making it available to a Dust agent.
 
 <aside>
-   Make sure to use your own email(s) in the `guests` field — otherwise you won’t see the test event created in your Google Calendar (and you invite Gabriel and myself to your test event )
+   Make sure to use your own email(s) in the `guests` field. Otherwise you won’t see the test event created in your Google Calendar (and you invite Gabriel and myself to your test event )
 </aside>
 
 <aside>
@@ -40,7 +40,7 @@ In your Dust App, add a CURL block as pictured above. The CURL block is used to 
 
 Once you have pasted the webhook URL of your Zap and filled-in the `body` section of the block with all the required parameters, you can run your Dust App.
 
-To make it easier, you can simply copy and paste this code into your CURL block `body` section:
+To make it easier, you can copy and paste this code into your CURL block `body` section:
 
 ```jsx
 _fun = (env) => {
@@ -80,9 +80,9 @@ You can now test the Zap Google Calendar action. If everything went according to
 ## Test your Dust App
 
 
-Go back to your Dust App and add a final CODE block at the end. This code block should simply return a string as pictured above. That will prevent your agent from receiving noisy technical (and useless) information from your CURL block.
+Go back to your Dust App and add a final CODE block at the end. This code block should return a string as pictured above. That will prevent your agent from receiving noisy technical (and useless) information from your CURL block.
 
-You can simply copy and paste this into the block:
+You can copy and paste this into the block:
 
 ```jsx
 _fun = (env) => {

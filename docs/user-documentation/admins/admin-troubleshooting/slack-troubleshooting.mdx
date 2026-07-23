@@ -38,7 +38,7 @@ Now that the basics are clear, let's dive into the troubleshooting usual suspect
 
 ### Private channel not appearing
 
-**Why this happens:** Slack apps cannot see private channels until explicitly invited. This is a Slack security feature—private means private until you grant access.
+**Why this happens:** Slack apps cannot see private channels until explicitly invited. This is a Slack security feature: private means private until you grant access.
 
 **How to fix it:**
 
@@ -103,12 +103,12 @@ Inviting the bot makes the channel visible in Dust's connection manager. But mes
 <Info>
 **DMs are not supported**
 
-`@Dust` works in public and private channels only. It does not respond in direct messages ([Dust in Slack](/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows)). This is by design—channels provide shared context that makes agent responses more useful to everyone.
+`@Dust` works in public and private channels only. It does not respond in direct messages ([Dust in Slack](/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows)). This is by design: channels provide shared context that makes agent responses more useful to everyone.
 </Info>
 
 ### Bot doesn't see full conversation
 
-**Why this happens:** When you mention `@Dust`, it only receives the thread it's mentioned in—not the entire channel history. This keeps responses fast and focused.
+**Why this happens:** When you mention `@Dust`, it only receives the thread it's mentioned in, not the entire channel history. This keeps responses fast and focused.
 
 **What you can do:**
 
@@ -156,7 +156,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 
 | Tool                         | What It Requires        | How It Works                                       |
 | ---------------------------- | ----------------------- | -------------------------------------------------- |
-| **Semantic Search Messages** | Slack AI add‑on enabled | Uses natural language understanding—better results |
+| **Semantic Search Messages** | Slack AI add‑on enabled | Uses natural language understanding for better results |
 | **Search Messages**          | Nothing                 | Keyword matching only, less accurate               |
 
 **What you can do:**
@@ -167,7 +167,7 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 
 ### Actions appear from my name
 
-**Why this happens:** Slack tools use your personal OAuth credentials. When an agent posts a message or performs an action, Slack sees it as coming from you. This is intentional—it means agents can only do what you're allowed to do ([Slack Tools](/docs/user-documentation/agents/tools/slack-tools)).
+**Why this happens:** Slack tools use your personal OAuth credentials. When an agent posts a message or performs an action, Slack sees it as coming from you. This is intentional: it means agents can only do what you're allowed to do ([Slack Tools](/docs/user-documentation/agents/tools/slack-tools)).
 
 **If you need bot identity:** Contact [support@dust.tt](mailto:support@dust.tt) to request access to the **Slack Bot** tool, which posts as a bot instead of you. Note: the bot version only works in public channels where the bot has been invited.
 
@@ -191,14 +191,14 @@ Slack workflows must be enabled for your workspace by Dust. Contact [support@dus
 **How to fix it:**
 
 1. Verify you're a Slack **Owner** or **Admin** (not just a member)
-2. Copy the manifest exactly as provided in the Dust docs—do not edit it ([Connections](/docs/user-documentation/data-sources/connections))
+2. Copy the manifest exactly as provided in the Dust docs; do not edit it ([Connections](/docs/user-documentation/data-sources/connections))
 3. When Slack prompts you to select a workspace, choose the correct one
 
 **How to check your Slack role:**
 
 1. Click your workspace name in Slack (top‑left corner)
 2. Go to **Settings & administration  Manage members**
-3. Search for your name—your role appears next to it
+3. Search for your name; your role appears next to it
 
 ### Connection broke after editing app
 

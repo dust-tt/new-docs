@@ -10,11 +10,11 @@ Ensure to do the Initial Connection Setup once and then Manage the Connection by
 The recommended approach to creating a Notion Connection is to provision a user [dust-admin@yourdomain.com](mailto:dust-admin@yourdomain.com) in your Google workspace and use that identity to connect Dust to your various data sources. The IT/CISO/(name the right function here) will update Dust data access using that account.
 You will have to ensure that this new 'admin user' has access to the pages/teamspaces that you want to connect.
 This will help them control what Dust has access to by managing the permission of that account on Notion.
-If you cannot locate a specific Notion page in Dust, simply add it directly through Notion. To guarantee proper indexing and organization, link all parent pages to reestablish the page hierarchy.
+If you cannot locate a specific Notion page in Dust, add it directly through Notion. To guarantee proper indexing and organization, link all parent pages to reestablish the page hierarchy.
 Notion connections are unique per user, and replacing an existing connection with a new user's permissions disrupts the current data access.
 </Danger>
 
-Dust integrates with Notion to bring your workspace's pages and databases into Dust, allowing for a streamlined data-sharing and collaboration process. Due to permission restrictions, only Notion Admins can set up this connection.
+Dust integrates with Notion to bring your workspace's pages and databases into Dust, so agents can search and use that content. Due to permission restrictions, only Notion Admins can set up this connection.
 
 ### Initial Connection Setup
 
@@ -34,7 +34,7 @@ The setup process **requires a Notion Admin** who is also a Dust Admin. This ens
 
 **Managing Permissions**
 
-* Adopt a **shared-by-default** approach—share everything except for the data you want to exclude from Dust.
+* Adopt a **shared-by-default** approach: share everything except for the data you want to exclude from Dust.
 * Use Notion's **Top Page selection** to share entire sections that are 100% sharable.
 * Apply a more **granular approach** for sensitive pages, which will be classified under an Orphaned Pages folder in Dust.
 

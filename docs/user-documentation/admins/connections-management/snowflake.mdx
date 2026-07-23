@@ -10,7 +10,7 @@ You can connect Dust to your Snowflake data warehouse to enable your agents to p
 Dust agents are able to use the output from these queries to answer quantitative questions:
 
 
-The agents can also leverage the results to create visualizations, such as charts:
+The agents can also use the results to create visualizations, such as charts:
 
 
 The "Tools inspection" button allows to view the reasoning and SQL query used by the agent to retrieve the data:
@@ -202,7 +202,7 @@ Keep your private key file (`rsa_key.p8`) secure. You'll need to provide it to D
 #### **Grant`USAGE` on databases and schemas to the role**
 
 *:bulb:Granting USAGE for databases and schemas does not mean granting access to the tables inside.\
-It simply means that the Dust role on Snowflake will be aware of the existence of these databases & schemas, which is a pre-requisite if you wish to query some of the tables they contain.*
+It only means that the Dust role on Snowflake will be aware of the existence of these databases & schemas, which is a pre-requisite if you wish to query some of the tables they contain.*
 
 For each Snowflake database that you wish to use through Dust, you will need to grant `USAGE` to the role:
 

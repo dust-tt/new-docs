@@ -4,12 +4,12 @@ Source for [docs.dust.tt](https://docs.dust.tt), built with [Mintlify](https://m
 
 ## Structure
 
-- `docs.json` — site configuration and navigation
-- `index.mdx` — homepage
-- `docs/user-documentation/` — product documentation (getting started, agents, data sources, admins)
-- `docs/developer-platform/` — developer platform docs and API reference (auto-generated from `docs/developer-platform/dust-api-documentation/openapi.json`)
-- `docs/changelog.mdx` — product changelog
-- `branding/` — logos and favicon
+- `docs.json`: site configuration and navigation
+- `index.mdx`: homepage
+- `docs/user-documentation/`: product documentation (getting started, agents, data sources, admins)
+- `docs/developer-platform/`: developer platform docs and API reference (auto-generated from `docs/developer-platform/dust-api-documentation/openapi.json`)
+- `docs/changelog.mdx`: product changelog
+- `branding/`: logos and favicon
 
 ## Local development
 

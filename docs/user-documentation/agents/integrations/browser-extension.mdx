@@ -27,25 +27,25 @@ Choose your browser and install the extension:
 
 Broad permissions are required by browsers to enable core features like capturing tab content and screenshots.
 
-No data is ever collected automatically — the extension only reads webpage content when you explicitly request it or when it asks for your permission before doing so.
+No data is ever collected automatically. The extension only reads webpage content when you explicitly request it or when it asks for your permission before doing so.
 
 Source code available for review: <Anchor label="background.ts" target="_blank" href="https://github.com/dust-tt/dust/blob/main/extension/platforms/chrome/background.ts">background.ts</Anchor>
 
 
 ## Dust, right in your browser
 
-Just like in the web app, you can start a conversation with any of your Dust agents directly from the extension — ask questions, get summaries, draft content, and more, without leaving your current tab.
+Just like in the web app, you can start a conversation with any of your Dust agents directly from the extension: ask questions, get summaries, draft content, and more, without leaving your current tab.
 
 Find the features you're used to in the web app, such as:
 
 ### Input & Composition
 
-The extension's input bar is now fully on par with the web app — everything you can do on dust.tt, you can do directly from your browser.
+The extension's input bar is now fully on par with the web app: everything you can do on dust.tt, you can do directly from your browser.
 
-* **@Mentions** — Mention members of your workspace directly in a conversation.
-* **Rich text formatting** — Bold, italic, lists, and emoji support.
-* **Attach to conversations** — Add agents, tools, skills, or knowledge sources to any conversation.
-* **Draft auto-save** — Your unsent message is preserved when you close the extension and restored when you reopen it.
+* **@Mentions**: Mention members of your workspace directly in a conversation.
+* **Rich text formatting**: Bold, italic, lists, and emoji support.
+* **Attach to conversations**: Add agents, tools, skills, or knowledge sources to any conversation.
+* **Draft auto-save**: Your unsent message is preserved when you close the extension and restored when you reopen it.
 
 
 ### Sidebar
@@ -58,7 +58,7 @@ The sidebar mirrors the web app navigation. Click the sidebar icon to access:
 
 ### MCP Tools
 
-The extension now shares the same tool architecture as the web app. Any MCP tool your workspace has configured (Notion, Gmail, Google Drive, etc.) is automatically available to agents in the extension — no extra setup needed.
+The extension now shares the same tool architecture as the web app. Any MCP tool your workspace has configured (Notion, Gmail, Google Drive, etc.) is automatically available to agents in the extension, with no extra setup needed.
 
 ***
 
@@ -70,8 +70,8 @@ The extension gives agents direct awareness of what's happening in your browser.
 
 You can manually attach the current tab's text or a full-page screenshot using the icons in the input bar. You can also use keyboard shortcuts:
 
-* `⌘ + Shift + Y` (Mac) / `Ctrl + Shift + Y` (Windows) — attach page content
-* `⌘ + Shift + S` (Mac) / `Ctrl + Shift + S` (Windows) — attach screenshot
+* `⌘ + Shift + Y` (Mac) / `Ctrl + Shift + Y` (Windows): attach page content
+* `⌘ + Shift + S` (Mac) / `Ctrl + Shift + S` (Windows): attach screenshot
 
 
 **Agents can also request access to the page content on their own** when it is relevant to your question. A permission prompt will appear before any content is accessed.
@@ -84,12 +84,12 @@ Agents can work across multiple open tabs at once. When you ask a question that 
 
 ### PDF & file auto-attachment
 
-If you are on a page displaying a file (e.g. a PDF or an image), the agent will detect it and offer to attach the file to the conversation automatically — no manual download or upload needed.
+If you are on a page displaying a file (e.g. a PDF or an image), the agent will detect it and offer to attach the file to the conversation automatically, with no manual download or upload needed.
 
 
 ### Page interaction
 
-Agents can interact with the current page using mouse clicks and keystrokes. This enables use cases like filling out forms, clicking buttons, or navigating a board — all without leaving the page.
+Agents can interact with the current page using mouse clicks and keystrokes. This enables use cases like filling out forms, clicking buttons, or navigating a board, all without leaving the page.
 
 **Note:** Page interaction is intentionally disabled on pages where a dedicated MCP tool is available (e.g. Notion, Gmail). In those cases, the agent will use the MCP tool instead, which is faster and more reliable.
 
@@ -101,11 +101,11 @@ The Dust extension is available on **Chrome**, **Firefox**, **Arc**, **Microsoft
 
 ## Known Limitations
 
-* **Include page content is not working well on Google Drive — Gdoc included** (since it’s not really text on the page but a canvas). The workaround is to use the “include tab screenshot” feature or to download the Gdoc as a PDF.
+* **Include page content is not working well on Google Drive, Gdoc included** (since it’s not really text on the page but a canvas). The workaround is to use the “include tab screenshot” feature or to download the Gdoc as a PDF.
 
 
 ## Use case examples
 
-* **Sales teams** are streamlining their follow-up process, pulling insights directly from meeting transcripts, Slack channels and CRM data while working in their email client.
+* **Sales teams** are speeding up their follow-ups, pulling insights directly from meeting transcripts, Slack channels and CRM data while working in their email client.
 * **Support teams** are becoming more data-fluent, getting instant assistance in interpreting dashboards and metrics.
 * **Engineering teams** are accelerating code reviews with on-point comments co-written with their Dust coding agents.
