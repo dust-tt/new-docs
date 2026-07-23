@@ -7,12 +7,12 @@ title: "BigQuery"
 
 You can connect Dust to your BigQuery data warehouse to enable your agents to perform [Table queries](/docs/user-documentation/agents/knowledge/table-queries) on your BigQuery tables.
 
-Agents can now leverage table and column descriptions set in BigQuery to better understand your data structure. This feature can be enabled in the BigQuery connection management screen.
+Agents can now use table and column descriptions set in BigQuery to better understand your data structure. This feature can be enabled in the BigQuery connection management screen.
 
 Dust agents are able to use the output from these queries to answer quantitative questions:
 
 
-The agents can also leverage the results to create visualizations, such as charts:
+The agents can also use the results to create visualizations, such as charts:
 
 
 The "Tools inspection" button allows to view the reasoning and SQL query used by the agent to retrieve the data:
@@ -81,4 +81,4 @@ The key file will download automatically. Keep it secure as it provides access t
 BigQuery prevents cross-location queries. A single query cannot reference tables from datasets in different locations (for example, US and EU). If your data spans multiple locations, select only the datasets from one location for this connection. [Learn more](https://cloud.google.com/bigquery/docs/datasets-intro#dataset_location)
 
 5. Select the datasets and tables you want to make available in Dust
-6. You can enable the "Use BigQuery descriptions" option to allow agents to leverage table and column descriptions that are set in BigQuery. This can help agents better understand your data structure without requiring additional documentation.
+6. You can enable the "Use BigQuery descriptions" option to allow agents to use table and column descriptions that are set in BigQuery. This can help agents better understand your data structure without requiring additional documentation.

@@ -14,20 +14,20 @@ Use the time range selector at the top right of the page to scope every chart an
 
 ## What's on the dashboard
 
-- **Overview** — total workspace members alongside the active-user count for the selected period.
-- **Credit usage** — a stacked bar chart of credits consumed over time. Credits are Dust's unit of AI compute usage. Switch the granularity between **Daily, Weekly, and Monthly**, and break the data down by:
-  - **Total** — all consumption combined.
-  - **By Usage Type** — interactive (User) versus Programmatic (API and integration) usage.
-  - **By Agent**, **By User**, or **By Source** — the top contributors in each dimension.
+- **Overview**: total workspace members alongside the active-user count for the selected period.
+- **Credit usage**: a stacked bar chart of credits consumed over time. Credits are Dust's unit of AI compute usage. Switch the granularity between **Daily, Weekly, and Monthly**, and break the data down by:
+  - **Total**: all consumption combined.
+  - **By Usage Type**: interactive (User) versus Programmatic (API and integration) usage.
+  - **By Agent**, **By User**, or **By Source**: the top contributors in each dimension.
 
   When grouped, use the **Top N** selector (5, 10, 15, 20, or 30) to control how many series are shown. The rest are bundled into an "Others" bar. Click a legend entry to drill into one or more series, and **Clear filters** to reset. The chart can be opened full screen.
 
-- **Users by credits** — the top 100 members by credits consumed over the selected period, with their message count and most-used agents (model and, on hover, description). Search for a specific user by name.
-- **Agents by credits** — the top 100 agents by credits consumed, with their model, description, top users, and top skills (skill descriptions show on hover). Search for a specific agent by name.
-- **Activity over time** — a line chart that toggles between **messages and conversations** (volume) and **DAU / WAU / MAU** (daily, weekly, and monthly active users).
-- **Message sources** — breakdown of where messages originate: the Dust web app, the browser extension, Slack, Teams, email, triggered and scheduled runs, and programmatic integrations such as the API, Zapier, n8n, and Make.
-- **Tool usage** — executions and unique users per tool over time. Pick a specific tool from the dropdown to drill in.
-- **Skill usage** — executions and unique users per skill, with the same drill-down control.
+- **Users by credits**: the top 100 members by credits consumed over the selected period, with their message count and most-used agents (model and, on hover, description). Search for a specific user by name.
+- **Agents by credits**: the top 100 agents by credits consumed, with their model, description, top users, and top skills (skill descriptions show on hover). Search for a specific agent by name.
+- **Activity over time**: a line chart that toggles between **messages and conversations** (volume) and **DAU / WAU / MAU** (daily, weekly, and monthly active users).
+- **Message sources**: breakdown of where messages originate, covering the Dust web app, the browser extension, Slack, Teams, email, triggered and scheduled runs, and programmatic integrations such as the API, Zapier, n8n, and Make.
+- **Tool usage**: executions and unique users per tool over time. Pick a specific tool from the dropdown to drill in.
+- **Skill usage**: executions and unique users per skill, with the same drill-down control.
 
 ## Downloading data
 
@@ -37,7 +37,7 @@ Use the time range selector at the top right of the page to scope every chart an
 
 ## Accessing analytics via the API
 
-You can pull usage data programmatically through the [Export workspace analytics](/docs/developer-platform/dust-api-documentation/export-workspace-analytics) endpoint. Any Dust API key with the **builder** role (or above) can call it — no special access request needed.
+You can pull usage data programmatically through the [Export workspace analytics](/docs/developer-platform/dust-api-documentation/export-workspace-analytics) endpoint. Any Dust API key with the **builder** role (or above) can call it; no special access request needed.
 
 Pass the `table` you want along with a `startDate` and `endDate` (both `YYYY-MM-DD`):
 

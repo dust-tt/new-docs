@@ -5,9 +5,9 @@ title: "[Beta] Import Jira issues"
 
 ## Jira Issues Importer for Dust
 
-The **Jira issues Importer for Dust** is a powerful tool designed to seamlessly integrate your Jira issues data with Dust's AI-powered knowledge management platform.
+This script imports recently updated Jira issues into a Dust datasource.
 
-This open-source script, **available on GitHub at[dust-tt/dust-labs/jira](https://github.com/dust-tt/dust-labs/tree/main/jira)**, automates the process of exporting issues updated in the last 24 hours from Jira and importing them into a Dust datasource. It fetches comprehensive issues details, like so:
+This open-source script, **available on GitHub at[dust-tt/dust-labs/jira](https://github.com/dust-tt/dust-labs/tree/main/jira)**, automates the process of exporting issues updated in the last 24 hours from Jira and importing them into a Dust datasource. It fetches full issue details, like so:
 
 ```
 Issue Key: KAN-3
@@ -51,6 +51,4 @@ This is the first comment of the issue
 
 The script then formats and uploads this data to Dust.
 
-By leveraging this script, support teams can effortlessly keep their Dust knowledge base up-to-date with the latest information from Jira.
-
-This integration enables more effective use of Dust's AI capabilities for analyzing support trends, improving response times, and enhancing overall customer service quality. The script is designed with rate limiting and error handling in mind, ensuring reliable performance even with large volumes of Jira issues data.
+The script only exports issues updated in the last 24 hours, so schedule it to run daily to keep your Dust knowledge base up to date with Jira. Your agents can then use the issue data to analyze support trends, response times, and customer service quality. The script uses rate limiting and error handling to stay reliable with large volumes of Jira issues.

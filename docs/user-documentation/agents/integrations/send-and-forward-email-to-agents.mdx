@@ -3,7 +3,7 @@ title: "Send and Forward Email to Agents"
 ---
 
 
-This feature lets you involve any Dust agent in an email thread — just like you would email or cc a human colleague. Forward a message, reply to a thread, or start a fresh email: the agent reads the thread and responds in the thread (only to you).
+This feature lets you involve any Dust agent in an email thread, just like you would email or cc a human colleague. Forward a message, reply to a thread, or start a fresh email: the agent reads the thread and responds in the thread (only to you).
 
 <Info>
 **Feature activation**
@@ -13,12 +13,12 @@ Send Email to Agents is an opt-in feature, not activated by default. You can ena
 
 ## How it works
 
-Once the feature is enabled by an admin, every agent in your workspace becomes reachable at the address: `agent-name@dust.team` — where `agent-name` is the agent's name in Dust, the same name you use to @mention it. Dust uses best‑effort matching, so exact spelling isn't required.
+Once the feature is enabled by an admin, every agent in your workspace becomes reachable at the address: `agent-name@dust.team`, where `agent-name` is the agent's name in Dust, the same name you use to @mention it. Dust uses best‑effort matching, so exact spelling isn't required.
 
 When you send or forward an email to an agent:
 
 - The agent reads the thread, including any attachments directly present in the email you sent.
-- It replies in‑thread only to you — other to/cc recipients do not see the agent's answer.
+- It replies in‑thread only to you. Other to/cc recipients do not see the agent's answer.
 - If the agent needs to use a tool that modifies something (e.g., creating a ticket, updating a record), it will send you a confirmation request first.
 
 Think of email as another interface to interact with a Dust agent, similar in spirit to Slack or Teams. Once Dust matches your email to an agent, that agent keeps its usual instructions, tools, and permissions. The main difference: in addition to replying in Dust, the completed response is emailed back to you (just as a response to a message sent via Slack/Teams is propagated back there).
@@ -49,7 +49,7 @@ The agent will reply in‑thread, only to you.
 <Warning>
 **Important**
 
-The agent uses your email address to verify your identity and your workspace membership. Only workspace members can trigger agents this way — emails from non‑members are not processed.
+The agent uses your email address to verify your identity and your workspace membership. Only workspace members can trigger agents this way. Emails from non‑members are not processed.
 </Warning>
 
 ## Example use cases
@@ -67,7 +67,7 @@ The agent uses your email address to verify your identity and your workspace mem
 - Tool validation: When an action requires confirmation (e.g., writing to an external system), the agent sends the sender a private email with secure Accept / Reject links before proceeding. Other recipients are not notified.
 - Errors: If something goes wrong, the agent will email the error message (only to you).
 - Reply‑To: The agent always replies to the actual sender, not to a custom Reply‑To address.
-- Name matching: Dust uses best‑effort matching on the agent name. `issuebot@dust.team`, `issue-bot@dust.team`, and `IssueBot@dust.team` will all resolve to the same agent—unless you actually have different agents named `issuebot` and `issue-bot` respectively.
+- Name matching: Dust uses best‑effort matching on the agent name. `issuebot@dust.team`, `issue-bot@dust.team`, and `IssueBot@dust.team` will all resolve to the same agent, unless you actually have different agents named `issuebot` and `issue-bot` respectively.
 
 ## Security
 
@@ -84,11 +84,11 @@ The agent acts with the same permissions as any Dust agent run by the sender. It
 
 ### A note on security
 
-Just as it's risky to open attachments from unknown senders, forwarding emails from untrusted sources to an agent carries risk — the agent will read and act on whatever you send it. Apply the same judgment you would before forwarding a thread to a naïve colleague.
+Just as it's risky to open attachments from unknown senders, forwarding emails from untrusted sources to an agent carries risk: the agent will read and act on whatever you send it. Apply the same judgment you would before forwarding a thread to a naïve colleague.
 
 ## Restrictions & Limitations
 
-- Prior thread attachments: The agent can read the full forwarded thread body, but only has access to attachments directly included in the email you sent — not attachments from earlier messages.
+- Prior thread attachments: The agent can read the full forwarded thread body, but only has access to attachments directly included in the email you sent, not attachments from earlier messages.
 - No outbound initiation: Agents cannot initiate emails on their own. They only respond when directly addressed.
 - Workspace membership required: Only emails sent by workspace members are processed. Emails from unrecognized senders are silently dropped.
 - One workspace per user email: An agent address resolves to a single workspace. If a user belongs to multiple workspaces with the same email, then the most recently used paying workspace is chosen.
@@ -109,7 +109,7 @@ Dust uses best‑effort matching. If the name is close enough to an existing age
 
 ### Can I address multiple agents in the same email?
 
-Yes — add multiple agent addresses in To or CC. Each agent will process the thread independently and reply separately.
+Yes. Add multiple agent addresses in To or CC. Each agent will process the thread independently and reply separately.
 
 ### Can my customers email agents directly?
 
@@ -125,7 +125,7 @@ No. Emails sent by workspace members to agents are counted as regular usage, not
 
 ### Can I create a fresh email to an agent (not an existing thread)?
 
-Yes — sending a new email to an agent creates a fresh thread. Replies stay in that thread.
+Yes. Sending a new email to an agent creates a fresh thread. Replies stay in that thread.
 
 ### Do agents remember the whole thread?
 

@@ -3,9 +3,9 @@ title: "Tasks"
 ---
 
 
-The **Tasks tab** is where work gets defined, assigned, and executed. Tasks are lightweight items that describe something that needs to happen. Any Pod member can create them, assign them, and start an agent on them. Agents can do the same — create tasks, start working on them, and mark them done, all without a human in the loop.
+The **Tasks tab** is where work gets defined, assigned, and executed. Tasks are lightweight items that describe something that needs to happen. Any Pod member can create them, assign them, and start an agent on them. Agents can do the same: create tasks, start working on them, and mark them done, all without a human in the loop.
 
-This reflects a core principle of Pods: **everything a human can do, an agent can do**. Agent interactions with Tasks are powered by the **Pods skill**, which is available to all agents by default. See the [Overview](/docs/user-documentation/pods/overview) for more details.
+This reflects a core principle of Pods: **everything a human can do, an agent can do**. Agents interact with Tasks through the **Pods skill**, which is available to all agents by default. See the [Overview](/docs/user-documentation/pods/overview) for more details.
 
 
 ## How to create a task
@@ -19,12 +19,12 @@ This reflects a core principle of Pods: **everything a human can do, an agent ca
 
 **As an agent:**
 
-Agents can create tasks directly in a Pod — for example, after analysing a conversation, processing an incoming request, or as part of a larger workflow. Tasks created by agents appear in the same list and are treated identically to tasks created by humans.
+Agents can create tasks directly in a Pod, for example after analysing a conversation, processing an incoming request, or as part of a larger workflow. Tasks created by agents appear in the same list and are treated identically to tasks created by humans.
 
 Tasks are grouped by assignee. Unassigned tasks appear in their own section.
 
 <Info>
-**Write task descriptions as clear, self-contained instructions — the agent will read the task text as its starting brief when it begins working.**
+**Write task descriptions as clear, self-contained instructions: the agent will read the task text as its starting brief when it begins working.**
 
 **Task states**
 </Info>
@@ -33,7 +33,7 @@ Tasks are grouped by assignee. Unassigned tasks appear in their own section.
 | --------------- | ---------------------------------------------------------------------- |
 | **Open**        | Task has been created but no one has started working on it yet         |
 | **In progress** | An agent has been started on the task and a linked conversation exists |
-| **Done**        | The task has been completed — by a human or an agent                   |
+| **Done**        | The task has been completed, by a human or an agent                   |
 
 ## How to start an agent on a task
 
@@ -41,18 +41,18 @@ Tasks are grouped by assignee. Unassigned tasks appear in their own section.
 
 1. Hover over a task and click the **** (play) button
 2. Optionally add a custom message or select a specific agent
-3. Click **Start** — a conversation linked to the task is created and the task moves to **In progress**
+3. Click **Start**. A conversation linked to the task is created and the task moves to **In progress**
 
 
 **As an agent:**
 
-Agents can start working on a task directly — picking it up, opening a linked conversation, and progressing it to **In progress** without any human trigger.
+Agents can start working on a task directly: picking it up, opening a linked conversation, and progressing it to **In progress** without any human trigger.
 
 The linked conversation is visible in the Conversations tab. You can follow the agent's progress, step in, and redirect at any time.
 
 ## How to mark a task done
 
-* **By a human:** click the checkbox next to the task — it moves to **Done** immediately
+* **By a human:** click the checkbox next to the task; it moves to **Done** immediately
 * **By an agent:** the agent can mark its own task done at the end of a conversation, with a short rationale explaining what was accomplished
 
 Completed tasks remain visible with a strikethrough. They can be unchecked to reopen if needed.
@@ -60,9 +60,9 @@ Completed tasks remain visible with a strikethrough. They can be unchecked to re
 
 ## How to edit or delete a task
 
-* **Edit text:** click directly on the task description to edit it inline — press **Enter** to save
+* **Edit text:** click directly on the task description to edit it inline, then press **Enter** to save
 * **Reassign:** click the assignee avatar to change who the task is assigned to
-* **Delete:** open the `...` menu on the task  **Delete task** — a confirmation is required
+* **Delete:** open the `...` menu on the task  **Delete task**; a confirmation is required
 
 ## Filtering and searching tasks
 
@@ -97,7 +97,7 @@ For ongoing sync, use the **wake-up tool** to schedule a recurring agent that ru
 Example prompt: _"Every weekday morning, check for new open Jira tickets in project XYZ and create a task in this Pod for any that don't already exist. Also check for tasks in this Pod that are marked done and close the corresponding Jira ticket. Use the wake-up tool to schedule this automatically."_
 
 <Info>
-The sync agent can use the Pods skill by default to read and write Pod tasks. The relevant external tool — **Jira**, **Asana**, or **Linear** — must be available to the agent so it can read and write external issues.
+The sync agent can use the Pods skill by default to read and write Pod tasks. The relevant external tool (**Jira**, **Asana**, or **Linear**) must be available to the agent so it can read and write external issues.
 </Info>
 
 <Warning>
