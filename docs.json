@@ -142,6 +142,7 @@
           "docs/user-documentation/agents/discover-skills",
           "docs/user-documentation/agents/discover-tools",
           "docs/user-documentation/agents/go-deep",
+          "docs/user-documentation/agents/dust-support",
           "docs/user-documentation/agents/self-improving-skills"
         ]
       },
