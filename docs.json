@@ -350,6 +350,7 @@
             "group": "Tools management",
             "pages": [
               "docs/user-documentation/admins/tools-management/adding-an-mcp-server",
+              "docs/user-documentation/admins/tools-management/static-egress-ips",
               "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials",
               {
                 "group": "Salesforce",
@@ -2257,6 +2258,14 @@
     {
       "source": "/docs/user-documentation/pods/getting-started",
       "destination": "/docs/user-documentation/getting-started/dust-rollout-guide"
+    },
+    {
+      "source": "/changelog/static-ip-for-custom-mcp-server-calls",
+      "destination": "/docs/user-documentation/admins/tools-management/static-egress-ips"
+    },
+    {
+      "source": "/changelog/changelog-update-8",
+      "destination": "/docs/changelog"
     }
   ],
   "thumbnails": {
