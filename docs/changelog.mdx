@@ -3,6 +3,18 @@ title: "Changelog"
 description: "New updates and improvements to Dust"
 ---
 
+<Update label="August 12th, 2026" tags={["Deprecated"]}>
+## Model-specific default agents are deprecated
+
+We’re retiring model-specific default agents such as @claude-sonnet, @gpt-5.5, and @haiku. These agents were wrappers around a model, without their own instructions, connected data, tools, or workflows. Maintaining them alongside real Dust agents made the agent list harder to understand and required repeated updates as models changed.
+
+This does not remove access to these models. @dust is now the canonical general-purpose agent, and you can choose the model for each message directly from the composer: type `/`, then select **Pick model**. We recommend **Standard** for most queries, as Dust continuously monitors model performance and selects a strong default. You can also choose a specific model whenever you need to.
+
+Models are the brain powering your automation. Agents combine a model with instructions, connected data, tools, and workflows. This change keeps the agent list focused on agents that provide Dust-specific value, while allowing one stable agent to benefit from changing model offerings, model fallback, and cost controls.
+
+You can still create an empty agent with a specific model if you need a persistent model configuration, but for most users, selecting a model from the composer is the simpler option.
+
+</Update>
 
 <Update label="August 10th, 2026" tags={["Added"]}>
 ## Choose the model from the composer
