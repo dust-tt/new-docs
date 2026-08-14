@@ -117,6 +117,13 @@ Read all messages in a specific thread from public channels, private channels, o
 * Reference channels using \<#CHANNEL_ID> format
 * Never use plain names as they won't be parsed correctly
 
+## Message Attribution
+
+Messages posted by agents include a "Sent via [agent] on Dust" footer by default.
+
+- Personal Slack tools: agents can omit the footer only if a workspace admin has enabled footer removal in the workspace settings. When the setting is off (the default), the footer is always shown.
+- Slack Bot tool: messages are posted by the Dust Slack app, so authorship is already visible at the app level. Agents can control the footer per message with the `showSentByFooter` parameter, which defaults to on.
+
 ## Limitations & Considerations
 
 * Standard Slack API limits apply

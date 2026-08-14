@@ -1,0 +1,25 @@
+---
+title: "Static egress IP addresses"
+---
+
+Some security teams need to whitelist Dust's outbound IP addresses in their firewall, for example to let Dust reach a remote MCP server or a Snowflake instance behind a network policy.
+
+## When Dust uses static IPs
+
+Dust routes outbound traffic through static egress IPs only in these two cases:
+
+- **Remote MCP servers** hosted on a domain verified for your workspace (Admin > People & Security > Verified domains). The MCP server hostname must belong to the verified domain itself, for example `mcp.acme.com` under a verified `acme.com`. A host on a different domain, including a vendor's domain, is not covered.
+- **Snowflake connections**.
+
+All other outbound traffic (web search, browsing, other tools and connections) uses dynamic cloud IPs that can change at any time. Do not whitelist those.
+
+## The IP addresses
+
+| Region | Static egress IP |
+| --------------- | ---------------- |
+| US (`dust.tt`) | `34.46.9.232` |
+| EU (`eu.dust.tt`) | `35.195.191.222` |
+
+<Warning>
+These IPs are shared by all Dust workspaces. A firewall rule that allows them does not identify your workspace. Never rely on source IP alone to authenticate requests: keep authentication (bearer token or OAuth) enabled on your MCP server. IP whitelisting is a network-level restriction, not an identity guarantee.
+</Warning>
